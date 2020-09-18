@@ -1,0 +1,24 @@
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+### CocoaPods
+Pods/
+Podfile.lock
+default.profraw
+
+## OS files
+*.DS_Store*
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+## Xcode files
+build/
+*.swp
+*~.nib
+xcuserdata/
+project.xcworkspace/
