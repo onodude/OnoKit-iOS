@@ -9,9 +9,11 @@ def basePods
   # Core
 
   pod 'ObjectMapper', '~> 3.5.1'
+  pod 'Alamofire', '~> 5.0.0'
 
   # UI
 
+  pod 'SVProgressHUD', '~> 2.2.5'
   pod 'SnapKit', '~> 5.0.0'
   
   # Util
