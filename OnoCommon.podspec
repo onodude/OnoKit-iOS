@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-	s.name = 'Common'
+	s.name = 'OnoCommon'
 	s.version = '1.0.0'
 	s.summary = 'A collection of common classes'
 	s.description = 'This is a collection of classes, extensions, methods and functions that aims at decomplexifying tasks that should be easy.'

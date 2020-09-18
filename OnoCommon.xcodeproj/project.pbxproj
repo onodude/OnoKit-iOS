@@ -46,7 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		770456E7251522F1006CC071 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		770456E7251522F1006CC071 /* OnoCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnoCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		770456EA251522F1006CC071 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		770456EB251522F1006CC071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		770456F625152372006CC071 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		770456DD251522F0006CC071 = {
 			isa = PBXGroup;
 			children = (
-				770456E9251522F1006CC071 /* Common */,
+				770456E9251522F1006CC071 /* OnoCommon */,
 				770456E8251522F1006CC071 /* Products */,
 				D862A78856655A581D570C6B /* Pods */,
 				74E660A7E976FA58851907A5 /* Frameworks */,
@@ -121,12 +121,12 @@
 		770456E8251522F1006CC071 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				770456E7251522F1006CC071 /* Common.framework */,
+				770456E7251522F1006CC071 /* OnoCommon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		770456E9251522F1006CC071 /* Common */ = {
+		770456E9251522F1006CC071 /* OnoCommon */ = {
 			isa = PBXGroup;
 			children = (
 				770457302515249E006CC071 /* Resources */,
@@ -136,7 +136,7 @@
 				7704576E251526DA006CC071 /* CommonConstants.swift */,
 				770456EB251522F1006CC071 /* Info.plist */,
 			);
-			path = Common;
+			path = OnoCommon;
 			sourceTree = "<group>";
 		};
 		770456F325152328006CC071 /* Classes */ = {
@@ -216,9 +216,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		770456E6251522F0006CC071 /* Common */ = {
+		770456E6251522F0006CC071 /* OnoCommon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 770456EF251522F1006CC071 /* Build configuration list for PBXNativeTarget "Common" */;
+			buildConfigurationList = 770456EF251522F1006CC071 /* Build configuration list for PBXNativeTarget "OnoCommon" */;
 			buildPhases = (
 				6E6508F0B757CD7D8C088034 /* [CP] Check Pods Manifest.lock */,
 				770456E2251522F0006CC071 /* Headers */,
@@ -231,9 +231,9 @@
 			);
 			dependencies = (
 			);
-			name = Common;
+			name = OnoCommon;
 			productName = Common;
-			productReference = 770456E7251522F1006CC071 /* Common.framework */;
+			productReference = 770456E7251522F1006CC071 /* OnoCommon.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -250,7 +250,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 770456E1251522F0006CC071 /* Build configuration list for PBXProject "Common" */;
+			buildConfigurationList = 770456E1251522F0006CC071 /* Build configuration list for PBXProject "OnoCommon" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -263,7 +263,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				770456E6251522F0006CC071 /* Common */,
+				770456E6251522F0006CC071 /* OnoCommon */,
 			);
 		};
 /* End PBXProject section */
@@ -549,7 +549,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		770456E1251522F0006CC071 /* Build configuration list for PBXProject "Common" */ = {
+		770456E1251522F0006CC071 /* Build configuration list for PBXProject "OnoCommon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				770456ED251522F1006CC071 /* Debug */,
@@ -558,7 +558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		770456EF251522F1006CC071 /* Build configuration list for PBXNativeTarget "Common" */ = {
+		770456EF251522F1006CC071 /* Build configuration list for PBXNativeTarget "OnoCommon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				770456F0251522F1006CC071 /* Debug */,

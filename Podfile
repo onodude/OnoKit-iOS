@@ -2,7 +2,7 @@ platform :ios, '13.0'
  
  use_frameworks!
  
-# Pods for Common
+# Pods for OnoCommon
 
 def basePods
 
@@ -23,7 +23,7 @@ def basePods
 
 end
   
-target 'Common' do
+target 'OnoCommon' do
   basePods
 end
 
