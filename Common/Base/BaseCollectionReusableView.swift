@@ -10,14 +10,14 @@ open class BaseCollectionReusableView: UICollectionReusableView {
 
     // MARK: Objects
 
-    var viewMain: UIView!
-    var indexPath: IndexPath!
-    var controller: UIViewController!
-    var collectionView: UICollectionView!
+    open var viewMain: UIView!
+    open var indexPath: IndexPath!
+    open var controller: UIViewController!
+    open var collectionView: UICollectionView!
 
     // MARK: Initializers
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
 
         viewMain = CommonView.init(superview: self)

@@ -19,18 +19,18 @@ open class BaseViewController: UIViewController, BaseViewControllerProtocol, CAA
 
     // MARK: - Objects
 
-    var screenName: String = ""
+    open var screenName: String = ""
 
-    var viewNavBar: CommonView!
-    var imgNavBarBg: CommonImageView!
-    var imgNavBarTitle: CommonImageView!
-    var lblNavBarTitle: CommonLabel!
-    var btnBack: CommonButton!
-    var btnSearch: CommonButton!
-    var btnSettings: CommonButton!
-    var btnClose: CommonButton!
+    open var viewNavBar: CommonView!
+    open var imgNavBarBg: CommonImageView!
+    open var imgNavBarTitle: CommonImageView!
+    open var lblNavBarTitle: CommonLabel!
+    open var btnBack: CommonButton!
+    open var btnSearch: CommonButton!
+    open var btnSettings: CommonButton!
+    open var btnClose: CommonButton!
 
-    var viewMain: UIView!
+    open var viewMain: UIView!
 
     // MARK: - Load
 
