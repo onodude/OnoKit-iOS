@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
 	s.ios.deployment_target = '13.0'
 
-	s.source_files = 'Common/**/*.swift'
+	s.source_files = 'OnoCommon/**/*.swift'
 
 	s.dependency 'Alamofire', '~> 5.0.0'
 	s.dependency 'ObjectMapper', '~> 3.5.1'

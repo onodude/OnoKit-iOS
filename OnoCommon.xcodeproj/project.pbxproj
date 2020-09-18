@@ -42,7 +42,7 @@
 		7704575825152523006CC071 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575125152523006CC071 /* CommonModel.swift */; };
 		7704575925152523006CC071 /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575225152523006CC071 /* CommonTableViewCell.swift */; };
 		77045771251526DA006CC071 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704576E251526DA006CC071 /* CommonConstants.swift */; };
-		8A2D3FDB11C9D978A2FA8CE2 /* Pods_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84A93976C779972F4B243BA /* Pods_Common.framework */; };
+		A401CB9616A741A63F149E08 /* Pods_OnoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807E8C0ACF382666558651A7 /* Pods_OnoCommon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,7 +83,9 @@
 		7704575125152523006CC071 /* CommonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
 		7704575225152523006CC071 /* CommonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
 		7704576E251526DA006CC071 /* CommonConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
-		D84A93976C779972F4B243BA /* Pods_Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		807E8C0ACF382666558651A7 /* Pods_OnoCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnoCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		969680373C63C20055DFA949 /* Pods-OnoCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoCommon.debug.xcconfig"; path = "Target Support Files/Pods-OnoCommon/Pods-OnoCommon.debug.xcconfig"; sourceTree = "<group>"; };
+		BBA679E72A357B6E2F971A96 /* Pods-OnoCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoCommon.release.xcconfig"; path = "Target Support Files/Pods-OnoCommon/Pods-OnoCommon.release.xcconfig"; sourceTree = "<group>"; };
 		D9B2FECED0ECBEB2F5FCA534 /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
 		E9018241EAA291238C6A90A7 /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A2D3FDB11C9D978A2FA8CE2 /* Pods_Common.framework in Frameworks */,
+				A401CB9616A741A63F149E08 /* Pods_OnoCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +105,7 @@
 		74E660A7E976FA58851907A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D84A93976C779972F4B243BA /* Pods_Common.framework */,
+				807E8C0ACF382666558651A7 /* Pods_OnoCommon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,6 +200,8 @@
 			children = (
 				E9018241EAA291238C6A90A7 /* Pods-Common.debug.xcconfig */,
 				D9B2FECED0ECBEB2F5FCA534 /* Pods-Common.release.xcconfig */,
+				969680373C63C20055DFA949 /* Pods-OnoCommon.debug.xcconfig */,
+				BBA679E72A357B6E2F971A96 /* Pods-OnoCommon.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -295,7 +299,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Common-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-OnoCommon-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -489,7 +493,7 @@
 		};
 		770456F0251522F1006CC071 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9018241EAA291238C6A90A7 /* Pods-Common.debug.xcconfig */;
+			baseConfigurationReference = 969680373C63C20055DFA949 /* Pods-OnoCommon.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -520,7 +524,7 @@
 		};
 		770456F1251522F1006CC071 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9B2FECED0ECBEB2F5FCA534 /* Pods-Common.release.xcconfig */;
+			baseConfigurationReference = BBA679E72A357B6E2F971A96 /* Pods-OnoCommon.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
