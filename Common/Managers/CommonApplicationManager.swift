@@ -11,17 +11,13 @@ open class CommonApplicationManager: NSObject {
 
     open var window: UIWindow!
 
-    public static let shared = CommonApplicationManager()
+    private static let sharedCommon = CommonApplicationManager()
 
     open func start(window: UIWindow) {
 
         self.window = window
 
         loadDeviceInfo()
-
-        CommonConfigManager.shared.configureLibraries()
-
-        CommonNavigationManager.shared.window = self.window
 
     }
 

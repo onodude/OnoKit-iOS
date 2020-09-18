@@ -8,7 +8,7 @@ import UIKit
 
 open class CommonConfigManager {
 
-    public static let shared = CommonConfigManager()
+    private static let sharedCommon = CommonConfigManager()
 
     public func configureLibraries() {
 

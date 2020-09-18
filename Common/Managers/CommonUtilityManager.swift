@@ -47,7 +47,7 @@ open class CommonUtilityManager {
 
     public static func getCurrentViewController() -> UIViewController! {
 
-        let tvc = CommonNavigationManager.shared.tabBarController
+        let tvc = CommonNavigationManager.sharedCommon.tabBarController
 
         tvc.selectedViewController = tvc.viewControllers![2]
 
@@ -65,7 +65,7 @@ open class CommonUtilityManager {
 
     public static func getCurrentNavigationController() -> UINavigationController! {
 
-        let tvc = CommonNavigationManager.shared.tabBarController
+        let tvc = CommonNavigationManager.sharedCommon.tabBarController
 
         if let nc: UINavigationController = tvc.viewControllers![2] as? UINavigationController {
 

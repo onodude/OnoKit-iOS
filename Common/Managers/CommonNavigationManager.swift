@@ -13,7 +13,7 @@ open  class CommonNavigationManager {
     open var tabBarController: CommonTabBarController = CommonTabBarController()
     open var initialViewController: UIViewController!
 
-    public static let shared = CommonNavigationManager()
+    static let sharedCommon = CommonNavigationManager()
 
     open func loggedInLaunchSequence(animated: Bool) {
 
