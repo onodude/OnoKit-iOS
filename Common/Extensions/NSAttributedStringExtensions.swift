@@ -9,7 +9,7 @@ import UIKit
 
 public extension NSAttributedString {
 
-    public convenience init(text: String, lineHeightMultiple: CGFloat, alignment: NSTextAlignment, font: UIFont) {
+    convenience init(text: String, lineHeightMultiple: CGFloat, alignment: NSTextAlignment, font: UIFont) {
 
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineHeightMultiple = lineHeightMultiple

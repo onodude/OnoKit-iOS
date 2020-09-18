@@ -8,7 +8,7 @@ import Foundation
 
 public extension Date {
 
-    public var serverDateFormat: String {
+    var serverDateFormat: String {
 
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -18,7 +18,7 @@ public extension Date {
 
     }
 
-    public var commonDateFormat: String {
+    var commonDateFormat: String {
 
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy"
@@ -28,7 +28,7 @@ public extension Date {
 
     }
 
-    public var serverDateAndTimeFormat: String {
+    var serverDateAndTimeFormat: String {
 
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -38,7 +38,7 @@ public extension Date {
 
     }
 
-    public var commonDateAndTimeFormat: String {
+    var commonDateAndTimeFormat: String {
 
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy - HH:mm"
