@@ -1,50 +1,49 @@
-# Common
+# OnoCommon
 
-## Project setup
+[![Version](https://img.shields.io/cocoapods/v/OnoCommon)](https://cocoapods.org/pods/onocommon)
+[![Platform](https://img.shields.io/cocoapods/p/OnoCommon)](https://cocoapods.org/pods/onocommon)
 
-### Requirements
-- Xcode 11.4.1
-- OSX 10.15.4 or later
+## Example
 
-### Getting Started
-#### CocoaPods
-This project uses [Cocoapods](https://cocoapods.org) for third-party dependencies management, therefore before opening it you have to make sure you have the latest stable version by running:
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-    sudo gem install cocoapods
+## Requirements
 
-Then cd to the root of the project and run:
+## Installation
 
-    pod install --repo-update
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
-Now you can open the `Common.xcworkspace` file to run the project in Xcode.
+`$ gem install cocoapods`
 
-#### Code style
-The code style definition follows [Google's Swift Style Guide](https://google.github.io/swift/) which is a review of the official Apple's Swift standard library style.
+CocoaPods 1.1.0+ is required to build OnoCommon 1.0.0+.
 
-#### SwiftLint
-This project uses [SwiftLint](https://github.com/realm/SwiftLint) as a lint / formatter tool.
-You can see the errors and warnings of each build right inside Xcode's issue navigator, as the regular ones.
-You can either fix them manually or rely on the SwiftLint's autocorrection feature that can be run via the following command `Pods/SwiftLint/swiftlint autocorrect`.
-The lint rules are contained in the `.swiftlint.yml` file and should be progressively hardened, the initial version is reasonable enough to start using it without having a huge impact on the codebase.
+To integrate OnoCommon into your Xcode project using CocoaPods, specify it in your Podfile:
 
-Make sure you select `Automatically trim trailing whitespaces` and `Including whitespace-only lines` on Xcode.
-You can access these checkboxes at `Xcode -> Preferences -> Text Editing -> Editing`
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '13.0'
+use_frameworks!
 
-To automatically fix all SwiftLint warnings cd to the root of the project and run:
+target '<Your Target Name>' do
+    pod 'OnoCommon', '~> 1.0.0'
+end
+```
 
-	./Pods/SwiftLint/swiftlint autocorrect
-	
-#### Git hooks
-Please add the following pre-commit hook on your machine: this will enforce the SwiftLint check before committing any changes to the codebase.
-~~~~
-#!/bin/sh
-echo "Running static code analysis..."
-status=$(./Pods/SwiftLint/swiftlint)
-if [  -z "$status" ] ; then
-    echo "... all good!"
-    exit 0
-else
-    echo 1>&2 "... oh no! Errors found, commit aborted. Please run ./Pods/SwiftLint/swiftlint and fix any additional errors."
-    exit 1
-fi
-~~~~
+Then, run the following command:
+
+`$ pod install`
+
+
+OnoCommon is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+
+```ruby
+pod 'OnoCommon'
+```
+
+## Author
+
+onodude, onur.erdemol@gmail.com
+
+## License
+
+OnoCommon is available under the Apache License, Version 2.0. See the LICENSE file for more info.
