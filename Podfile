@@ -16,7 +16,7 @@ def basePods
   
   # Util
   
-  pod 'KeychainAccess', '~> 4.2.0'
+  pod 'KeychainAccess', '~> 4.1.0'
   pod 'SwiftLint', '~> 0.40.0'
 
 end
