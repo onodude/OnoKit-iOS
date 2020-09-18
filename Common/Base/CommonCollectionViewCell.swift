@@ -8,8 +8,6 @@ import UIKit
 
 open class CommonCollectionViewCell: UICollectionViewCell {
 
-    open var cellIdentifier: String = ""
-
     // MARK: Objects
 
     open var viewMain: UIView!

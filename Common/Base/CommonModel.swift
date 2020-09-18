@@ -11,7 +11,7 @@ open class CommonModel: Mappable {
 
     // MARK: - Initializers
 
-    init() { }
+    public init() { }
 
     public required init?(map: Map) { }
 

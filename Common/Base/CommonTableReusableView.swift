@@ -10,17 +10,17 @@ open class CommonTableReusableView: UIView {
 
     // MARK: - Objects
 
-    static var defaultHeaderHeight: CGFloat = 60
-    static var defaultFooterHeight: CGFloat = 20
+    public static var defaultHeaderHeight: CGFloat = 60
+    public static var defaultFooterHeight: CGFloat = 20
 
-    var viewMain: UIView!
-    var indexPath: IndexPath!
-    var controller: UIViewController!
-    var tableView: UITableView!
+    open var viewMain: UIView!
+    open var indexPath: IndexPath!
+    open var controller: UIViewController!
+    open var tableView: UITableView!
 
     // MARK: - Build
 
-    func buildMainView() {
+    open func buildMainView() {
 
         viewMain = CommonView(superview: self)
         viewMain.snp.makeConstraints { (view) in
