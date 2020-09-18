@@ -8,6 +8,28 @@ import UIKit
 
 public class CommonTextField: UITextField {
 
+    convenience init(title: String, placeholder: String, font: UIFont, titleColor: UIColor, placeholderColor: UIColor, bgColor: UIColor, autocapitalizationType: UITextAutocapitalizationType, keyboardType: UIKeyboardType, textContentType: UITextContentType, superview: UIView, delegate: Any) {
+
+        self.init(frame: .zero)
+        superview.addSubview(self)
+
+        self.delegate = delegate as? UITextFieldDelegate
+
+        self.backgroundColor = bgColor
+
+        self.returnKeyType = .done
+        self.autocapitalizationType = autocapitalizationType
+        self.keyboardType = keyboardType
+        self.textContentType = textContentType
+
+        self.font = font
+
+        self.textColor = titleColor
+
+        self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: placeholderColor])
+
+    }
+
     public convenience init(title: String, placeholder: String, font: UIFont, titleColor: UIColor, superview: UIView, delegate: Any) {
 
         self.init(frame: .zero)
