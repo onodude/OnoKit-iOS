@@ -1,0 +1,16 @@
+disabled_rules:
+  - line_length
+  - unused_optional_binding
+  - force_cast
+  - force_try
+  - identifier_name
+  - for_where
+  - function_parameter_count
+  - class_delegate_protocol
+  - weak_delegate
+  - todo
+  - function_body_length
+  - type_body_length
+  - file_length
+excluded:
+  - Pods
