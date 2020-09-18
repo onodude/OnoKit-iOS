@@ -99,7 +99,7 @@ open class CommonViewController: UIViewController, CommonViewControllerProtocol,
 
     open func addNavigationBarTitle(title: String) {
 
-        lblNavBarTitle = CommonLabel(text: title, titleColor: CommonColorManager.colorBlack(), font: CommonFontManager.fontSemiBold(18), bgColor: .clear, alignment: .center, superview: viewNavBar)
+        lblNavBarTitle = CommonLabel(text: title, titleColor: CommonColorManager.colorBlack(), font: CommonFontManager.fontBold(18), bgColor: .clear, alignment: .center, superview: viewNavBar)
 
         lblNavBarTitle.snp.makeConstraints { (view) in
             view.centerX.equalToSuperview()

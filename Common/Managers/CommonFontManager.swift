@@ -11,12 +11,16 @@ open class CommonFontManager {
 
     // MARK: - Font Names
 
-    public static var fontNameRegular = "OpenSans-Regular"
-    public static var fontNameMedium = "OpenSans-Medium"
-    public static var fontNameBold = "OpenSans-Bold"
-    public static var fontNameSemiBold = "OpenSans-Semibold"
+    public static var fontNameRegular = "HelveticaNeue-Regular"
+    public static var fontNameMedium = "HelveticaNeue-Medium"
+    public static var fontNameBold = "HelveticaNeue-Bold"
+    public static var fontNameLight = "HelveticaNeue-Light"
 
     // MARK: - Font Creators
+
+    public static func fontLight(_ size: CGFloat) -> UIFont {
+        return UIFont(name: fontNameLight, size: size)!
+    }
 
     public static func fontRegular(_ size: CGFloat) -> UIFont {
         return UIFont(name: fontNameRegular, size: size)!
@@ -28,10 +32,6 @@ open class CommonFontManager {
 
     public static func fontBold(_ size: CGFloat) -> UIFont {
         return UIFont(name: fontNameBold, size: size)!
-    }
-
-    public static func fontSemiBold(_ size: CGFloat) -> UIFont {
-        return UIFont(name: fontNameSemiBold, size: size)!
     }
 
     // MARK: - Helpers
