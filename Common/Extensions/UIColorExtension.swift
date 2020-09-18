@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-extension UIColor {
+public extension UIColor {
 
     convenience init(hexString: String, alpha: CGFloat = 1.0) {
 

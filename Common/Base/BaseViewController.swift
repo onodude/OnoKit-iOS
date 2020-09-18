@@ -7,7 +7,7 @@
 import UIKit
 import SnapKit
 
-protocol BaseViewControllerProtocol {
+public protocol BaseViewControllerProtocol {
 
     func loadMainView()
     func buildMainView()
@@ -15,7 +15,7 @@ protocol BaseViewControllerProtocol {
 
 }
 
-class BaseViewController: UIViewController, BaseViewControllerProtocol, CAAnimationDelegate {
+public class BaseViewController: UIViewController, BaseViewControllerProtocol, CAAnimationDelegate {
 
     // MARK: - Objects
 
@@ -34,24 +34,24 @@ class BaseViewController: UIViewController, BaseViewControllerProtocol, CAAnimat
 
     // MARK: - Load
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         let viewName = String(describing: type(of: self))
         LogManager.log(string: String(format: "%@", viewName) )
     }
 
-    func loadMainView() { }
+    public func loadMainView() { }
 
     // MARK: - Build
 
-    func bindViewModel() { }
+    public func bindViewModel() { }
 
-    func buildMainView() {
+    public func buildMainView() {
 
         self.view.window?.layer.backgroundColor = UIColor.clear.cgColor
 
@@ -137,7 +137,7 @@ class BaseViewController: UIViewController, BaseViewControllerProtocol, CAAnimat
 
     // MARK: - Other
 
-    override func didReceiveMemoryWarning() {
+    public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
         let viewName = String(describing: type(of: self))
@@ -145,11 +145,11 @@ class BaseViewController: UIViewController, BaseViewControllerProtocol, CAAnimat
 
     }
 
-    override var prefersStatusBarHidden: Bool {
+    public override var prefersStatusBarHidden: Bool {
         return false
     }
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
+    public override var preferredStatusBarStyle: UIStatusBarStyle {
         if #available(iOS 13.0, *) {
             return .darkContent
         } else {

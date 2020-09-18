@@ -6,7 +6,7 @@
 
 import Foundation
 
-extension URL {
+public extension URL {
 
     func getQueryParamsForKey(key: String) -> String! {
         let components = URLComponents(url: self, resolvingAgainstBaseURL: false)

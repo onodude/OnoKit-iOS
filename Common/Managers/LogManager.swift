@@ -14,11 +14,11 @@ public func Log<T>(_ object: T?, filename: String = #file, line: Int = #line, fu
 
 }
 
-class LogManager {
+public class LogManager {
 
-    static let sharedInstance = LogManager()
+    public static let sharedInstance = LogManager()
 
-    static func log(string: String) {
+    public static func log(string: String) {
 
         if isXcode() {
 
@@ -32,7 +32,7 @@ class LogManager {
 
     }
 
-    static func isXcode() -> Bool {
+    public static func isXcode() -> Bool {
 
         var info = kinfo_proc()
         var mib: [Int32] = [CTL_KERN, KERN_PROC, KERN_PROC_PID, getpid()]

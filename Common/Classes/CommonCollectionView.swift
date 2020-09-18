@@ -6,9 +6,9 @@
 
 import UIKit
 
-class CommonCollectionView: UICollectionView {
+public class CommonCollectionView: UICollectionView {
 
-    convenience init(backgroundColor: UIColor, superview: UIView, delegate: Any) {
+    public convenience init(backgroundColor: UIColor, superview: UIView, delegate: Any) {
 
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
 
@@ -26,7 +26,7 @@ class CommonCollectionView: UICollectionView {
 
     }
 
-    convenience init(backgroundColor: UIColor, superview: UIView, handler: CommonCollectionViewHandler, direction: UICollectionView.ScrollDirection, identifiers: [String]) {
+    public convenience init(backgroundColor: UIColor, superview: UIView, handler: CommonCollectionViewHandler, direction: UICollectionView.ScrollDirection, identifiers: [String]) {
 
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.scrollDirection = direction

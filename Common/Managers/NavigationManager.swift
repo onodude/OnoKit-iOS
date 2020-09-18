@@ -6,7 +6,7 @@
 
 import UIKit
 
-class NavigationManager {
+public class NavigationManager {
 
     var window: UIWindow!
     var navigationController: NavigationController = NavigationController()

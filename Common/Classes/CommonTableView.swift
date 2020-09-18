@@ -6,13 +6,13 @@
 
 import UIKit
 
-class CommonTableView: UITableView {
+public class CommonTableView: UITableView {
 
-    var ctrlRefresh: UIRefreshControl = UIRefreshControl()
+    public var ctrlRefresh: UIRefreshControl = UIRefreshControl()
 
     // MARK: - Initializers
 
-    convenience init(bgColor: UIColor, style: UITableView.Style, superview: UIView, delegate: Any) {
+    public convenience init(bgColor: UIColor, style: UITableView.Style, superview: UIView, delegate: Any) {
 
         self.init(frame: .zero, style: style)
 
@@ -35,7 +35,7 @@ class CommonTableView: UITableView {
 
     }
 
-    convenience init(style: UITableView.Style, superview: UIView, delegate: Any) {
+    public convenience init(style: UITableView.Style, superview: UIView, delegate: Any) {
 
         self.init(frame: .zero, style: style)
 
@@ -60,7 +60,7 @@ class CommonTableView: UITableView {
 
     // MARK: - Functions
 
-    func stopRefreshControl() {
+    public func stopRefreshControl() {
 
         if self.ctrlRefresh.isRefreshing {
 
@@ -70,7 +70,7 @@ class CommonTableView: UITableView {
 
     }
 
-    func addRefreshController(tintColor: UIColor, action: Selector, target: Any) {
+    public func addRefreshController(tintColor: UIColor, action: Selector, target: Any) {
 
         self.ctrlRefresh.tintColor = tintColor
         self.ctrlRefresh.addTarget(target, action: action, for: .valueChanged)
@@ -83,7 +83,7 @@ class CommonTableView: UITableView {
 
     }
 
-    func scrollToTopRow() {
+    public func scrollToTopRow() {
 
         self.setContentOffset(CGPoint.zero, animated: true)
 

@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-extension UIImageView {
+public extension UIImageView {
 
     convenience init(color: UIColor) {
 

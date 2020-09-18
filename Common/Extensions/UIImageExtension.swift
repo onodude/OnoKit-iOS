@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-extension UIImage {
+public extension UIImage {
 
     // MARK: - Common Creators
 
@@ -19,7 +19,7 @@ extension UIImage {
         self.init(cgImage: image!.cgImage!)
     }
 
-    public convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
+    convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
         let rect = CGRect(origin: .zero, size: size)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
         color.setFill()

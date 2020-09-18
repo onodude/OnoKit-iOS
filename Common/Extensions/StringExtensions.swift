@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-extension String {
+public extension String {
 
     func height(width: CGFloat, font: UIFont) -> CGFloat {
         let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
@@ -107,9 +107,11 @@ extension String {
             return nil
         }
     }
+
     func getBase64Value() -> String {
         return self.data(using: String.Encoding.utf8)!.base64EncodedString(options: [])
     }
+
     func trim() -> String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }

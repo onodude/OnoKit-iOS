@@ -6,11 +6,11 @@
 
 import UIKit
 
-class CommonImageView: UIImageView {
+public class CommonImageView: UIImageView {
 
     // MARK: - Initializers
 
-    convenience init(imageName: String, superview: UIView) {
+    public convenience init(imageName: String, superview: UIView) {
 
         self.init(frame: .zero)
 
@@ -22,7 +22,7 @@ class CommonImageView: UIImageView {
 
     }
 
-    convenience init(backgroundColor: UIColor, superview: UIView) {
+    public convenience init(backgroundColor: UIColor, superview: UIView) {
 
         self.init(frame: .zero)
 
@@ -32,7 +32,7 @@ class CommonImageView: UIImageView {
 
     }
 
-    convenience init(image: UIImage, superview: UIView) {
+    public convenience init(image: UIImage, superview: UIView) {
 
         self.init(frame: .zero)
 
@@ -45,7 +45,7 @@ class CommonImageView: UIImageView {
 
     // MARK: - Actions
 
-    func loadImageView(photoUrl: String, aspectMode: UIView.ContentMode) {
+    public func loadImageView(photoUrl: String, aspectMode: UIView.ContentMode) {
 
         self.image = UIImage(named: "img_placeholder")
 

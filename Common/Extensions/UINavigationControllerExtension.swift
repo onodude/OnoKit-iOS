@@ -6,7 +6,7 @@
 
 import UIKit
 
-extension UINavigationController {
+public extension UINavigationController {
 
     func getControllerWithClass(_ anyClass: AnyClass) -> UIViewController {
 

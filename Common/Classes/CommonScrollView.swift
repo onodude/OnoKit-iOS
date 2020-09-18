@@ -6,9 +6,9 @@
 
 import UIKit
 
-class CommonScrollView: UIScrollView {
+public class CommonScrollView: UIScrollView {
 
-    convenience init(superview: UIView) {
+    public convenience init(superview: UIView) {
 
         self.init(frame: .zero)
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -24,7 +24,7 @@ class CommonScrollView: UIScrollView {
 
     }
 
-    convenience init(superview: UIView, controller: UIViewController) {
+    public convenience init(superview: UIView, controller: UIViewController) {
 
         self.init(frame: .zero)
         self.translatesAutoresizingMaskIntoConstraints = false

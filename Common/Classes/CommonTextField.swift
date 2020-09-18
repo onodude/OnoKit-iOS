@@ -6,9 +6,9 @@
 
 import UIKit
 
-class CommonTextField: UITextField {
+public class CommonTextField: UITextField {
 
-    convenience init(title: String, placeholder: String, font: UIFont, titleColor: UIColor, superview: UIView, delegate: Any) {
+    public convenience init(title: String, placeholder: String, font: UIFont, titleColor: UIColor, superview: UIView, delegate: Any) {
 
         self.init(frame: .zero)
         superview.addSubview(self)
@@ -26,7 +26,7 @@ class CommonTextField: UITextField {
 
     }
 
-    convenience init(title: String, placeholder: String, font: UIFont, titleColor: UIColor, placeholderColor: UIColor, bgColor: UIColor, superview: UIView, delegate: Any) {
+    public convenience init(title: String, placeholder: String, font: UIFont, titleColor: UIColor, placeholderColor: UIColor, bgColor: UIColor, superview: UIView, delegate: Any) {
 
         self.init(frame: .zero)
         superview.addSubview(self)
@@ -45,16 +45,16 @@ class CommonTextField: UITextField {
 
     }
 
-    func setPlaceholder(placeholder: String, font: UIFont, color: UIColor) {
+    public func setPlaceholder(placeholder: String, font: UIFont, color: UIColor) {
         self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: color])
     }
 
-    func addLeftPadding(width: Int) {
+    public func addLeftPadding(width: Int) {
         self.leftView = CommonView(frame: CGRect(x: 0, y: 0, width: width, height: 10))
         self.leftViewMode = .always
     }
 
-    func addRightPadding(width: Int) {
+    public func addRightPadding(width: Int) {
         self.rightView = CommonView(frame: CGRect(x: 0, y: 0, width: width, height: 10))
         self.rightViewMode = .always
     }

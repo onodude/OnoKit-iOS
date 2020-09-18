@@ -6,7 +6,7 @@
 
 import UIKit
 
-extension UITextField {
+public extension UITextField {
 
     convenience init(text: String, font: UIFont, color: UIColor, superview: UIView) {
 

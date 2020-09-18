@@ -7,9 +7,9 @@
 import Foundation
 import UIKit
 
-extension NSAttributedString {
+public extension NSAttributedString {
 
-    convenience init(text: String, lineHeightMultiple: CGFloat, alignment: NSTextAlignment, font: UIFont) {
+    public convenience init(text: String, lineHeightMultiple: CGFloat, alignment: NSTextAlignment, font: UIFont) {
 
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineHeightMultiple = lineHeightMultiple

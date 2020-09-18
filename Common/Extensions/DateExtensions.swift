@@ -6,9 +6,9 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
 
-    var serverDateFormat: String {
+    public var serverDateFormat: String {
 
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -18,7 +18,7 @@ extension Date {
 
     }
 
-    var commonDateFormat: String {
+    public var commonDateFormat: String {
 
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy"
@@ -28,7 +28,7 @@ extension Date {
 
     }
 
-    var serverDateAndTimeFormat: String {
+    public var serverDateAndTimeFormat: String {
 
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -38,7 +38,7 @@ extension Date {
 
     }
 
-    var commonDateAndTimeFormat: String {
+    public var commonDateAndTimeFormat: String {
 
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy - HH:mm"

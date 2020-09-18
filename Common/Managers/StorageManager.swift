@@ -7,20 +7,20 @@
 import Foundation
 import KeychainAccess
 
-class StorageManager {
+public class StorageManager {
 
     // MARK: - Keys
 
-    static let kCommonGroup: String = "CommonKeychainGroup"
-    static let kCommonService: String = "CommonKeychainService"
+    public static let kCommonGroup: String = "CommonKeychainGroup"
+    public static let kCommonService: String = "CommonKeychainService"
 
-    static let kDeviceId: String = "DeviceId"
-    static let kServiceUrl: String = "ServiceUrl"
-    static let kToken: String = "Token"
+    public static let kDeviceId: String = "DeviceId"
+    public static let kServiceUrl: String = "ServiceUrl"
+    public static let kToken: String = "Token"
 
     // MARK: - Device
 
-    static func getDeviceID() -> String {
+    public static func getDeviceID() -> String {
 
         let deviceId: String = getStringForKey(key: kDeviceId)
 
@@ -28,7 +28,7 @@ class StorageManager {
 
     }
 
-    static func setDeviceID(_ key: String) {
+    public static func setDeviceID(_ key: String) {
 
         setStringForKey(value: key, key: kDeviceId)
 
@@ -36,7 +36,7 @@ class StorageManager {
 
     // MARK: - Network
 
-    static func getToken() -> String {
+    public static func getToken() -> String {
 
         let token: String = getStringForKey(key: kToken)
 
@@ -44,7 +44,7 @@ class StorageManager {
 
     }
 
-    static func setToken(_ key: String) {
+    public static func setToken(_ key: String) {
 
         setStringForKey(value: key, key: kToken)
 
@@ -52,7 +52,7 @@ class StorageManager {
 
     // MARK: - Helpers
 
-    static func setBoolForKey(value: Bool, key: String) {
+    public static func setBoolForKey(value: Bool, key: String) {
 
         let keychain = Keychain(service: kCommonService)
 
@@ -60,7 +60,7 @@ class StorageManager {
 
     }
 
-    static func getBoolForKey(key: String) -> Bool {
+    public static func getBoolForKey(key: String) -> Bool {
 
         let keychain = Keychain(service: kCommonService)
 
@@ -76,7 +76,7 @@ class StorageManager {
 
     }
 
-    static func setStringForKey(value: String, key: String) {
+    public static func setStringForKey(value: String, key: String) {
 
         let keychain = Keychain(service: kCommonService)
 
@@ -84,7 +84,7 @@ class StorageManager {
 
     }
 
-    static func getStringForKey(key: String) -> String {
+    public static func getStringForKey(key: String) -> String {
 
         let keychain = Keychain(service: kCommonService)
 
@@ -100,7 +100,7 @@ class StorageManager {
 
     }
 
-    static func setIntForKey(value: Int, key: String) {
+    public static func setIntForKey(value: Int, key: String) {
 
         let keychain = Keychain(service: kCommonService)
 
@@ -108,7 +108,7 @@ class StorageManager {
 
     }
 
-    static func getIntForKey(key: String) -> Int {
+    public static func getIntForKey(key: String) -> Int {
 
         let keychain = Keychain(service: kCommonService)
 

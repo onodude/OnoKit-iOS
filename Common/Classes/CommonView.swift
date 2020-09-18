@@ -6,11 +6,11 @@
 
 import UIKit
 
-class CommonView: UIView {
+public class CommonView: UIView {
 
     // MARK: - Initializers
 
-    convenience init(superview: UIView) {
+    public convenience init(superview: UIView) {
 
         self.init(frame: .zero)
         self.backgroundColor = .clear
@@ -19,7 +19,7 @@ class CommonView: UIView {
 
     }
 
-    convenience init(backgroundColor: UIColor, superview: UIView) {
+    public convenience init(backgroundColor: UIColor, superview: UIView) {
 
         self.init(frame: .zero)
         self.backgroundColor = backgroundColor

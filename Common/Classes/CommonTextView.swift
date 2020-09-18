@@ -6,9 +6,9 @@
 
 import UIKit
 
-class CommonTextView: UITextView {
+public class CommonTextView: UITextView {
 
-    convenience init(text: String, textColor: UIColor, font: UIFont, bgColor: UIColor, alignment: NSTextAlignment, superview: UIView, delegate: Any) {
+    public convenience init(text: String, textColor: UIColor, font: UIFont, bgColor: UIColor, alignment: NSTextAlignment, superview: UIView, delegate: Any) {
 
         self.init(frame: .zero)
         superview.addSubview(self)

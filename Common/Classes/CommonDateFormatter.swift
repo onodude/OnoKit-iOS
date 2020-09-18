@@ -6,9 +6,9 @@
 
 import UIKit
 
-class CommonDateFormatter: DateFormatter {
+public class CommonDateFormatter: DateFormatter {
 
-    convenience init(format: String? = nil, zone: String? = nil) {
+    public convenience init(format: String? = nil, zone: String? = nil) {
 
         self.init()
         if let notNullFormat = format { self.dateFormat = notNullFormat }

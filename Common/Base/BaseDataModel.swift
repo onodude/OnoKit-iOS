@@ -7,14 +7,14 @@
 import UIKit
 import ObjectMapper
 
-class BaseDataModel: Mappable {
+public class BaseDataModel: Mappable {
 
     // MARK: - Initializers
 
     init() { }
 
-    required init?(map: Map) { }
+    public required init?(map: Map) { }
 
-    func mapping(map: Map) { }
+    public func mapping(map: Map) { }
 
 }

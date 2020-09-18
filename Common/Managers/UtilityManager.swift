@@ -7,11 +7,11 @@
 import Foundation
 import UIKit
 
-class UtilityManager {
+public class UtilityManager {
 
     // MARK: - Version
 
-    static func getAppVersion() -> String {
+    public static func getAppVersion() -> String {
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
             return version
         } else {
@@ -19,7 +19,7 @@ class UtilityManager {
         }
     }
 
-    static func getBuildVersion() -> String {
+    public static func getBuildVersion() -> String {
         if let version = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
             return version
         } else {
@@ -27,7 +27,7 @@ class UtilityManager {
         }
     }
 
-    static func getBuildVersionInteger() -> Int {
+    public static func getBuildVersionInteger() -> Int {
         if let version = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
             return Int(version)!
         } else {
@@ -37,7 +37,7 @@ class UtilityManager {
 
     // MARK: - Static Data
 
-    static func getTestResponse() -> String {
+    public static func getTestResponse() -> String {
 
         let json = String(data: try! Data(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "test_response", ofType: "json")!)), encoding: String.Encoding.utf8)!
 
@@ -45,7 +45,7 @@ class UtilityManager {
 
     }
 
-    static func getCurrentViewController() -> UIViewController! {
+    public static func getCurrentViewController() -> UIViewController! {
 
         let tvc = NavigationManager.shared.tabBarController
 
@@ -63,7 +63,7 @@ class UtilityManager {
 
     }
 
-    static func getCurrentNavigationController() -> UINavigationController! {
+    public static func getCurrentNavigationController() -> UINavigationController! {
 
         let tvc = NavigationManager.shared.tabBarController
 

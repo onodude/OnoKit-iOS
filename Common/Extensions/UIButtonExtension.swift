@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-extension UIButton {
+public extension UIButton {
 
     // MARK: Common Creators
 

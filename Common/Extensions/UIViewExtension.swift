@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-extension UIView {
+public extension UIView {
 
     func allSubViewsOf<T: UIView>(type: T.Type) -> [T] {
         var all = [T]()
