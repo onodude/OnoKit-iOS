@@ -8,7 +8,7 @@ import UIKit
 
 public class CommonTextField: UITextField {
 
-    convenience init(title: String, placeholder: String, font: UIFont, titleColor: UIColor, placeholderColor: UIColor, bgColor: UIColor, autocapitalizationType: UITextAutocapitalizationType, keyboardType: UIKeyboardType, textContentType: UITextContentType, superview: UIView, delegate: Any) {
+    public convenience init(title: String, placeholder: String, font: UIFont, titleColor: UIColor, placeholderColor: UIColor, bgColor: UIColor, autocapitalizationType: UITextAutocapitalizationType, keyboardType: UIKeyboardType, textContentType: UITextContentType, superview: UIView, delegate: Any) {
 
         self.init(frame: .zero)
         superview.addSubview(self)
