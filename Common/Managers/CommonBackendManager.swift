@@ -6,4 +6,4 @@
 
 import Foundation
 
-public class CommonBackendManager { }
+open class CommonBackendManager { }

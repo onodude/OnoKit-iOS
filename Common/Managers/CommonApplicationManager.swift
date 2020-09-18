@@ -7,13 +7,13 @@
 import UIKit
 import UserNotifications
 
-public class CommonApplicationManager: NSObject {
+open class CommonApplicationManager: NSObject {
 
-    public var window: UIWindow!
+    open var window: UIWindow!
 
     public static let shared = CommonApplicationManager()
 
-    public func start(window: UIWindow) {
+    open func start(window: UIWindow) {
 
         self.window = window
 
@@ -25,7 +25,7 @@ public class CommonApplicationManager: NSObject {
 
     }
 
-    public func loadDeviceInfo() {
+    open func loadDeviceInfo() {
 
         let kScreenHeight: CGFloat = UIScreen.main.bounds.height
         let kScreenWidth: CGFloat = UIScreen.main.bounds.width

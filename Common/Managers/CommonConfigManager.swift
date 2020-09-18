@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class CommonConfigManager {
+open class CommonConfigManager {
 
     public static let shared = CommonConfigManager()
 

@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-public class CommonUtilityManager {
+open class CommonUtilityManager {
 
     // MARK: - Version
 

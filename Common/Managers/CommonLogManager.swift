@@ -14,7 +14,7 @@ public func Log<T>(_ object: T?, filename: String = #file, line: Int = #line, fu
 
 }
 
-public class CommonLogManager {
+open class CommonLogManager {
 
     public static let sharedInstance = CommonLogManager()
 

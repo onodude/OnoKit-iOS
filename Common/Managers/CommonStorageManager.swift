@@ -7,7 +7,7 @@
 import Foundation
 import KeychainAccess
 
-public class CommonStorageManager {
+open class CommonStorageManager {
 
     // MARK: - Keys
 

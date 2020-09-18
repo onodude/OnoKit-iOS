@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-public class CommonFontManager {
+open class CommonFontManager {
 
     // MARK: - Font Names
 
