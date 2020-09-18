@@ -9,6 +9,8 @@ import Combine
 
 open class CommonViewModel: ObservableObject, Identifiable {
 
+    public init() { }
+
     open var disposables = Set<AnyCancellable>()
 
 }
