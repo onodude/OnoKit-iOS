@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class BaseCollectionViewCell: UICollectionViewCell {
+open class BaseCollectionViewCell: UICollectionViewCell {
 
     open var cellIdentifier: String = ""
 
@@ -30,11 +30,11 @@ public class BaseCollectionViewCell: UICollectionViewCell {
 
     }
 
-    required init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
 
-    func set(indexPath: IndexPath, collectionView: UICollectionView, viewController: UIViewController) {
+    public func set(indexPath: IndexPath, collectionView: UICollectionView, viewController: UIViewController) {
         self.indexPath = indexPath
         self.collectionView = collectionView
         self.controller = viewController

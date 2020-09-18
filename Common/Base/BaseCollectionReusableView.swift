@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class BaseCollectionReusableView: UICollectionReusableView {
+open class BaseCollectionReusableView: UICollectionReusableView {
 
     // MARK: Objects
 
@@ -28,7 +28,7 @@ public class BaseCollectionReusableView: UICollectionReusableView {
 
     }
 
-    required init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
 

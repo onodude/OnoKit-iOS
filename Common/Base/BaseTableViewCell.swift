@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class BaseTableViewCell: UITableViewCell {
+open class BaseTableViewCell: UITableViewCell {
 
     // MARK: - Objects
 
@@ -17,7 +17,7 @@ public class BaseTableViewCell: UITableViewCell {
 
     // MARK: - Initializers
 
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
@@ -29,13 +29,13 @@ public class BaseTableViewCell: UITableViewCell {
 
     }
 
-    required init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
 
         super.init(coder: aDecoder)!
 
     }
 
-    func set(indexPath: IndexPath, tableView: UITableView, viewController: UIViewController) {
+    public func set(indexPath: IndexPath, tableView: UITableView, viewController: UIViewController) {
         self.indexPath = indexPath
         self.tableView = tableView
         self.controller = viewController

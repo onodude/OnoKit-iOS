@@ -7,8 +7,8 @@
 import UIKit
 import Combine
 
-public class BaseViewModel: ObservableObject, Identifiable {
+open class BaseViewModel: ObservableObject, Identifiable {
 
-    public var disposables = Set<AnyCancellable>()
+    open var disposables = Set<AnyCancellable>()
 
 }

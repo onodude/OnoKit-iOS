@@ -7,7 +7,7 @@
 import UIKit
 import SnapKit
 
-public protocol BaseViewControllerProtocol {
+protocol BaseViewControllerProtocol {
 
     func loadMainView()
     func buildMainView()
@@ -15,7 +15,7 @@ public protocol BaseViewControllerProtocol {
 
 }
 
-public class BaseViewController: UIViewController, BaseViewControllerProtocol, CAAnimationDelegate {
+open class BaseViewController: UIViewController, BaseViewControllerProtocol, CAAnimationDelegate {
 
     // MARK: - Objects
 
@@ -34,24 +34,24 @@ public class BaseViewController: UIViewController, BaseViewControllerProtocol, C
 
     // MARK: - Load
 
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    public override func viewDidAppear(_ animated: Bool) {
+    open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         let viewName = String(describing: type(of: self))
         LogManager.log(string: String(format: "%@", viewName) )
     }
 
-    public func loadMainView() { }
+    open func loadMainView() { }
 
     // MARK: - Build
 
-    public func bindViewModel() { }
+    open func bindViewModel() { }
 
-    public func buildMainView() {
+    open func buildMainView() {
 
         self.view.window?.layer.backgroundColor = UIColor.clear.cgColor
 
@@ -63,7 +63,7 @@ public class BaseViewController: UIViewController, BaseViewControllerProtocol, C
 
     }
 
-    func buildNavigationBar() {
+    open func buildNavigationBar() {
 
         viewNavBar = CommonView(backgroundColor: .clear, superview: viewMain)
 
@@ -84,7 +84,7 @@ public class BaseViewController: UIViewController, BaseViewControllerProtocol, C
 
     // MARK: - Configuration
 
-    func addNavigationBarBackButton() {
+    open func addNavigationBarBackButton() {
 
         btnBack = CommonButton(imageName: "btn_back", superview: viewNavBar, action: #selector(self.btnBackPressed), target: self)
 
@@ -97,7 +97,7 @@ public class BaseViewController: UIViewController, BaseViewControllerProtocol, C
 
     }
 
-    func addNavigationBarTitle(title: String) {
+    open func addNavigationBarTitle(title: String) {
 
         lblNavBarTitle = CommonLabel(text: title, titleColor: ColorManager.colorBlack(), font: FontManager.fontSemiBold(18), bgColor: .clear, alignment: .center, superview: viewNavBar)
 
@@ -112,7 +112,7 @@ public class BaseViewController: UIViewController, BaseViewControllerProtocol, C
 
     // MARK: - Keyboard
 
-    func addKeyboardNotifications() {
+    open func addKeyboardNotifications() {
 
          NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
          NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -121,23 +121,23 @@ public class BaseViewController: UIViewController, BaseViewControllerProtocol, C
 
     // MARK: - Actions
 
-    @objc func btnBackPressed() {
+    @objc open func btnBackPressed() {
 
         NavigationManager.dismiss(from: self)
 
     }
 
-    @objc func keyboardWillShow(notification: NSNotification) {
+    @objc open func keyboardWillShow(notification: NSNotification) {
 
     }
 
-    @objc func keyboardWillHide(notification: NSNotification) {
+    @objc open func keyboardWillHide(notification: NSNotification) {
 
     }
 
     // MARK: - Other
 
-    public override func didReceiveMemoryWarning() {
+    open override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
         let viewName = String(describing: type(of: self))
@@ -145,11 +145,11 @@ public class BaseViewController: UIViewController, BaseViewControllerProtocol, C
 
     }
 
-    public override var prefersStatusBarHidden: Bool {
+    open override var prefersStatusBarHidden: Bool {
         return false
     }
 
-    public override var preferredStatusBarStyle: UIStatusBarStyle {
+    open override var preferredStatusBarStyle: UIStatusBarStyle {
         if #available(iOS 13.0, *) {
             return .darkContent
         } else {
