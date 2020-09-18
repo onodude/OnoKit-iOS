@@ -6,7 +6,7 @@
 
 import UIKit
 
-open class BaseTableReusableView: UIView {
+open class CommonTableReusableView: UIView {
 
     // MARK: - Objects
 

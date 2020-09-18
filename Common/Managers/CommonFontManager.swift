@@ -7,36 +7,36 @@
 import Foundation
 import UIKit
 
-class FontManager {
+public class CommonFontManager {
 
     // MARK: - Font Names
 
-    static var fontNameRegular = "ArcoPerpetuoPro-Regular"
-    static var fontNameMedium = "ArcoPerpetuoPro-Medium"
-    static var fontNameBold = "ArcoPerpetuoPro-Bold"
-    static var fontNameSemiBold = "ArcoPerpetuoPro-Semibold"
+    public static var fontNameRegular = "OpenSans-Regular"
+    public static var fontNameMedium = "OpenSans-Medium"
+    public static var fontNameBold = "OpenSans-Bold"
+    public static var fontNameSemiBold = "OpenSans-Semibold"
 
     // MARK: - Font Creators
 
-    static func fontRegular(_ size: CGFloat) -> UIFont {
+    public static func fontRegular(_ size: CGFloat) -> UIFont {
         return UIFont(name: fontNameRegular, size: size)!
     }
 
-    static func fontMedium(_ size: CGFloat) -> UIFont {
+    public static func fontMedium(_ size: CGFloat) -> UIFont {
         return UIFont(name: fontNameMedium, size: size)!
     }
 
-    static func fontBold(_ size: CGFloat) -> UIFont {
+    public static func fontBold(_ size: CGFloat) -> UIFont {
         return UIFont(name: fontNameBold, size: size)!
     }
 
-    static func fontSemiBold(_ size: CGFloat) -> UIFont {
+    public static func fontSemiBold(_ size: CGFloat) -> UIFont {
         return UIFont(name: fontNameSemiBold, size: size)!
     }
 
     // MARK: - Helpers
 
-    static func printFonts() {
+    public static func printFonts() {
         let fontFamilyNames = UIFont.familyNames
         for familyName in fontFamilyNames {
             print("------------------------------")

@@ -6,12 +6,4 @@
 
 import UIKit
 
-class ConfigManager {
-
-    static let shared = ConfigManager()
-
-    func configureLibraries() {
-
-    }
-
-}
+open class CommonTabBarController: UITabBarController { }

@@ -7,11 +7,11 @@
 import UIKit
 import UserNotifications
 
-public class ApplicationManager: NSObject {
+public class CommonApplicationManager: NSObject {
 
     public var window: UIWindow!
 
-    public static let shared = ApplicationManager()
+    public static let shared = CommonApplicationManager()
 
     public func start(window: UIWindow) {
 
@@ -19,9 +19,9 @@ public class ApplicationManager: NSObject {
 
         loadDeviceInfo()
 
-        ConfigManager.shared.configureLibraries()
+        CommonConfigManager.shared.configureLibraries()
 
-        NavigationManager.shared.window = self.window
+        CommonNavigationManager.shared.window = self.window
 
     }
 
@@ -33,10 +33,10 @@ public class ApplicationManager: NSObject {
         kStatusBarHeight = window.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
         kBottomBarHeight = window.safeAreaInsets.bottom
 
-        LogManager.log(string: String(format: "screenHeight: %0.0f", kScreenHeight) )
-        LogManager.log(string: String(format: "screenWidth: %0.0f", kScreenWidth) )
-        LogManager.log(string: String(format: "tabBarHeight: %0.0f", kTabBarHeight) )
-        LogManager.log(string: String(format: "navBarHeight: %0.0f", kNavBarHeight) )
+        CommonLogManager.log(string: String(format: "screenHeight: %0.0f", kScreenHeight) )
+        CommonLogManager.log(string: String(format: "screenWidth: %0.0f", kScreenWidth) )
+        CommonLogManager.log(string: String(format: "tabBarHeight: %0.0f", kTabBarHeight) )
+        CommonLogManager.log(string: String(format: "navBarHeight: %0.0f", kNavBarHeight) )
 
     }
 

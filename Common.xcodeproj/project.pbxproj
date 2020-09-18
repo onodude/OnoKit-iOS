@@ -34,26 +34,26 @@
 		77045729251523BE006CC071 /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704571E251523BD006CC071 /* CommonView.swift */; };
 		7704572A251523BE006CC071 /* CommonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704571F251523BE006CC071 /* CommonLabel.swift */; };
 		77045732251524AD006CC071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77045731251524AD006CC071 /* Assets.xcassets */; };
-		770457412515251E006CC071 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770457372515251E006CC071 /* LogManager.swift */; };
-		770457422515251E006CC071 /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770457382515251E006CC071 /* ConfigManager.swift */; };
-		770457432515251E006CC071 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770457392515251E006CC071 /* NavigationManager.swift */; };
-		770457442515251E006CC071 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573A2515251E006CC071 /* UtilityManager.swift */; };
-		770457452515251E006CC071 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573B2515251E006CC071 /* ApplicationManager.swift */; };
-		770457462515251E006CC071 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573C2515251E006CC071 /* FontManager.swift */; };
-		770457472515251E006CC071 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573D2515251E006CC071 /* ColorManager.swift */; };
-		770457482515251E006CC071 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573E2515251E006CC071 /* StorageManager.swift */; };
-		770457492515251E006CC071 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573F2515251E006CC071 /* CacheManager.swift */; };
-		7704574A2515251E006CC071 /* BackendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770457402515251E006CC071 /* BackendManager.swift */; };
-		7704575325152523006CC071 /* BaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704574C25152523006CC071 /* BaseCollectionReusableView.swift */; };
-		7704575425152523006CC071 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704574D25152523006CC071 /* BaseViewController.swift */; };
-		7704575525152523006CC071 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704574E25152523006CC071 /* BaseCollectionViewCell.swift */; };
-		7704575625152523006CC071 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704574F25152523006CC071 /* BaseViewModel.swift */; };
-		7704575725152523006CC071 /* BaseTableReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575025152523006CC071 /* BaseTableReusableView.swift */; };
-		7704575825152523006CC071 /* BaseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575125152523006CC071 /* BaseDataModel.swift */; };
-		7704575925152523006CC071 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575225152523006CC071 /* BaseTableViewCell.swift */; };
-		77045771251526DA006CC071 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704576E251526DA006CC071 /* Constants.swift */; };
-		77045772251526DA006CC071 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704576F251526DA006CC071 /* NavigationController.swift */; };
-		77045773251526DA006CC071 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045770251526DA006CC071 /* TabBarController.swift */; };
+		770457412515251E006CC071 /* CommonLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770457372515251E006CC071 /* CommonLogManager.swift */; };
+		770457422515251E006CC071 /* CommonConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770457382515251E006CC071 /* CommonConfigManager.swift */; };
+		770457432515251E006CC071 /* CommonNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770457392515251E006CC071 /* CommonNavigationManager.swift */; };
+		770457442515251E006CC071 /* CommonUtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573A2515251E006CC071 /* CommonUtilityManager.swift */; };
+		770457452515251E006CC071 /* CommonApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573B2515251E006CC071 /* CommonApplicationManager.swift */; };
+		770457462515251E006CC071 /* CommonFontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573C2515251E006CC071 /* CommonFontManager.swift */; };
+		770457472515251E006CC071 /* CommonColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573D2515251E006CC071 /* CommonColorManager.swift */; };
+		770457482515251E006CC071 /* CommonStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573E2515251E006CC071 /* CommonStorageManager.swift */; };
+		770457492515251E006CC071 /* CommonCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704573F2515251E006CC071 /* CommonCacheManager.swift */; };
+		7704574A2515251E006CC071 /* CommonBackendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770457402515251E006CC071 /* CommonBackendManager.swift */; };
+		7704575325152523006CC071 /* CommonCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704574C25152523006CC071 /* CommonCollectionReusableView.swift */; };
+		7704575425152523006CC071 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704574D25152523006CC071 /* CommonViewController.swift */; };
+		7704575525152523006CC071 /* CommonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704574E25152523006CC071 /* CommonCollectionViewCell.swift */; };
+		7704575625152523006CC071 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704574F25152523006CC071 /* CommonViewModel.swift */; };
+		7704575725152523006CC071 /* CommonTableReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575025152523006CC071 /* CommonTableReusableView.swift */; };
+		7704575825152523006CC071 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575125152523006CC071 /* CommonModel.swift */; };
+		7704575925152523006CC071 /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575225152523006CC071 /* CommonTableViewCell.swift */; };
+		77045771251526DA006CC071 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704576E251526DA006CC071 /* CommonConstants.swift */; };
+		77045772251526DA006CC071 /* CommonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704576F251526DA006CC071 /* CommonNavigationController.swift */; };
+		77045773251526DA006CC071 /* CommonTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045770251526DA006CC071 /* CommonTabBarController.swift */; };
 		8A2D3FDB11C9D978A2FA8CE2 /* Pods_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84A93976C779972F4B243BA /* Pods_Common.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,26 +87,26 @@
 		7704571E251523BD006CC071 /* CommonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		7704571F251523BE006CC071 /* CommonLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonLabel.swift; sourceTree = "<group>"; };
 		77045731251524AD006CC071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		770457372515251E006CC071 /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
-		770457382515251E006CC071 /* ConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
-		770457392515251E006CC071 /* NavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
-		7704573A2515251E006CC071 /* UtilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityManager.swift; sourceTree = "<group>"; };
-		7704573B2515251E006CC071 /* ApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
-		7704573C2515251E006CC071 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
-		7704573D2515251E006CC071 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
-		7704573E2515251E006CC071 /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		7704573F2515251E006CC071 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
-		770457402515251E006CC071 /* BackendManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendManager.swift; sourceTree = "<group>"; };
-		7704574C25152523006CC071 /* BaseCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionReusableView.swift; sourceTree = "<group>"; };
-		7704574D25152523006CC071 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		7704574E25152523006CC071 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		7704574F25152523006CC071 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		7704575025152523006CC071 /* BaseTableReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableReusableView.swift; sourceTree = "<group>"; };
-		7704575125152523006CC071 /* BaseDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataModel.swift; sourceTree = "<group>"; };
-		7704575225152523006CC071 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		7704576E251526DA006CC071 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		7704576F251526DA006CC071 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		77045770251526DA006CC071 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		770457372515251E006CC071 /* CommonLogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonLogManager.swift; sourceTree = "<group>"; };
+		770457382515251E006CC071 /* CommonConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConfigManager.swift; sourceTree = "<group>"; };
+		770457392515251E006CC071 /* CommonNavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonNavigationManager.swift; sourceTree = "<group>"; };
+		7704573A2515251E006CC071 /* CommonUtilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtilityManager.swift; sourceTree = "<group>"; };
+		7704573B2515251E006CC071 /* CommonApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonApplicationManager.swift; sourceTree = "<group>"; };
+		7704573C2515251E006CC071 /* CommonFontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFontManager.swift; sourceTree = "<group>"; };
+		7704573D2515251E006CC071 /* CommonColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonColorManager.swift; sourceTree = "<group>"; };
+		7704573E2515251E006CC071 /* CommonStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonStorageManager.swift; sourceTree = "<group>"; };
+		7704573F2515251E006CC071 /* CommonCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCacheManager.swift; sourceTree = "<group>"; };
+		770457402515251E006CC071 /* CommonBackendManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonBackendManager.swift; sourceTree = "<group>"; };
+		7704574C25152523006CC071 /* CommonCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCollectionReusableView.swift; sourceTree = "<group>"; };
+		7704574D25152523006CC071 /* CommonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		7704574E25152523006CC071 /* CommonCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCollectionViewCell.swift; sourceTree = "<group>"; };
+		7704574F25152523006CC071 /* CommonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		7704575025152523006CC071 /* CommonTableReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableReusableView.swift; sourceTree = "<group>"; };
+		7704575125152523006CC071 /* CommonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
+		7704575225152523006CC071 /* CommonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
+		7704576E251526DA006CC071 /* CommonConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
+		7704576F251526DA006CC071 /* CommonNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonNavigationController.swift; sourceTree = "<group>"; };
+		77045770251526DA006CC071 /* CommonTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTabBarController.swift; sourceTree = "<group>"; };
 		D84A93976C779972F4B243BA /* Pods_Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B2FECED0ECBEB2F5FCA534 /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
 		E9018241EAA291238C6A90A7 /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,16 +215,16 @@
 		77045734251524EB006CC071 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				7704573B2515251E006CC071 /* ApplicationManager.swift */,
-				770457402515251E006CC071 /* BackendManager.swift */,
-				7704573F2515251E006CC071 /* CacheManager.swift */,
-				7704573D2515251E006CC071 /* ColorManager.swift */,
-				770457382515251E006CC071 /* ConfigManager.swift */,
-				7704573C2515251E006CC071 /* FontManager.swift */,
-				770457372515251E006CC071 /* LogManager.swift */,
-				770457392515251E006CC071 /* NavigationManager.swift */,
-				7704573E2515251E006CC071 /* StorageManager.swift */,
-				7704573A2515251E006CC071 /* UtilityManager.swift */,
+				7704573B2515251E006CC071 /* CommonApplicationManager.swift */,
+				770457402515251E006CC071 /* CommonBackendManager.swift */,
+				7704573F2515251E006CC071 /* CommonCacheManager.swift */,
+				7704573D2515251E006CC071 /* CommonColorManager.swift */,
+				770457382515251E006CC071 /* CommonConfigManager.swift */,
+				7704573C2515251E006CC071 /* CommonFontManager.swift */,
+				770457372515251E006CC071 /* CommonLogManager.swift */,
+				770457392515251E006CC071 /* CommonNavigationManager.swift */,
+				7704573E2515251E006CC071 /* CommonStorageManager.swift */,
+				7704573A2515251E006CC071 /* CommonUtilityManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -232,13 +232,13 @@
 		7704573525152503006CC071 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				7704574C25152523006CC071 /* BaseCollectionReusableView.swift */,
-				7704574E25152523006CC071 /* BaseCollectionViewCell.swift */,
-				7704575125152523006CC071 /* BaseDataModel.swift */,
-				7704575025152523006CC071 /* BaseTableReusableView.swift */,
-				7704575225152523006CC071 /* BaseTableViewCell.swift */,
-				7704574D25152523006CC071 /* BaseViewController.swift */,
-				7704574F25152523006CC071 /* BaseViewModel.swift */,
+				7704574C25152523006CC071 /* CommonCollectionReusableView.swift */,
+				7704574E25152523006CC071 /* CommonCollectionViewCell.swift */,
+				7704575125152523006CC071 /* CommonModel.swift */,
+				7704575025152523006CC071 /* CommonTableReusableView.swift */,
+				7704575225152523006CC071 /* CommonTableViewCell.swift */,
+				7704574D25152523006CC071 /* CommonViewController.swift */,
+				7704574F25152523006CC071 /* CommonViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -246,9 +246,9 @@
 		7704576D251526DA006CC071 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				7704576E251526DA006CC071 /* Constants.swift */,
-				7704576F251526DA006CC071 /* NavigationController.swift */,
-				77045770251526DA006CC071 /* TabBarController.swift */,
+				7704576E251526DA006CC071 /* CommonConstants.swift */,
+				7704576F251526DA006CC071 /* CommonNavigationController.swift */,
+				77045770251526DA006CC071 /* CommonTabBarController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -386,41 +386,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				770457412515251E006CC071 /* LogManager.swift in Sources */,
+				770457412515251E006CC071 /* CommonLogManager.swift in Sources */,
 				7704570B25152373006CC071 /* StringExtensions.swift in Sources */,
 				7704570A25152373006CC071 /* DateExtensions.swift in Sources */,
-				77045773251526DA006CC071 /* TabBarController.swift in Sources */,
+				77045773251526DA006CC071 /* CommonTabBarController.swift in Sources */,
 				77045721251523BE006CC071 /* CommonButton.swift in Sources */,
 				77045728251523BE006CC071 /* CommonDateFormatter.swift in Sources */,
-				7704575725152523006CC071 /* BaseTableReusableView.swift in Sources */,
+				7704575725152523006CC071 /* CommonTableReusableView.swift in Sources */,
 				77045727251523BE006CC071 /* CommonImageView.swift in Sources */,
-				7704574A2515251E006CC071 /* BackendManager.swift in Sources */,
-				77045771251526DA006CC071 /* Constants.swift in Sources */,
-				7704575925152523006CC071 /* BaseTableViewCell.swift in Sources */,
-				770457492515251E006CC071 /* CacheManager.swift in Sources */,
-				770457452515251E006CC071 /* ApplicationManager.swift in Sources */,
+				7704574A2515251E006CC071 /* CommonBackendManager.swift in Sources */,
+				77045771251526DA006CC071 /* CommonConstants.swift in Sources */,
+				7704575925152523006CC071 /* CommonTableViewCell.swift in Sources */,
+				770457492515251E006CC071 /* CommonCacheManager.swift in Sources */,
+				770457452515251E006CC071 /* CommonApplicationManager.swift in Sources */,
 				7704570925152373006CC071 /* UIViewExtension.swift in Sources */,
 				77045725251523BE006CC071 /* CommonTableView.swift in Sources */,
-				7704575525152523006CC071 /* BaseCollectionViewCell.swift in Sources */,
+				7704575525152523006CC071 /* CommonCollectionViewCell.swift in Sources */,
 				77045724251523BE006CC071 /* CommonTextView.swift in Sources */,
 				77045722251523BE006CC071 /* CommonCollectionViewHandler.swift in Sources */,
 				7704570D25152373006CC071 /* UIImageExtension.swift in Sources */,
 				7704571125152373006CC071 /* UILabelExtension.swift in Sources */,
-				770457432515251E006CC071 /* NavigationManager.swift in Sources */,
-				770457472515251E006CC071 /* ColorManager.swift in Sources */,
+				770457432515251E006CC071 /* CommonNavigationManager.swift in Sources */,
+				770457472515251E006CC071 /* CommonColorManager.swift in Sources */,
 				77045726251523BE006CC071 /* CommonTextField.swift in Sources */,
-				770457482515251E006CC071 /* StorageManager.swift in Sources */,
-				7704575625152523006CC071 /* BaseViewModel.swift in Sources */,
-				7704575325152523006CC071 /* BaseCollectionReusableView.swift in Sources */,
+				770457482515251E006CC071 /* CommonStorageManager.swift in Sources */,
+				7704575625152523006CC071 /* CommonViewModel.swift in Sources */,
+				7704575325152523006CC071 /* CommonCollectionReusableView.swift in Sources */,
 				7704571225152373006CC071 /* UIImageViewExtension.swift in Sources */,
 				7704570F25152373006CC071 /* NSAttributedStringExtensions.swift in Sources */,
-				7704575425152523006CC071 /* BaseViewController.swift in Sources */,
+				7704575425152523006CC071 /* CommonViewController.swift in Sources */,
 				7704570C25152373006CC071 /* URLExtensions.swift in Sources */,
-				7704575825152523006CC071 /* BaseDataModel.swift in Sources */,
+				7704575825152523006CC071 /* CommonModel.swift in Sources */,
 				7704572A251523BE006CC071 /* CommonLabel.swift in Sources */,
 				7704571025152373006CC071 /* NSStringExtensions.swift in Sources */,
-				770457422515251E006CC071 /* ConfigManager.swift in Sources */,
-				77045772251526DA006CC071 /* NavigationController.swift in Sources */,
+				770457422515251E006CC071 /* CommonConfigManager.swift in Sources */,
+				77045772251526DA006CC071 /* CommonNavigationController.swift in Sources */,
 				77045723251523BE006CC071 /* CommonCollectionView.swift in Sources */,
 				7704570525152373006CC071 /* UINavigationControllerExtension.swift in Sources */,
 				7704570E25152373006CC071 /* UITextViewExtension.swift in Sources */,
@@ -428,8 +428,8 @@
 				77045720251523BE006CC071 /* CommonScrollView.swift in Sources */,
 				7704570625152373006CC071 /* UIButtonExtension.swift in Sources */,
 				7704570725152373006CC071 /* UIColorExtension.swift in Sources */,
-				770457442515251E006CC071 /* UtilityManager.swift in Sources */,
-				770457462515251E006CC071 /* FontManager.swift in Sources */,
+				770457442515251E006CC071 /* CommonUtilityManager.swift in Sources */,
+				770457462515251E006CC071 /* CommonFontManager.swift in Sources */,
 				77045729251523BE006CC071 /* CommonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

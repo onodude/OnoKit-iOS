@@ -6,7 +6,7 @@
 
 import UIKit
 
-open class BaseCollectionViewCell: UICollectionViewCell {
+open class CommonCollectionViewCell: UICollectionViewCell {
 
     open var cellIdentifier: String = ""
 

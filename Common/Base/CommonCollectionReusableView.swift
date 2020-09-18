@@ -6,7 +6,7 @@
 
 import UIKit
 
-open class BaseCollectionReusableView: UICollectionReusableView {
+open class CommonCollectionReusableView: UICollectionReusableView {
 
     // MARK: Objects
 

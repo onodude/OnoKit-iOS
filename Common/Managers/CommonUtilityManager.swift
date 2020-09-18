@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-public class UtilityManager {
+public class CommonUtilityManager {
 
     // MARK: - Version
 
@@ -47,7 +47,7 @@ public class UtilityManager {
 
     public static func getCurrentViewController() -> UIViewController! {
 
-        let tvc = NavigationManager.shared.tabBarController
+        let tvc = CommonNavigationManager.shared.tabBarController
 
         tvc.selectedViewController = tvc.viewControllers![2]
 
@@ -65,7 +65,7 @@ public class UtilityManager {
 
     public static func getCurrentNavigationController() -> UINavigationController! {
 
-        let tvc = NavigationManager.shared.tabBarController
+        let tvc = CommonNavigationManager.shared.tabBarController
 
         if let nc: UINavigationController = tvc.viewControllers![2] as? UINavigationController {
 

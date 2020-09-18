@@ -14,19 +14,15 @@ public func Log<T>(_ object: T?, filename: String = #file, line: Int = #line, fu
 
 }
 
-public class LogManager {
+public class CommonLogManager {
 
-    public static let sharedInstance = LogManager()
+    public static let sharedInstance = CommonLogManager()
 
     public static func log(string: String) {
 
         if isXcode() {
 
             print(string)
-
-        } else {
-
-            //  Crashlytics.crashlytics().log(string)
 
         }
 

@@ -7,7 +7,7 @@
 import UIKit
 import ObjectMapper
 
-open class BaseDataModel: Mappable {
+open class CommonModel: Mappable {
 
     // MARK: - Initializers
 

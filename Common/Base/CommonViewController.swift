@@ -7,7 +7,7 @@
 import UIKit
 import SnapKit
 
-protocol BaseViewControllerProtocol {
+protocol CommonViewControllerProtocol {
 
     func loadMainView()
     func buildMainView()
@@ -15,7 +15,7 @@ protocol BaseViewControllerProtocol {
 
 }
 
-open class BaseViewController: UIViewController, BaseViewControllerProtocol, CAAnimationDelegate {
+open class CommonViewController: UIViewController, CommonViewControllerProtocol, CAAnimationDelegate {
 
     // MARK: - Objects
 
@@ -42,7 +42,7 @@ open class BaseViewController: UIViewController, BaseViewControllerProtocol, CAA
         super.viewDidAppear(animated)
 
         let viewName = String(describing: type(of: self))
-        LogManager.log(string: String(format: "%@", viewName) )
+        CommonLogManager.log(string: String(format: "%@", viewName) )
     }
 
     open func loadMainView() { }
@@ -55,7 +55,7 @@ open class BaseViewController: UIViewController, BaseViewControllerProtocol, CAA
 
         self.view.window?.layer.backgroundColor = UIColor.clear.cgColor
 
-        viewMain = CommonView(backgroundColor: ColorManager.colorWhite(), superview: self.view)
+        viewMain = CommonView(backgroundColor: CommonColorManager.colorWhite(), superview: self.view)
 
         viewMain.snp.makeConstraints { (view) in
             view.left.right.top.bottom.equalTo(self.view)
@@ -99,7 +99,7 @@ open class BaseViewController: UIViewController, BaseViewControllerProtocol, CAA
 
     open func addNavigationBarTitle(title: String) {
 
-        lblNavBarTitle = CommonLabel(text: title, titleColor: ColorManager.colorBlack(), font: FontManager.fontSemiBold(18), bgColor: .clear, alignment: .center, superview: viewNavBar)
+        lblNavBarTitle = CommonLabel(text: title, titleColor: CommonColorManager.colorBlack(), font: CommonFontManager.fontSemiBold(18), bgColor: .clear, alignment: .center, superview: viewNavBar)
 
         lblNavBarTitle.snp.makeConstraints { (view) in
             view.centerX.equalToSuperview()
@@ -123,7 +123,7 @@ open class BaseViewController: UIViewController, BaseViewControllerProtocol, CAA
 
     @objc open func btnBackPressed() {
 
-        NavigationManager.dismiss(from: self)
+        CommonNavigationManager.dismiss(from: self)
 
     }
 
@@ -141,7 +141,7 @@ open class BaseViewController: UIViewController, BaseViewControllerProtocol, CAA
         super.didReceiveMemoryWarning()
 
         let viewName = String(describing: type(of: self))
-        LogManager.log(string: String(format: "didReceiveMemoryWarning: %@", viewName) )
+        CommonLogManager.log(string: String(format: "didReceiveMemoryWarning: %@", viewName) )
 
     }
 

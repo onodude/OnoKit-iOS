@@ -6,4 +6,4 @@
 
 import UIKit
 
-class TabBarController: UITabBarController { }
+open class CommonNavigationController: UINavigationController { }

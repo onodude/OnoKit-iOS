@@ -6,7 +6,7 @@
 
 import Foundation
 
-public class CacheManager {
+public class CommonCacheManager {
 
     // MARK: - Helpers
 

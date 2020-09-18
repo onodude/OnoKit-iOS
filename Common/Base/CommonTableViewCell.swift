@@ -6,14 +6,14 @@
 
 import UIKit
 
-open class BaseTableViewCell: UITableViewCell {
+open class CommonTableViewCell: UITableViewCell {
 
     // MARK: - Objects
 
-    var viewMain: UIView!
-    var indexPath: IndexPath!
-    var controller: UIViewController!
-    var tableView: UITableView!
+    open var viewMain: UIView!
+    open var indexPath: IndexPath!
+    open var controller: UIViewController!
+    open var tableView: UITableView!
 
     // MARK: - Initializers
 

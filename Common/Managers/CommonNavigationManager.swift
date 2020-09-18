@@ -6,20 +6,20 @@
 
 import UIKit
 
-public class NavigationManager {
+open  class CommonNavigationManager {
 
-    var window: UIWindow!
-    var navigationController: NavigationController = NavigationController()
-    var tabBarController: TabBarController = TabBarController()
-    var initialViewController: UIViewController!
+    open var window: UIWindow!
+    open var navigationController: CommonNavigationController = CommonNavigationController()
+    open var tabBarController: CommonTabBarController = CommonTabBarController()
+    open var initialViewController: UIViewController!
 
-    static let shared = NavigationManager()
+    public static let shared = CommonNavigationManager()
 
-    func loggedInLaunchSequence(animated: Bool) {
+    open func loggedInLaunchSequence(animated: Bool) {
 
-        LogManager.log(string: String("loggedInLaunchSequence") )
+        CommonLogManager.log(string: String("loggedInLaunchSequence") )
 
-        self.navigationController = NavigationController()
+        self.navigationController = CommonNavigationController()
 
         self.window!.rootViewController = self.tabBarController
         self.window!.makeKeyAndVisible()
@@ -36,16 +36,16 @@ public class NavigationManager {
 
     }
 
-    func notLoggedInLaunchSequence(animated: Bool) {
+    open func notLoggedInLaunchSequence(animated: Bool) {
 
-        LogManager.log(string: String("notLoggedInLaunchSequence") )
+        CommonLogManager.log(string: String("notLoggedInLaunchSequence") )
 
-        self.tabBarController = TabBarController()
+        self.tabBarController = CommonTabBarController()
 
         let vc = initialViewController!
         vc.hidesBottomBarWhenPushed = true
 
-        self.navigationController = NavigationController(rootViewController: vc)
+        self.navigationController = CommonNavigationController(rootViewController: vc)
         self.navigationController.setNavigationBarHidden(true, animated: false)
 
         self.window!.rootViewController = self.navigationController
@@ -63,7 +63,7 @@ public class NavigationManager {
 
     }
 
-    static func show(from: UIViewController, to: UIViewController) {
+    public static func show(from: UIViewController, to: UIViewController) {
         to.hidesBottomBarWhenPushed = true
         let transition = CATransition()
         transition.duration = 0.4
@@ -73,7 +73,7 @@ public class NavigationManager {
         from.navigationController?.pushViewController(to, animated: false)
     }
 
-    static func dismiss(from: UIViewController) {
+    public static func dismiss(from: UIViewController) {
         let transition = CATransition()
         transition.duration = 0.4
         transition.type = CATransitionType.fade
@@ -82,7 +82,7 @@ public class NavigationManager {
         from.navigationController?.popViewController(animated: false)
     }
 
-    static func push(from: UIViewController, to: UIViewController, direction: CATransitionSubtype) {
+    public static func push(from: UIViewController, to: UIViewController, direction: CATransitionSubtype) {
         to.hidesBottomBarWhenPushed = true
         let transition = CATransition()
         transition.duration = 0.4
@@ -93,7 +93,7 @@ public class NavigationManager {
         from.navigationController?.pushViewController(to, animated: false)
     }
 
-    static func pop(from: UIViewController, direction: CATransitionSubtype) {
+    public static func pop(from: UIViewController, direction: CATransitionSubtype) {
         let transition = CATransition()
         transition.duration = 0.4
         transition.type = CATransitionType.moveIn
