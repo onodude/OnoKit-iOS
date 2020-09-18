@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class CommonCollectionView: UICollectionView {
+open class CommonCollectionView: UICollectionView {
 
     public convenience init(backgroundColor: UIColor, superview: UIView, delegate: Any) {
 

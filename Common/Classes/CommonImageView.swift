@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class CommonImageView: UIImageView {
+open class CommonImageView: UIImageView {
 
     // MARK: - Initializers
 
@@ -45,7 +45,7 @@ public class CommonImageView: UIImageView {
 
     // MARK: - Actions
 
-    public func loadImageView(photoUrl: String, aspectMode: UIView.ContentMode) {
+    open func loadImageView(photoUrl: String, aspectMode: UIView.ContentMode) {
 
         self.image = UIImage(named: "img_placeholder")
 

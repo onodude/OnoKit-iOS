@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class CommonLabel: UILabel {
+open class CommonLabel: UILabel {
 
     // MARK: - Initializers
 
@@ -28,19 +28,19 @@ public class CommonLabel: UILabel {
 
     // MARK: - Configuration
 
-    public func setPadding(_ insets: UIEdgeInsets) {
+    open func setPadding(_ insets: UIEdgeInsets) {
 
         super.drawText(in: self.frame.inset(by: insets))
         self.setNeedsLayout()
 
     }
 
-    public override func drawText(in rect: CGRect) {
+    open override func drawText(in rect: CGRect) {
         let insets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         super.drawText(in: rect.inset(by: insets))
     }
 
-    public func setAttributes(font: UIFont, color: UIColor) {
+    open func setAttributes(font: UIFont, color: UIColor) {
 
         self.font = font
         self.textColor = color

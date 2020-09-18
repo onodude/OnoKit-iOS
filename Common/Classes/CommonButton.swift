@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class CommonButton: UIButton {
+open class CommonButton: UIButton {
 
     // MARK: - Basic Buttons
 

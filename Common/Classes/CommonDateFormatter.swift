@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class CommonDateFormatter: DateFormatter {
+open class CommonDateFormatter: DateFormatter {
 
     public convenience init(format: String? = nil, zone: String? = nil) {
 

@@ -6,10 +6,10 @@
 
 import UIKit
 
-public class CommonCollectionViewHandler: NSObject, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+open class CommonCollectionViewHandler: NSObject, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-    public var items: [Any] = []
-    public var controller: UIViewController!
+    open var items: [Any] = []
+    open var controller: UIViewController!
 
     public convenience init(items: [Any], controller: UIViewController) {
         self.init()
@@ -17,17 +17,17 @@ public class CommonCollectionViewHandler: NSObject, UICollectionViewDelegate, UI
         self.controller = controller
     }
 
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
 
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         return UICollectionViewCell()
 
     }
 
-    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    open func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
         let width: CGFloat = kScreenWidth/2
 
@@ -37,7 +37,7 @@ public class CommonCollectionViewHandler: NSObject, UICollectionViewDelegate, UI
 
     }
 
-    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    open func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
 
         return UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
 
