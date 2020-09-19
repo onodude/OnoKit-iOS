@@ -11,7 +11,7 @@ public extension UIButton {
 
     // MARK: Common Creators
 
-    convenience init(superview: UIView) {
+    convenience init(_ superview: UIView) {
 
         self.init(type: .custom)
         self.frame = .zero

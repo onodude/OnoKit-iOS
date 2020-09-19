@@ -8,43 +8,49 @@ import UIKit
 
 open class CommonLabel: UILabel {
 
-    // MARK: - Initializers
+    // MARK: - Setters
 
-    public convenience init(text: String, titleColor: UIColor, font: UIFont, bgColor: UIColor, alignment: NSTextAlignment, superview: UIView) {
-
-        self.init(text: text, titleColor: titleColor, font: font, bgColor: bgColor, alignment: alignment)
-
+    func superview(_ superview: UIView) -> CommonLabel {
         superview.addSubview(self)
-
+        return self
     }
 
-    public convenience init(bgColor: UIColor, alignment: NSTextAlignment, superview: UIView) {
+    func bgColor(_ bgColor: UIColor) -> CommonLabel {
+        self.backgroundColor = bgColor
+        return self
+    }
 
-        self.init(bgColor: bgColor, alignment: alignment)
+    func corner(_ corner: CGFloat) -> CommonLabel {
+        self.setCornerRadius(corner: corner)
+        return self
+    }
 
-        superview.addSubview(self)
+    func textColor(_ textColor: UIColor) -> CommonLabel {
+        self.textColor = textColor
+        return self
+    }
 
+    func font(_ font: UIFont) -> CommonLabel {
+        self.font = font
+        return self
+    }
+
+    func alignment(_ alignment: NSTextAlignment) -> CommonLabel {
+        self.textAlignment = alignment
+        return self
+    }
+
+    func padding(_ insets: UIEdgeInsets) -> CommonLabel {
+        super.drawText(in: self.frame.inset(by: insets))
+        self.setNeedsLayout()
+        return self
     }
 
     // MARK: - Configuration
 
-    open func setPadding(_ insets: UIEdgeInsets) {
-
-        super.drawText(in: self.frame.inset(by: insets))
-        self.setNeedsLayout()
-
-    }
-
     open override func drawText(in rect: CGRect) {
         let insets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         super.drawText(in: rect.inset(by: insets))
-    }
-
-    open func setAttributes(font: UIFont, color: UIColor) {
-
-        self.font = font
-        self.textColor = color
-
     }
 
 }
