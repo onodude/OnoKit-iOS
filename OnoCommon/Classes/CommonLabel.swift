@@ -76,8 +76,8 @@ open class CommonLabel: UILabel {
     }
 
     @discardableResult
-    public func text(_ title: NSAttributedString) -> CommonLabel {
-        self.attributedText = attributedText
+    public func text(_ text: NSAttributedString) -> CommonLabel {
+        self.attributedText = text
         return self
     }
 
