@@ -8,24 +8,25 @@ import UIKit
 
 public class CommonView: UIView {
 
-    // MARK: - Initializers
-
-    public convenience init(superview: UIView) {
-
-        self.init(frame: .zero)
-        self.backgroundColor = .clear
-
-        superview.addSubview(self)
-
+    static func create(_ superview: UIView) -> CommonView {
+        return CommonView().superview(superview).frame(.zero).bgColor(.clear)
     }
 
-    public convenience init(backgroundColor: UIColor, superview: UIView) {
+    // MARK: - Setters
 
-        self.init(frame: .zero)
-        self.backgroundColor = backgroundColor
+    func frame(_ frame: CGRect) -> CommonView {
+        self.frame = frame
+        return self
+    }
 
+    func superview(_ superview: UIView) -> CommonView {
         superview.addSubview(self)
+        return self
+    }
 
+    func bgColor(_ bgColor: UIColor) -> CommonView {
+        self.backgroundColor = bgColor
+        return self
     }
 
 }

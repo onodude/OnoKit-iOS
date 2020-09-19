@@ -33,7 +33,7 @@ open class CommonViewController: UIViewController, CommonViewControllerProtocol 
 
         self.view.window?.layer.backgroundColor = UIColor.clear.cgColor
 
-        viewMain = CommonView(backgroundColor: .white, superview: self.view)
+        viewMain = CommonView.create(self.view).bgColor(.white)
 
         viewMain.snp.makeConstraints { (view) in
             view.left.right.top.bottom.equalTo(self.view)

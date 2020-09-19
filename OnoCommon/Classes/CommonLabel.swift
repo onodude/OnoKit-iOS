@@ -8,7 +8,16 @@ import UIKit
 
 open class CommonLabel: UILabel {
 
+    static func create(_ superview: UIView) -> CommonLabel {
+        return CommonLabel().superview(superview).frame(.zero).bgColor(.clear)
+    }
+
     // MARK: - Setters
+
+    func frame(_ frame: CGRect) -> CommonLabel {
+        self.frame = frame
+        return self
+    }
 
     func superview(_ superview: UIView) -> CommonLabel {
         superview.addSubview(self)

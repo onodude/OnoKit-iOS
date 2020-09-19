@@ -9,18 +9,6 @@ import UIKit
 
 public extension UIButton {
 
-    // MARK: Common Creators
-
-    convenience init(_ superview: UIView) {
-
-        self.init(type: .custom)
-        self.frame = .zero
-        self.backgroundColor = .clear
-
-        superview.addSubview(self)
-
-    }
-
     // MARK: Common Editors
 
     func setBackgroundImageForAllStates(image: UIImage) {

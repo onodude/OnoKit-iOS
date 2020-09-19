@@ -8,6 +8,8 @@ import UIKit
 
 public class CommonScrollView: UIScrollView {
 
+    /*
+
     public convenience init(superview: UIView) {
 
         self.init(frame: .zero)
@@ -23,6 +25,8 @@ public class CommonScrollView: UIScrollView {
         superview.addSubview(self)
 
     }
+
+    */
 
     public convenience init(superview: UIView, controller: UIViewController) {
 
