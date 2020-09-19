@@ -5,6 +5,7 @@
 //
 
 import UIKit
+import SnapKit
 
 open class CommonTableViewCell: UITableViewCell {
 
