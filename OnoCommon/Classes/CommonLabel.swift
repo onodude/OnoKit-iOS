@@ -87,6 +87,12 @@ open class CommonLabel: UILabel {
         return self
     }
 
+    @discardableResult
+    public func lineBreakMode(_ lineBreakMode: NSLineBreakMode) -> CommonLabel {
+        self.lineBreakMode = lineBreakMode
+        return self
+    }
+
     // MARK: - Configuration
 
     open override func drawText(in rect: CGRect) {

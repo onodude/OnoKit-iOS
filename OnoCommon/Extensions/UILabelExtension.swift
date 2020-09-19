@@ -16,6 +16,8 @@ public extension UILabel {
         self.init()
         self.frame = .zero
         self.backgroundColor = .clear
+        self.numberOfLines = 0
+        self.lineBreakMode = .byTruncatingTail
 
         superview.addSubview(self)
 
