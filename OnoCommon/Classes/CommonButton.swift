@@ -8,81 +8,83 @@ import UIKit
 
 open class CommonButton: UIButton {
 
-    // MARK: - Basic Buttons
+    // MARK: - Setters
 
-    public convenience init(superview: UIView) {
-
-        self.init(type: .custom)
-        self.frame = .zero
-        self.backgroundColor = .clear
-
+    func superview(_ superview: UIView) -> CommonButton {
         superview.addSubview(self)
-
+        return self
     }
 
-    public convenience init(superview: UIView, action: Selector, target: Any) {
-
-        self.init(action: action, target: target)
-
-        superview.addSubview(self)
+    func action(_ event: UIControl.Event = .touchUpInside, _ selector: Selector, _ target: Any) -> CommonButton {
+        self.addTarget(target, action: selector, for: event)
+        return self
     }
 
-    // MARK: - Image Buttons
+    func action(_ event: UIControl.Event = .touchUpInside, _ method: @escaping () -> Void) -> CommonButton {
+        self.addAction(event, method)
+        return self
+    }
 
-    public convenience init(imageName: String, bgColor: UIColor, corner: CGFloat, superview: UIView, action: Selector, target: Any) {
-
-        self.init(image: UIImage(named: imageName)!, action: action, target: target)
-
+    func bgColor(_ bgColor: UIColor) -> CommonButton {
         self.backgroundColor = bgColor
+        return self
+    }
 
+    func bgImage(_ bgImage: UIImage, _ state: UIControl.State? = nil) -> CommonButton {
+        if let state = state {
+            self.setImage(bgImage, for: state)
+        } else {
+            self.setImageForAllStates(image: bgImage)
+        }
+        return self
+    }
+
+    func imageName(_ imageName: String, _ state: UIControl.State? = nil) -> CommonButton {
+        if let image = UIImage(named: imageName) {
+            if let state = state {
+                self.setImage(image, for: state)
+            } else {
+                self.setImageForAllStates(image: image)
+            }
+        }
+        return self
+    }
+
+    func image(_ image: UIImage, _ state: UIControl.State? = nil) -> CommonButton {
+        if let state = state {
+            self.setImage(image, for: state)
+        } else {
+            self.setImageForAllStates(image: image)
+        }
+        return self
+    }
+
+    func corner(_ corner: CGFloat) -> CommonButton {
         self.setCornerRadius(corner: corner)
-
-        superview.addSubview(self)
-
+        return self
     }
 
-    public convenience init(imageName: String, superview: UIView, action: Selector, target: Any) {
-
-        self.init(image: UIImage(named: imageName)!, action: action, target: target)
-
-        superview.addSubview(self)
-
+    func titleColor(_ titleColor: UIColor, _ state: UIControl.State? = nil) -> CommonButton {
+        if let state = state {
+            self.setTitleColor(titleColor, for: state)
+        } else {
+            self.setTitleColorForAllStates(color: titleColor)
+        }
+        return self
     }
 
-    public convenience init(imageName: String, pressedImageName: String, superview: UIView, action: Selector, target: Any) {
-
-        self.init(image: UIImage(named: imageName)!, pressedImage: UIImage(named: pressedImageName)!, action: action, target: target)
-
-        superview.addSubview(self)
-
+    func font(_ font: UIFont) -> CommonButton {
+        self.setTitleFontForAllStates(font: font)
+        return self
     }
 
-    public convenience init(title: String, titleColor: UIColor, font: UIFont, superview: UIView, action: Selector, target: Any) {
-
-        self.init(title: title, titleColor: titleColor, font: font, bgColor: .clear, corner: 0, action: action, target: target)
-
-        superview.addSubview(self)
-
-    }
-
-    public convenience init(title: String, titleColor: UIColor, font: UIFont, bgColor: UIColor, corner: CGFloat, superview: UIView, action: Selector, target: Any) {
-
-        self.init(title: title, titleColor: titleColor, font: font, bgColor: bgColor, corner: corner, action: action, target: target)
-
-        superview.addSubview(self)
-
-    }
-
-    public convenience init(baseText: String, baseFont: UIFont, baseColor: UIColor, otherText: String, otherFont: UIFont, otherColor: UIColor, height: CGFloat, bgColor: UIColor, superview: UIView, action: Selector, target: Any) {
-
-        let commonCorner: CGFloat = height/2.0
-
-        self.init(title: "", titleColor: baseColor, font: baseFont, bgColor: bgColor, corner: commonCorner, action: action, target: target)
-
-        superview.addSubview(self)
-
-        self.setCustomTitleForAllStates(baseText: baseText, baseFont: baseFont, baseColor: baseColor, otherText: otherText, otherFont: otherFont, otherColor: otherColor)
-
+    func title(_ title: String, _ state: UIControl.State? = nil) -> CommonButton {
+        if let state = state {
+            self.setTitle(title, for: state)
+        } else {
+            self.setTitleForAllStates(title: title)
+        }
+        return self
     }
 
 }
