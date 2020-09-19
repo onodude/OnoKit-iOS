@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class CommonImageView: UIImageView {
+open class CommonImageView: UIImageView {
 
     public static func create(superview: UIView, frame: CGRect = .zero, bgColor: UIColor = .clear, corner: CGFloat? = nil, image: UIImage? = nil, imageName: String? = nil, contentMode: UIView.ContentMode = .center) -> CommonImageView {
 

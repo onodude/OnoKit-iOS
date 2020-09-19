@@ -6,9 +6,9 @@
 
 import UIKit
 
-public class CommonLabel: UILabel {
+open class CommonLabel: UILabel {
 
-    public static func create(superview: UIView, frame: CGRect = .zero, bgColor: UIColor = .clear, corner: CGFloat? = nil, textColor: UIColor? = nil, font: UIFont? = nil, alignment: NSTextAlignment? = nil, insets: UIEdgeInsets? = nil) -> CommonLabel {
+    static func create(superview: UIView, frame: CGRect = .zero, bgColor: UIColor = .clear, corner: CGFloat? = nil, textColor: UIColor? = nil, font: UIFont? = nil, alignment: NSTextAlignment? = nil, insets: UIEdgeInsets? = nil) -> CommonLabel {
 
         let view = CommonLabel()
         view.frame = frame
