@@ -81,6 +81,12 @@ open class CommonLabel: UILabel {
         return self
     }
 
+    @discardableResult
+    public func multiLine(_ multiLine: Bool) -> CommonLabel {
+        self.numberOfLines = multiLine ? 0 : 1
+        return self
+    }
+
     // MARK: - Configuration
 
     open override func drawText(in rect: CGRect) {
