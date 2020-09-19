@@ -69,6 +69,18 @@ open class CommonLabel: UILabel {
         return self
     }
 
+    @discardableResult
+    public func text(_ text: String) -> CommonLabel {
+        self.text = text
+        return self
+    }
+
+    @discardableResult
+    public func text(_ title: NSAttributedString) -> CommonLabel {
+        self.attributedText = attributedText
+        return self
+    }
+
     // MARK: - Configuration
 
     open override func drawText(in rect: CGRect) {

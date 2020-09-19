@@ -35,6 +35,14 @@ public extension UIButton {
 
     }
 
+    func setAttributedTitleForAllStates(title: NSAttributedString) {
+
+        self.setAttributedTitle(title, for: .normal)
+        self.setAttributedTitle(title, for: .selected)
+        self.setAttributedTitle(title, for: .highlighted)
+
+    }
+
     func setTitleFontForAllStates(font: UIFont) {
 
         self.titleLabel?.font = font

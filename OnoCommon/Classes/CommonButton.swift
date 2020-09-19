@@ -115,4 +115,14 @@ open class CommonButton: UIButton {
         return self
     }
 
+    @discardableResult
+    public func title(_ title: NSAttributedString, _ state: UIControl.State? = nil) -> CommonButton {
+        if let state = state {
+            self.setAttributedTitle(title, for: state)
+        } else {
+            self.setAttributedTitleForAllStates(title: title)
+        }
+        return self
+    }
+
 }
