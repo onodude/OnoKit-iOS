@@ -22,7 +22,7 @@ open class CommonTableReusableView: UIView {
 
     open func buildMainView() {
 
-        viewMain = CommonView.create(superview: self)
+        viewMain = CommonView.create(self)
         viewMain.snp.makeConstraints { (view) in
             view.edges.equalToSuperview()
         }

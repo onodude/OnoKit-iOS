@@ -8,35 +8,65 @@ import UIKit
 
 open class CommonLabel: UILabel {
 
-    static func create(superview: UIView, frame: CGRect = .zero, bgColor: UIColor = .clear, corner: CGFloat? = nil, textColor: UIColor? = nil, font: UIFont? = nil, alignment: NSTextAlignment? = nil, insets: UIEdgeInsets? = nil) -> CommonLabel {
+    public static func create(_ superview: UIView) -> CommonLabel {
+        return CommonLabel().superview(superview).frame(.zero).bgColor(.clear)
+    }
 
-        let view = CommonLabel()
-        view.frame = frame
-        view.backgroundColor = bgColor
+    // MARK: - Setters
 
-        if let corner = corner {
-            view.setCornerRadius(corner: corner)
-        }
+    @discardableResult
+    public func frame(_ frame: CGRect) -> CommonLabel {
+        self.frame = frame
+        return self
+    }
 
-        if let textColor = textColor {
-            view.textColor = textColor
-        }
+    @discardableResult
+    public func superview(_ superview: UIView) -> CommonLabel {
+        superview.addSubview(self)
+        return self
+    }
 
-        if let font = font {
-            view.font = font
-        }
+    @discardableResult
+    public func bgColor(_ bgColor: UIColor) -> CommonLabel {
+        self.backgroundColor = bgColor
+        return self
+    }
 
-        if let alignment = alignment {
-            view.textAlignment = alignment
-        }
+    @discardableResult
+    public func corner(_ corner: CGFloat) -> CommonLabel {
+        self.setCornerRadius(corner: corner)
+        return self
+    }
 
-        if let insets = insets {
-            view.drawText(in: view.frame.inset(by: insets))
-            view.setNeedsLayout()
-        }
+    @discardableResult
+    public func border(_ color: UIColor, _ width: CGFloat) -> CommonLabel {
+        self.addBorder(width: width, color: color)
+        return self
+    }
 
-        return view
+    @discardableResult
+    public func textColor(_ textColor: UIColor) -> CommonLabel {
+        self.textColor = textColor
+        return self
+    }
 
+    @discardableResult
+    public func font(_ font: UIFont) -> CommonLabel {
+        self.font = font
+        return self
+    }
+
+    @discardableResult
+    public func alignment(_ alignment: NSTextAlignment) -> CommonLabel {
+        self.textAlignment = alignment
+        return self
+    }
+
+    @discardableResult
+    public func padding(_ insets: UIEdgeInsets) -> CommonLabel {
+        super.drawText(in: self.frame.inset(by: insets))
+        self.setNeedsLayout()
+        return self
     }
 
     // MARK: - Configuration

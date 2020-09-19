@@ -20,7 +20,7 @@ open class CommonCollectionViewCell: UICollectionViewCell {
     public override init(frame: CGRect) {
         super.init(frame: frame)
 
-        viewMain = CommonView.create(superview: contentView)
+        viewMain = CommonView.create(contentView)
 
         viewMain.snp.makeConstraints { (view) in
             view.edges.equalToSuperview()

@@ -8,27 +8,54 @@ import UIKit
 
 open class CommonImageView: UIImageView {
 
-    public static func create(superview: UIView, frame: CGRect = .zero, bgColor: UIColor = .clear, corner: CGFloat? = nil, image: UIImage? = nil, imageName: String? = nil, contentMode: UIView.ContentMode = .center) -> CommonImageView {
+    public static func create(_ superview: UIView) -> CommonImageView {
+        return CommonImageView().superview(superview).frame(.zero).bgColor(.clear)
+    }
 
-        let view = CommonImageView()
-        view.frame = frame
-        view.backgroundColor = bgColor
-        view.contentMode = contentMode
+    // MARK: - Setters
 
-        if let corner = corner {
-            view.setCornerRadius(corner: corner)
-        }
+    @discardableResult
+    public func frame(_ frame: CGRect) -> CommonImageView {
+        self.frame = frame
+        return self
+    }
 
-        if let image = image {
-            view.image = image
-        }
+    @discardableResult
+    public func superview(_ superview: UIView) -> CommonImageView {
+        superview.addSubview(self)
+        return self
+    }
 
-        if let imageName = imageName {
-            view.image = UIImage(named: imageName)
-        }
+    @discardableResult
+    public func bgColor(_ bgColor: UIColor) -> CommonImageView {
+        self.backgroundColor = bgColor
+        return self
+    }
 
-        return view
+    @discardableResult
+    public func image(_ image: UIImage) -> CommonImageView {
+        self.image = image
+        self.contentMode = .center
+        return self
+    }
 
+    @discardableResult
+    public func imageName(_ imageName: String) -> CommonImageView {
+        self.image = UIImage(named: imageName)
+        self.contentMode = .center
+        return self
+    }
+
+    @discardableResult
+    public func corner(_ corner: CGFloat) -> CommonImageView {
+        self.setCornerRadius(corner: corner)
+        return self
+    }
+
+    @discardableResult
+    public func border(_ color: UIColor, _ width: CGFloat) -> CommonImageView {
+        self.addBorder(width: width, color: color)
+        return self
     }
 
     // MARK: - Actions

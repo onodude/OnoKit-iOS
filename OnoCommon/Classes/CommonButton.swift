@@ -6,9 +6,9 @@
 
 import UIKit
 
-public class CommonButton: UIButton {
+open class CommonButton: UIButton {
 
-    static func create(_ superview: UIView) -> CommonButton {
+    public static func create(_ superview: UIView) -> CommonButton {
         let button = CommonButton(type: .custom)
         return button.superview(superview).frame(.zero).bgColor(.clear)
     }
@@ -77,8 +77,15 @@ public class CommonButton: UIButton {
         return self
     }
 
+    @discardableResult
     public func corner(_ corner: CGFloat) -> CommonButton {
         self.setCornerRadius(corner: corner)
+        return self
+    }
+
+    @discardableResult
+    public func border(_ color: UIColor, _ width: CGFloat) -> CommonButton {
+        self.addBorder(width: width, color: color)
         return self
     }
 
