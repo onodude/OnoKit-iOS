@@ -20,7 +20,7 @@ open class CommonCollectionReusableView: UICollectionReusableView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
 
-        viewMain = CommonView.create(self)
+        viewMain = CommonView.create(superview: self)
 
         viewMain.snp.makeConstraints { (view) in
             view.edges.equalToSuperview()

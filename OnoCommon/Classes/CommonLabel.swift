@@ -6,53 +6,37 @@
 
 import UIKit
 
-open class CommonLabel: UILabel {
+public class CommonLabel: UILabel {
 
-    static func create(_ superview: UIView) -> CommonLabel {
-        return CommonLabel().superview(superview).frame(.zero).bgColor(.clear)
-    }
+    public static func create(superview: UIView, frame: CGRect = .zero, bgColor: UIColor = .clear, corner: CGFloat? = nil, textColor: UIColor? = nil, font: UIFont? = nil, alignment: NSTextAlignment? = nil, insets: UIEdgeInsets? = nil) -> CommonLabel {
 
-    // MARK: - Setters
+        let view = CommonLabel()
+        view.frame = frame
+        view.backgroundColor = bgColor
 
-    func frame(_ frame: CGRect) -> CommonLabel {
-        self.frame = frame
-        return self
-    }
+        if let corner = corner {
+            view.setCornerRadius(corner: corner)
+        }
 
-    func superview(_ superview: UIView) -> CommonLabel {
-        superview.addSubview(self)
-        return self
-    }
+        if let textColor = textColor {
+            view.textColor = textColor
+        }
 
-    func bgColor(_ bgColor: UIColor) -> CommonLabel {
-        self.backgroundColor = bgColor
-        return self
-    }
+        if let font = font {
+            view.font = font
+        }
 
-    func corner(_ corner: CGFloat) -> CommonLabel {
-        self.setCornerRadius(corner: corner)
-        return self
-    }
+        if let alignment = alignment {
+            view.textAlignment = alignment
+        }
 
-    func textColor(_ textColor: UIColor) -> CommonLabel {
-        self.textColor = textColor
-        return self
-    }
+        if let insets = insets {
+            view.drawText(in: view.frame.inset(by: insets))
+            view.setNeedsLayout()
+        }
 
-    func font(_ font: UIFont) -> CommonLabel {
-        self.font = font
-        return self
-    }
+        return view
 
-    func alignment(_ alignment: NSTextAlignment) -> CommonLabel {
-        self.textAlignment = alignment
-        return self
-    }
-
-    func padding(_ insets: UIEdgeInsets) -> CommonLabel {
-        super.drawText(in: self.frame.inset(by: insets))
-        self.setNeedsLayout()
-        return self
     }
 
     // MARK: - Configuration

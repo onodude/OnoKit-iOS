@@ -8,25 +8,18 @@ import UIKit
 
 public class CommonView: UIView {
 
-    static func create(_ superview: UIView) -> CommonView {
-        return CommonView().superview(superview).frame(.zero).bgColor(.clear)
-    }
+    public static func create(superview: UIView, frame: CGRect = .zero, bgColor: UIColor = .clear, corner: CGFloat? = nil) -> CommonView {
 
-    // MARK: - Setters
+        let view = CommonView()
+        view.frame = frame
+        view.backgroundColor = bgColor
 
-    func frame(_ frame: CGRect) -> CommonView {
-        self.frame = frame
-        return self
-    }
+        if let corner = corner {
+            view.setCornerRadius(corner: corner)
+        }
 
-    func superview(_ superview: UIView) -> CommonView {
-        superview.addSubview(self)
-        return self
-    }
+        return view
 
-    func bgColor(_ bgColor: UIColor) -> CommonView {
-        self.backgroundColor = bgColor
-        return self
     }
 
 }

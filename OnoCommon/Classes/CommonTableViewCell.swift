@@ -21,7 +21,7 @@ open class CommonTableViewCell: UITableViewCell {
 
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-        viewMain = CommonView.create(contentView)
+        viewMain = CommonView.create(superview: contentView)
 
         viewMain.snp.makeConstraints { (view) in
             view.edges.equalToSuperview()

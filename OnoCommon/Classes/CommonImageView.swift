@@ -6,44 +6,34 @@
 
 import UIKit
 
-open class CommonImageView: UIImageView {
+public class CommonImageView: UIImageView {
 
-    static func create(_ superview: UIView) -> CommonImageView {
-        return CommonImageView().superview(superview).frame(.zero).bgColor(.clear)
-    }
+    public static func create(superview: UIView, frame: CGRect = .zero, bgColor: UIColor = .clear, corner: CGFloat? = nil, image: UIImage? = nil, imageName: String? = nil, contentMode: UIView.ContentMode = .center) -> CommonImageView {
 
-    // MARK: - Setters
+        let view = CommonImageView()
+        view.frame = frame
+        view.backgroundColor = bgColor
+        view.contentMode = contentMode
 
-    func frame(_ frame: CGRect) -> CommonImageView {
-        self.frame = frame
-        return self
-    }
+        if let corner = corner {
+            view.setCornerRadius(corner: corner)
+        }
 
-    func superview(_ superview: UIView) -> CommonImageView {
-        superview.addSubview(self)
-        return self
-    }
+        if let image = image {
+            view.image = image
+        }
 
-    func bgColor(_ bgColor: UIColor) -> CommonImageView {
-        self.backgroundColor = bgColor
-        return self
-    }
+        if let imageName = imageName {
+            view.image = UIImage(named: imageName)
+        }
 
-    func image(_ image: UIImage) -> CommonImageView {
-        self.image = image
-        self.contentMode = .center
-        return self
-    }
+        return view
 
-    func imageName(_ imageName: String) -> CommonImageView {
-        self.image = UIImage(named: imageName)
-        self.contentMode = .center
-        return self
     }
 
     // MARK: - Actions
 
-    func loadImageView(photoUrl: String, aspectMode: UIView.ContentMode) {
+    public func loadImageView(photoUrl: String, aspectMode: UIView.ContentMode) {
 
         self.image = UIImage(named: "img_placeholder")
 
