@@ -8,28 +8,31 @@ import UIKit
 
 extension UICollectionView {
 
-    // MARK: - Common Creators
-
-    convenience init(_ superview: UIView, _ direction: UICollectionView.ScrollDirection? = nil, _ handler: CommonCollectionViewHandler) {
+    convenience init(superview: UIView, handler: Any, direction: UICollectionView.ScrollDirection, identifiers: [String]) {
 
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-
-        if let direction = direction {
-            layout.scrollDirection = direction
-        }
+        layout.scrollDirection = direction
 
         self.init(frame: .zero, collectionViewLayout: layout)
-
-        self.backgroundColor = .clear
 
         self.showsVerticalScrollIndicator = false
         self.showsHorizontalScrollIndicator = false
 
+        self.dataSource = handler as? UICollectionViewDataSource
+        self.delegate = handler as? UICollectionViewDelegate
+
+        self.backgroundColor = .clear
+
         self.isPagingEnabled = true
         self.bounces = false
 
-        self.dataSource = handler
-        self.delegate = handler
+        for identifier in identifiers {
+            if let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String {
+                if let anyClass: AnyClass = NSClassFromString("\(namespace).\(identifier)") {
+                    self.register(anyClass, forCellWithReuseIdentifier: identifier)
+                }
+            }
+        }
 
         superview.addSubview(self)
 
