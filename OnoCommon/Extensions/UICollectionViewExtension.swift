@@ -10,13 +10,10 @@ extension UICollectionView {
 
     // MARK: - Common Creators
 
-    convenience init(_ superview: UIView, _ direction: UICollectionView.ScrollDirection? = nil, _ handler: CommonCollectionViewHandler) {
+    convenience init(_ superview: UIView, _ direction: UICollectionView.ScrollDirection, _ handler: CommonCollectionViewHandler, _ identifiers: [String]) {
 
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-
-        if let direction = direction {
-            layout.scrollDirection = direction
-        }
+        layout.scrollDirection = direction
 
         self.init(frame: .zero, collectionViewLayout: layout)
 
@@ -30,6 +27,14 @@ extension UICollectionView {
 
         self.dataSource = handler
         self.delegate = handler
+
+        for identifier in identifiers {
+            if let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String {
+                if let anyClass: AnyClass = NSClassFromString("\(namespace).\(identifier)") {
+                    self.register(anyClass, forCellWithReuseIdentifier: identifier)
+                }
+            }
+        }
 
         superview.addSubview(self)
 
