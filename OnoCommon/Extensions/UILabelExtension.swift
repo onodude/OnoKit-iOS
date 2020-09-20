@@ -11,28 +11,15 @@ public extension UILabel {
 
     // MARK: - Common Creators
 
-    convenience init(text: String, titleColor: UIColor, font: UIFont, bgColor: UIColor, alignment: NSTextAlignment) {
+    convenience init(_ superview: UIView) {
 
         self.init()
         self.frame = .zero
-        self.backgroundColor = bgColor
-        self.font = font
-        self.text = text
-        self.textColor = titleColor
-        self.textAlignment = alignment
+        self.backgroundColor = .clear
         self.numberOfLines = 0
         self.lineBreakMode = .byTruncatingTail
-        //  self.adjustsFontSizeToFitWidth = true
 
-    }
-
-    convenience init(bgColor: UIColor, alignment: NSTextAlignment) {
-
-        self.init()
-        self.frame = .zero
-        self.backgroundColor = bgColor
-        self.textAlignment = alignment
-        //  self.adjustsFontSizeToFitWidth = true
+        superview.addSubview(self)
 
     }
 

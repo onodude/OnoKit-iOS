@@ -8,81 +8,121 @@ import UIKit
 
 open class CommonButton: UIButton {
 
-    // MARK: - Basic Buttons
-
-    public convenience init(superview: UIView) {
-
-        self.init(type: .custom)
-        self.frame = .zero
-        self.backgroundColor = .clear
-
-        superview.addSubview(self)
-
+    public static func create(_ superview: UIView) -> CommonButton {
+        let button = CommonButton(type: .custom)
+        return button.superview(superview).frame(.zero).bgColor(.clear)
     }
 
-    public convenience init(superview: UIView, action: Selector, target: Any) {
+    // MARK: - Setters
 
-        self.init(action: action, target: target)
-
-        superview.addSubview(self)
+    @discardableResult
+    public func frame(_ frame: CGRect) -> CommonButton {
+        self.frame = frame
+        return self
     }
 
-    // MARK: - Image Buttons
+    @discardableResult
+    public func superview(_ superview: UIView) -> CommonButton {
+        superview.addSubview(self)
+        return self
+    }
 
-    public convenience init(imageName: String, bgColor: UIColor, corner: CGFloat, superview: UIView, action: Selector, target: Any) {
+    @discardableResult
+    public func action(_ event: UIControl.Event = .touchUpInside, _ selector: Selector, _ target: Any) -> CommonButton {
+        self.addTarget(target, action: selector, for: event)
+        return self
+    }
 
-        self.init(image: UIImage(named: imageName)!, action: action, target: target)
+    @discardableResult
+    public func action(_ event: UIControl.Event = .touchUpInside, _ method: @escaping () -> Void) -> CommonButton {
+        self.addAction(event, method)
+        return self
+    }
 
+    @discardableResult
+    public func bgColor(_ bgColor: UIColor) -> CommonButton {
         self.backgroundColor = bgColor
+        return self
+    }
 
+    @discardableResult
+    public func bgImage(_ bgImage: UIImage, _ state: UIControl.State? = nil) -> CommonButton {
+        if let state = state {
+            self.setImage(bgImage, for: state)
+        } else {
+            self.setImageForAllStates(image: bgImage)
+        }
+        return self
+    }
+
+    @discardableResult
+    public func imageName(_ imageName: String, _ state: UIControl.State? = nil) -> CommonButton {
+        if let image = UIImage(named: imageName) {
+            if let state = state {
+                self.setImage(image, for: state)
+            } else {
+                self.setImageForAllStates(image: image)
+            }
+        }
+        return self
+    }
+
+    @discardableResult
+    public func image(_ image: UIImage, _ state: UIControl.State? = nil) -> CommonButton {
+        if let state = state {
+            self.setImage(image, for: state)
+        } else {
+            self.setImageForAllStates(image: image)
+        }
+        return self
+    }
+
+    @discardableResult
+    public func corner(_ corner: CGFloat) -> CommonButton {
         self.setCornerRadius(corner: corner)
-
-        superview.addSubview(self)
-
+        return self
     }
 
-    public convenience init(imageName: String, superview: UIView, action: Selector, target: Any) {
-
-        self.init(image: UIImage(named: imageName)!, action: action, target: target)
-
-        superview.addSubview(self)
-
+    @discardableResult
+    public func border(_ color: UIColor, _ width: CGFloat) -> CommonButton {
+        self.addBorder(width: width, color: color)
+        return self
     }
 
-    public convenience init(imageName: String, pressedImageName: String, superview: UIView, action: Selector, target: Any) {
-
-        self.init(image: UIImage(named: imageName)!, pressedImage: UIImage(named: pressedImageName)!, action: action, target: target)
-
-        superview.addSubview(self)
-
+    @discardableResult
+    public func titleColor(_ titleColor: UIColor, _ state: UIControl.State? = nil) -> CommonButton {
+        if let state = state {
+            self.setTitleColor(titleColor, for: state)
+        } else {
+            self.setTitleColorForAllStates(color: titleColor)
+        }
+        return self
     }
 
-    public convenience init(title: String, titleColor: UIColor, font: UIFont, superview: UIView, action: Selector, target: Any) {
-
-        self.init(title: title, titleColor: titleColor, font: font, bgColor: .clear, corner: 0, action: action, target: target)
-
-        superview.addSubview(self)
-
+    @discardableResult
+    public func font(_ font: UIFont) -> CommonButton {
+        self.setTitleFontForAllStates(font: font)
+        return self
     }
 
-    public convenience init(title: String, titleColor: UIColor, font: UIFont, bgColor: UIColor, corner: CGFloat, superview: UIView, action: Selector, target: Any) {
-
-        self.init(title: title, titleColor: titleColor, font: font, bgColor: bgColor, corner: corner, action: action, target: target)
-
-        superview.addSubview(self)
-
+    @discardableResult
+    public func title(_ title: String, _ state: UIControl.State? = nil) -> CommonButton {
+        if let state = state {
+            self.setTitle(title, for: state)
+        } else {
+            self.setTitleForAllStates(title: title)
+        }
+        return self
     }
 
-    public convenience init(baseText: String, baseFont: UIFont, baseColor: UIColor, otherText: String, otherFont: UIFont, otherColor: UIColor, height: CGFloat, bgColor: UIColor, superview: UIView, action: Selector, target: Any) {
-
-        let commonCorner: CGFloat = height/2.0
-
-        self.init(title: "", titleColor: baseColor, font: baseFont, bgColor: bgColor, corner: commonCorner, action: action, target: target)
-
-        superview.addSubview(self)
-
-        self.setCustomTitleForAllStates(baseText: baseText, baseFont: baseFont, baseColor: baseColor, otherText: otherText, otherFont: otherFont, otherColor: otherColor)
-
+    @discardableResult
+    public func title(_ title: NSAttributedString, _ state: UIControl.State? = nil) -> CommonButton {
+        if let state = state {
+            self.setAttributedTitle(title, for: state)
+        } else {
+            self.setAttributedTitleForAllStates(title: title)
+        }
+        return self
     }
 
 }

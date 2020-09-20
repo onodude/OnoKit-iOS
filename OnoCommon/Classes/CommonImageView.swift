@@ -8,44 +8,59 @@ import UIKit
 
 open class CommonImageView: UIImageView {
 
-    // MARK: - Initializers
+    public static func create(_ superview: UIView) -> CommonImageView {
+        return CommonImageView().superview(superview).frame(.zero).bgColor(.clear)
+    }
 
-    public convenience init(imageName: String, superview: UIView) {
+    // MARK: - Setters
 
-        self.init(frame: .zero)
+    @discardableResult
+    public func frame(_ frame: CGRect) -> CommonImageView {
+        self.frame = frame
+        return self
+    }
 
-        self.backgroundColor = .clear
+    @discardableResult
+    public func superview(_ superview: UIView) -> CommonImageView {
+        superview.addSubview(self)
+        return self
+    }
+
+    @discardableResult
+    public func bgColor(_ bgColor: UIColor) -> CommonImageView {
+        self.backgroundColor = bgColor
+        return self
+    }
+
+    @discardableResult
+    public func image(_ image: UIImage) -> CommonImageView {
+        self.image = image
+        self.contentMode = .center
+        return self
+    }
+
+    @discardableResult
+    public func imageName(_ imageName: String) -> CommonImageView {
         self.image = UIImage(named: imageName)
         self.contentMode = .center
-
-        superview.addSubview(self)
-
+        return self
     }
 
-    public convenience init(backgroundColor: UIColor, superview: UIView) {
-
-        self.init(frame: .zero)
-
-        self.backgroundColor = backgroundColor
-
-        superview.addSubview(self)
-
+    @discardableResult
+    public func corner(_ corner: CGFloat) -> CommonImageView {
+        self.setCornerRadius(corner: corner)
+        return self
     }
 
-    public convenience init(image: UIImage, superview: UIView) {
-
-        self.init(frame: .zero)
-
-        self.backgroundColor = .clear
-        self.image = image
-
-        superview.addSubview(self)
-
+    @discardableResult
+    public func border(_ color: UIColor, _ width: CGFloat) -> CommonImageView {
+        self.addBorder(width: width, color: color)
+        return self
     }
 
     // MARK: - Actions
 
-    open func loadImageView(photoUrl: String, aspectMode: UIView.ContentMode) {
+    public func loadImageView(photoUrl: String, aspectMode: UIView.ContentMode) {
 
         self.image = UIImage(named: "img_placeholder")
 

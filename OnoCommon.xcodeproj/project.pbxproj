@@ -11,15 +11,15 @@
 		7704570525152373006CC071 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456F625152372006CC071 /* UINavigationControllerExtension.swift */; };
 		7704570625152373006CC071 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456F725152372006CC071 /* UIButtonExtension.swift */; };
 		7704570725152373006CC071 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456F825152373006CC071 /* UIColorExtension.swift */; };
-		7704570825152373006CC071 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456F925152373006CC071 /* UITextFieldExtensions.swift */; };
+		7704570825152373006CC071 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456F925152373006CC071 /* UITextFieldExtension.swift */; };
 		7704570925152373006CC071 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456FA25152373006CC071 /* UIViewExtension.swift */; };
-		7704570A25152373006CC071 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456FB25152373006CC071 /* DateExtensions.swift */; };
-		7704570B25152373006CC071 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456FC25152373006CC071 /* StringExtensions.swift */; };
-		7704570C25152373006CC071 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456FD25152373006CC071 /* URLExtensions.swift */; };
+		7704570A25152373006CC071 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456FB25152373006CC071 /* DateExtension.swift */; };
+		7704570B25152373006CC071 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456FC25152373006CC071 /* StringExtension.swift */; };
+		7704570C25152373006CC071 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456FD25152373006CC071 /* URLExtension.swift */; };
 		7704570D25152373006CC071 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456FE25152373006CC071 /* UIImageExtension.swift */; };
 		7704570E25152373006CC071 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456FF25152373006CC071 /* UITextViewExtension.swift */; };
-		7704570F25152373006CC071 /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704570025152373006CC071 /* NSAttributedStringExtensions.swift */; };
-		7704571025152373006CC071 /* NSStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704570125152373006CC071 /* NSStringExtensions.swift */; };
+		7704570F25152373006CC071 /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704570025152373006CC071 /* NSAttributedStringExtension.swift */; };
+		7704571025152373006CC071 /* NSStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704570125152373006CC071 /* NSStringExtension.swift */; };
 		7704571125152373006CC071 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704570225152373006CC071 /* UILabelExtension.swift */; };
 		7704571225152373006CC071 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704570325152373006CC071 /* UIImageViewExtension.swift */; };
 		77045720251523BE006CC071 /* CommonScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045715251523BD006CC071 /* CommonScrollView.swift */; };
@@ -42,6 +42,9 @@
 		7704575825152523006CC071 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575125152523006CC071 /* CommonModel.swift */; };
 		7704575925152523006CC071 /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575225152523006CC071 /* CommonTableViewCell.swift */; };
 		77045771251526DA006CC071 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704576E251526DA006CC071 /* CommonConstants.swift */; };
+		7793AA622516729500910FAC /* CommonClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AA612516729500910FAC /* CommonClosureSleeve.swift */; };
+		7793AA65251672B600910FAC /* UIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AA64251672B600910FAC /* UIControlExtension.swift */; };
+		7793AB822516CD4E00910FAC /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */; };
 		A401CB9616A741A63F149E08 /* Pods_OnoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807E8C0ACF382666558651A7 /* Pods_OnoCommon.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,15 +55,15 @@
 		770456F625152372006CC071 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		770456F725152372006CC071 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		770456F825152373006CC071 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		770456F925152373006CC071 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
+		770456F925152373006CC071 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		770456FA25152373006CC071 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		770456FB25152373006CC071 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
-		770456FC25152373006CC071 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		770456FD25152373006CC071 /* URLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtensions.swift; sourceTree = "<group>"; };
+		770456FB25152373006CC071 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		770456FC25152373006CC071 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		770456FD25152373006CC071 /* URLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		770456FE25152373006CC071 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		770456FF25152373006CC071 /* UITextViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
-		7704570025152373006CC071 /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
-		7704570125152373006CC071 /* NSStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStringExtensions.swift; sourceTree = "<group>"; };
+		7704570025152373006CC071 /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
+		7704570125152373006CC071 /* NSStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStringExtension.swift; sourceTree = "<group>"; };
 		7704570225152373006CC071 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		7704570325152373006CC071 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		77045715251523BD006CC071 /* CommonScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonScrollView.swift; sourceTree = "<group>"; };
@@ -83,6 +86,9 @@
 		7704575125152523006CC071 /* CommonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
 		7704575225152523006CC071 /* CommonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
 		7704576E251526DA006CC071 /* CommonConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
+		7793AA612516729500910FAC /* CommonClosureSleeve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClosureSleeve.swift; sourceTree = "<group>"; };
+		7793AA64251672B600910FAC /* UIControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlExtension.swift; sourceTree = "<group>"; };
+		7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		807E8C0ACF382666558651A7 /* Pods_OnoCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnoCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		969680373C63C20055DFA949 /* Pods-OnoCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoCommon.debug.xcconfig"; path = "Target Support Files/Pods-OnoCommon/Pods-OnoCommon.debug.xcconfig"; sourceTree = "<group>"; };
 		BBA679E72A357B6E2F971A96 /* Pods-OnoCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoCommon.release.xcconfig"; path = "Target Support Files/Pods-OnoCommon/Pods-OnoCommon.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +168,7 @@
 				7704571B251523BD006CC071 /* CommonTextField.swift */,
 				77045719251523BD006CC071 /* CommonTextView.swift */,
 				7704571E251523BD006CC071 /* CommonView.swift */,
+				7793AA612516729500910FAC /* CommonClosureSleeve.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -169,20 +176,22 @@
 		770456F425152330006CC071 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				770456FB25152373006CC071 /* DateExtensions.swift */,
-				7704570025152373006CC071 /* NSAttributedStringExtensions.swift */,
-				7704570125152373006CC071 /* NSStringExtensions.swift */,
-				770456FC25152373006CC071 /* StringExtensions.swift */,
+				770456FB25152373006CC071 /* DateExtension.swift */,
+				7704570025152373006CC071 /* NSAttributedStringExtension.swift */,
+				7704570125152373006CC071 /* NSStringExtension.swift */,
+				770456FC25152373006CC071 /* StringExtension.swift */,
 				770456F725152372006CC071 /* UIButtonExtension.swift */,
 				770456F825152373006CC071 /* UIColorExtension.swift */,
 				770456FE25152373006CC071 /* UIImageExtension.swift */,
 				7704570325152373006CC071 /* UIImageViewExtension.swift */,
 				7704570225152373006CC071 /* UILabelExtension.swift */,
 				770456F625152372006CC071 /* UINavigationControllerExtension.swift */,
-				770456F925152373006CC071 /* UITextFieldExtensions.swift */,
+				770456F925152373006CC071 /* UITextFieldExtension.swift */,
 				770456FF25152373006CC071 /* UITextViewExtension.swift */,
 				770456FA25152373006CC071 /* UIViewExtension.swift */,
-				770456FD25152373006CC071 /* URLExtensions.swift */,
+				770456FD25152373006CC071 /* URLExtension.swift */,
+				7793AA64251672B600910FAC /* UIControlExtension.swift */,
+				7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -330,9 +339,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7704570B25152373006CC071 /* StringExtensions.swift in Sources */,
-				7704570A25152373006CC071 /* DateExtensions.swift in Sources */,
+				7704570B25152373006CC071 /* StringExtension.swift in Sources */,
+				7793AA65251672B600910FAC /* UIControlExtension.swift in Sources */,
+				7704570A25152373006CC071 /* DateExtension.swift in Sources */,
 				77045721251523BE006CC071 /* CommonButton.swift in Sources */,
+				7793AB822516CD4E00910FAC /* UICollectionViewExtension.swift in Sources */,
 				77045728251523BE006CC071 /* CommonDateFormatter.swift in Sources */,
 				7704575725152523006CC071 /* CommonTableReusableView.swift in Sources */,
 				77045727251523BE006CC071 /* CommonImageView.swift in Sources */,
@@ -349,19 +360,20 @@
 				7704575625152523006CC071 /* CommonViewModel.swift in Sources */,
 				7704575325152523006CC071 /* CommonCollectionReusableView.swift in Sources */,
 				7704571225152373006CC071 /* UIImageViewExtension.swift in Sources */,
-				7704570F25152373006CC071 /* NSAttributedStringExtensions.swift in Sources */,
+				7704570F25152373006CC071 /* NSAttributedStringExtension.swift in Sources */,
 				7704575425152523006CC071 /* CommonViewController.swift in Sources */,
-				7704570C25152373006CC071 /* URLExtensions.swift in Sources */,
+				7704570C25152373006CC071 /* URLExtension.swift in Sources */,
 				7704575825152523006CC071 /* CommonModel.swift in Sources */,
 				7704572A251523BE006CC071 /* CommonLabel.swift in Sources */,
-				7704571025152373006CC071 /* NSStringExtensions.swift in Sources */,
+				7704571025152373006CC071 /* NSStringExtension.swift in Sources */,
 				77045723251523BE006CC071 /* CommonCollectionView.swift in Sources */,
 				7704570525152373006CC071 /* UINavigationControllerExtension.swift in Sources */,
 				7704570E25152373006CC071 /* UITextViewExtension.swift in Sources */,
-				7704570825152373006CC071 /* UITextFieldExtensions.swift in Sources */,
+				7704570825152373006CC071 /* UITextFieldExtension.swift in Sources */,
 				77045720251523BE006CC071 /* CommonScrollView.swift in Sources */,
 				7704570625152373006CC071 /* UIButtonExtension.swift in Sources */,
 				7704570725152373006CC071 /* UIColorExtension.swift in Sources */,
+				7793AA622516729500910FAC /* CommonClosureSleeve.swift in Sources */,
 				77045729251523BE006CC071 /* CommonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

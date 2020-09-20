@@ -5,39 +5,14 @@
 //
 
 import UIKit
-import SnapKit
 
-protocol CommonViewControllerProtocol {
+open class CommonViewController: UIViewController {
 
-    func loadMainView()
-    func buildMainView()
-    func bindViewModel()
+    open override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
-}
-
-open class CommonViewController: UIViewController, CommonViewControllerProtocol {
-
-    // MARK: - Objects
-
-    open var viewMain: CommonView!
-
-    // MARK: - Load
-
-    open func loadMainView() { }
-
-    // MARK: - Build
-
-    open func bindViewModel() { }
-
-    open func buildMainView() {
-
-        self.view.window?.layer.backgroundColor = UIColor.clear.cgColor
-
-        viewMain = CommonView(backgroundColor: .white, superview: self.view)
-
-        viewMain.snp.makeConstraints { (view) in
-            view.left.right.top.bottom.equalTo(self.view)
-        }
+        let viewName = String(describing: type(of: self))
+        print(String(format: "%@", viewName))
 
     }
 

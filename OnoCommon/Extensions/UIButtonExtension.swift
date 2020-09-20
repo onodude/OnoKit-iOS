@@ -9,105 +9,6 @@ import UIKit
 
 public extension UIButton {
 
-    // MARK: Common Creators
-
-    convenience init(action: Selector, target: Any) {
-
-        self.init(type: .custom)
-        self.frame = .zero
-        self.backgroundColor = .clear
-
-        self.addTarget(target, action: action, for: .touchUpInside)
-
-    }
-
-    convenience init(image: UIImage, pressedImage: UIImage, action: Selector, target: Any) {
-
-        self.init(type: .custom)
-        self.frame = .zero
-        self.backgroundColor = .clear
-
-        self.setImage(image, for: .normal)
-        self.setImage(pressedImage, for: .selected)
-        self.setImage(pressedImage, for: .highlighted)
-
-        self.addTarget(target, action: action, for: .touchUpInside)
-
-    }
-
-    convenience init(image: UIImage, action: Selector, target: Any) {
-
-        self.init(type: .custom)
-        self.frame = .zero
-        self.backgroundColor = .clear
-
-        self.setImage(image, for: .normal)
-        self.setImage(image, for: .selected)
-        self.setImage(image, for: .highlighted)
-
-        self.addTarget(target, action: action, for: .touchUpInside)
-
-    }
-
-    convenience init(title: String, titleColor: UIColor, font: UIFont, bgImage: UIImage, corner: CGFloat, action: Selector, target: Any) {
-
-        self.init(type: .custom)
-        self.frame = .zero
-
-        self.setBackgroundImage(bgImage, for: .normal)
-        self.setBackgroundImage(bgImage, for: .selected)
-        self.setBackgroundImage(bgImage, for: .highlighted)
-
-        self.layer.cornerRadius = corner
-        self.layer.masksToBounds = true
-
-        self.setTitle(title, for: .normal)
-        self.setTitle(title, for: .selected)
-        self.setTitle(title, for: .highlighted)
-
-        self.setTitleColor(titleColor, for: .normal)
-        self.setTitleColor(titleColor, for: .selected)
-        self.setTitleColor(titleColor, for: .highlighted)
-
-        self.titleLabel?.font = font
-
-        self.contentHorizontalAlignment = .center
-        self.contentVerticalAlignment = .center
-
-        self.titleEdgeInsets = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
-
-        self.addTarget(target, action: action, for: .touchUpInside)
-
-    }
-
-    convenience init(title: String, titleColor: UIColor, font: UIFont, bgColor: UIColor, corner: CGFloat, action: Selector, target: Any) {
-
-        self.init(type: .custom)
-        self.frame = .zero
-        self.backgroundColor = bgColor
-
-        self.layer.cornerRadius = corner
-        self.layer.masksToBounds = true
-
-        self.setTitle(title, for: .normal)
-        self.setTitle(title, for: .selected)
-        self.setTitle(title, for: .highlighted)
-
-        self.setTitleColor(titleColor, for: .normal)
-        self.setTitleColor(titleColor, for: .selected)
-        self.setTitleColor(titleColor, for: .highlighted)
-
-        self.titleLabel?.font = font
-
-        self.contentHorizontalAlignment = .center
-        self.contentVerticalAlignment = .center
-
-        self.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-
-        self.addTarget(target, action: action, for: .touchUpInside)
-
-    }
-
     // MARK: Common Editors
 
     func setBackgroundImageForAllStates(image: UIImage) {
@@ -131,6 +32,14 @@ public extension UIButton {
         self.setTitle(title, for: .normal)
         self.setTitle(title, for: .selected)
         self.setTitle(title, for: .highlighted)
+
+    }
+
+    func setAttributedTitleForAllStates(title: NSAttributedString) {
+
+        self.setAttributedTitle(title, for: .normal)
+        self.setAttributedTitle(title, for: .selected)
+        self.setAttributedTitle(title, for: .highlighted)
 
     }
 

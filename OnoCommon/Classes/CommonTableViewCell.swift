@@ -5,6 +5,7 @@
 //
 
 import UIKit
+import SnapKit
 
 open class CommonTableViewCell: UITableViewCell {
 
@@ -21,8 +22,7 @@ open class CommonTableViewCell: UITableViewCell {
 
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-        viewMain = CommonView(superview: contentView)
-
+        viewMain = CommonView.create(contentView)
         viewMain.snp.makeConstraints { (view) in
             view.edges.equalToSuperview()
         }

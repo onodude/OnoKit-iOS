@@ -7,14 +7,4 @@
 import Foundation
 import UIKit
 
-public extension UIImageView {
-
-    convenience init(color: UIColor) {
-
-        self.init()
-        self.frame = .zero
-        self.backgroundColor = color
-
-    }
-
-}
+public extension UIImageView { }
