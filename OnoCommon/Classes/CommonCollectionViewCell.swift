@@ -10,10 +10,11 @@ open class CommonCollectionViewCell: UICollectionViewCell {
 
     // MARK: Objects
 
-    open var viewMain: UIView!
-    open var indexPath: IndexPath!
-    open var controller: UIViewController!
-    open var collectionView: UICollectionView!
+    var indexPath: IndexPath!
+    var viewMain: UIView!
+
+    var viewModel: CommonViewModelProtocol!
+    var viewController: CommonViewControllerProtocol!
 
     // MARK: Initializers
 
@@ -32,10 +33,10 @@ open class CommonCollectionViewCell: UICollectionViewCell {
         super.init(coder: aDecoder)!
     }
 
-    public func set(indexPath: IndexPath, collectionView: UICollectionView, viewController: UIViewController) {
+    func set(indexPath: IndexPath, viewModel: CommonViewModelProtocol, viewController: CommonViewControllerProtocol) {
         self.indexPath = indexPath
-        self.collectionView = collectionView
-        self.controller = viewController
+        self.viewModel = viewModel
+        self.viewController = viewController
     }
 
 }

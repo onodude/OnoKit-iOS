@@ -7,10 +7,14 @@
 import UIKit
 import Combine
 
-open class CommonViewModel: ObservableObject, Identifiable {
+protocol CommonViewModelProtocol {
+    var disposables: Set<AnyCancellable> { get set }
+}
+
+open class CommonViewModel: CommonViewModelProtocol, ObservableObject, Identifiable {
 
     public init() { }
 
-    open var disposables = Set<AnyCancellable>()
+    var disposables = Set<AnyCancellable>()
 
 }
