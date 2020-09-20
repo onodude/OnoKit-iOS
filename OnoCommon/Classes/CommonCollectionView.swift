@@ -8,42 +8,32 @@ import UIKit
 
 open class CommonCollectionView: UICollectionView {
 
-    public convenience init(backgroundColor: UIColor, superview: UIView, delegate: Any) {
-
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-
-        self.init(frame: .zero, collectionViewLayout: layout)
-
-        self.showsVerticalScrollIndicator = false
-        self.showsHorizontalScrollIndicator = false
-
-        self.dataSource = delegate as? UICollectionViewDataSource
-        self.delegate = delegate as? UICollectionViewDelegate
-
-        self.backgroundColor = backgroundColor
-
-        superview.addSubview(self)
-
+    public static func create(_ superview: UIView, _ direction: UICollectionView.ScrollDirection, _ handler: CommonCollectionViewHandler, _ identifiers: [String]) -> CommonCollectionView {
+        return CommonCollectionView(superview, direction, handler, identifiers)
     }
 
-    public convenience init(backgroundColor: UIColor, superview: UIView, handler: CommonCollectionViewHandler, direction: UICollectionView.ScrollDirection, identifiers: [String]) {
+    // MARK: - Setters
 
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.scrollDirection = direction
+    @discardableResult
+    public func frame(_ frame: CGRect) -> CommonCollectionView {
+        self.frame = frame
+        return self
+    }
 
-        self.init(frame: .zero, collectionViewLayout: layout)
+    @discardableResult
+    public func superview(_ superview: UIView) -> CommonCollectionView {
+        superview.addSubview(self)
+        return self
+    }
 
-        self.showsVerticalScrollIndicator = false
-        self.showsHorizontalScrollIndicator = false
+    @discardableResult
+    public func bgColor(_ bgColor: UIColor) -> CommonCollectionView {
+        self.backgroundColor = bgColor
+        return self
+    }
 
-        self.dataSource = handler
-        self.delegate = handler
-
-        self.backgroundColor = backgroundColor
-
-        self.isPagingEnabled = true
-        self.bounces = false
-
+    @discardableResult
+    public func identifiers(_ identifiers: [String]) -> CommonCollectionView {
         for identifier in identifiers {
             if let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String {
                 if let anyClass: AnyClass = NSClassFromString("\(namespace).\(identifier)") {
@@ -51,9 +41,7 @@ open class CommonCollectionView: UICollectionView {
                 }
             }
         }
-
-        superview.addSubview(self)
-
+        return self
     }
 
 }
