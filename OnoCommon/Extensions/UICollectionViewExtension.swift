@@ -12,7 +12,7 @@ extension UICollectionView {
 
     convenience init(_ superview: UIView, _ direction: UICollectionView.ScrollDirection? = nil, _ handler: CommonCollectionViewHandler) {
 
-        let layout = UICollectionViewFlowLayout()
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
 
         if let direction = direction {
             layout.scrollDirection = direction
