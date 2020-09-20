@@ -15,6 +15,6 @@ open class CommonViewModel: CommonViewModelProtocol, ObservableObject, Identifia
 
     public init() { }
 
-    var disposables = Set<AnyCancellable>()
+    open var disposables = Set<AnyCancellable>()
 
 }
