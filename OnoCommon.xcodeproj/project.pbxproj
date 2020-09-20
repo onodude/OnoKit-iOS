@@ -24,6 +24,7 @@
 		7704571225152373006CC071 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704570325152373006CC071 /* UIImageViewExtension.swift */; };
 		77045720251523BE006CC071 /* CommonScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045715251523BD006CC071 /* CommonScrollView.swift */; };
 		77045721251523BE006CC071 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045716251523BD006CC071 /* CommonButton.swift */; };
+		77045722251523BE006CC071 /* CommonCollectionViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045717251523BD006CC071 /* CommonCollectionViewHandler.swift */; };
 		77045723251523BE006CC071 /* CommonCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045718251523BD006CC071 /* CommonCollectionView.swift */; };
 		77045724251523BE006CC071 /* CommonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045719251523BD006CC071 /* CommonTextView.swift */; };
 		77045725251523BE006CC071 /* CommonTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704571A251523BD006CC071 /* CommonTableView.swift */; };
@@ -67,6 +68,7 @@
 		7704570325152373006CC071 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		77045715251523BD006CC071 /* CommonScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonScrollView.swift; sourceTree = "<group>"; };
 		77045716251523BD006CC071 /* CommonButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		77045717251523BD006CC071 /* CommonCollectionViewHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCollectionViewHandler.swift; sourceTree = "<group>"; };
 		77045718251523BD006CC071 /* CommonCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCollectionView.swift; sourceTree = "<group>"; };
 		77045719251523BD006CC071 /* CommonTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTextView.swift; sourceTree = "<group>"; };
 		7704571A251523BD006CC071 /* CommonTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				7704574F25152523006CC071 /* CommonViewModel.swift */,
 				77045716251523BD006CC071 /* CommonButton.swift */,
 				77045718251523BD006CC071 /* CommonCollectionView.swift */,
+				77045717251523BD006CC071 /* CommonCollectionViewHandler.swift */,
 				7704571D251523BD006CC071 /* CommonDateFormatter.swift */,
 				7704571C251523BD006CC071 /* CommonImageView.swift */,
 				7704571F251523BE006CC071 /* CommonLabel.swift */,
@@ -350,6 +353,7 @@
 				77045725251523BE006CC071 /* CommonTableView.swift in Sources */,
 				7704575525152523006CC071 /* CommonCollectionViewCell.swift in Sources */,
 				77045724251523BE006CC071 /* CommonTextView.swift in Sources */,
+				77045722251523BE006CC071 /* CommonCollectionViewHandler.swift in Sources */,
 				7704570D25152373006CC071 /* UIImageExtension.swift in Sources */,
 				7704571125152373006CC071 /* UILabelExtension.swift in Sources */,
 				77045726251523BE006CC071 /* CommonTextField.swift in Sources */,
