@@ -6,23 +6,30 @@
 
 import UIKit
 
-public class CommonScrollView: UIScrollView {
+open class CommonScrollView: UICollectionView {
 
-    public convenience init(superview: UIView) {
+    public static func create(_ superview: UIView) -> CommonScrollView {
+        return CommonScrollView(superview)
+    }
 
-        self.init(frame: .zero)
-        self.translatesAutoresizingMaskIntoConstraints = false
-        self.alwaysBounceVertical = true
-        self.delegate = self as? UIScrollViewDelegate
+    // MARK: - Setters
 
-        self.keyboardDismissMode = .interactive
+    @discardableResult
+    public func frame(_ frame: CGRect) -> CommonScrollView {
+        self.frame = frame
+        return self
+    }
 
-        self.showsVerticalScrollIndicator = false
-        self.showsHorizontalScrollIndicator = false
-        self.contentInsetAdjustmentBehavior = .never
-
+    @discardableResult
+    public func superview(_ superview: UIView) -> CommonScrollView {
         superview.addSubview(self)
+        return self
+    }
 
+    @discardableResult
+    public func bgColor(_ bgColor: UIColor) -> CommonScrollView {
+        self.backgroundColor = bgColor
+        return self
     }
 
 }
