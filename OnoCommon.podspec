@@ -14,5 +14,8 @@ Pod::Spec.new do |s|
 	s.ios.deployment_target = '13.0'
 
 	s.source_files = 'OnoCommon/**/*.swift'
+	
+	s.dependency 'ObjectMapper', '~> 3.5.1'
+	s.dependency 'SnapKit', '~> 5.0.0'
 end
 
