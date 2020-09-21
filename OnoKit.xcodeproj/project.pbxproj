@@ -49,11 +49,14 @@
 		7793AA622516729500910FAC /* CommonClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AA612516729500910FAC /* CommonClosureSleeve.swift */; };
 		7793AA65251672B600910FAC /* UIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AA64251672B600910FAC /* UIControlExtension.swift */; };
 		7793AB822516CD4E00910FAC /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */; };
-		A401CB9616A741A63F149E08 /* Pods_OnoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807E8C0ACF382666558651A7 /* Pods_OnoCommon.framework */; };
+		F3FF6975D3ADD9ACCA4E275C /* Pods_OnoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A9E3F1689CD6C95BE0112C /* Pods_OnoKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		770456E7251522F1006CC071 /* OnoCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnoCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A9E3F1689CD6C95BE0112C /* Pods_OnoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		678736D52C2FCD745E0D3315 /* Pods-OnoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoKit.debug.xcconfig"; path = "Target Support Files/Pods-OnoKit/Pods-OnoKit.debug.xcconfig"; sourceTree = "<group>"; };
+		7020874F68DD9D1C4D9477CE /* Pods-OnoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoKit.release.xcconfig"; path = "Target Support Files/Pods-OnoKit/Pods-OnoKit.release.xcconfig"; sourceTree = "<group>"; };
+		770456E7251522F1006CC071 /* OnoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		770456EA251522F1006CC071 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		770456EB251522F1006CC071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		770456F625152372006CC071 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
@@ -97,7 +100,6 @@
 		7793AA612516729500910FAC /* CommonClosureSleeve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClosureSleeve.swift; sourceTree = "<group>"; };
 		7793AA64251672B600910FAC /* UIControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlExtension.swift; sourceTree = "<group>"; };
 		7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
-		807E8C0ACF382666558651A7 /* Pods_OnoCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnoCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		969680373C63C20055DFA949 /* Pods-OnoCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoCommon.debug.xcconfig"; path = "Target Support Files/Pods-OnoCommon/Pods-OnoCommon.debug.xcconfig"; sourceTree = "<group>"; };
 		BBA679E72A357B6E2F971A96 /* Pods-OnoCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoCommon.release.xcconfig"; path = "Target Support Files/Pods-OnoCommon/Pods-OnoCommon.release.xcconfig"; sourceTree = "<group>"; };
 		D9B2FECED0ECBEB2F5FCA534 /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A401CB9616A741A63F149E08 /* Pods_OnoCommon.framework in Frameworks */,
+				F3FF6975D3ADD9ACCA4E275C /* Pods_OnoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +121,7 @@
 		74E660A7E976FA58851907A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				807E8C0ACF382666558651A7 /* Pods_OnoCommon.framework */,
+				55A9E3F1689CD6C95BE0112C /* Pods_OnoKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,7 +129,7 @@
 		770456DD251522F0006CC071 = {
 			isa = PBXGroup;
 			children = (
-				770456E9251522F1006CC071 /* OnoCommon */,
+				770456E9251522F1006CC071 /* OnoKit */,
 				770456E8251522F1006CC071 /* Products */,
 				D862A78856655A581D570C6B /* Pods */,
 				74E660A7E976FA58851907A5 /* Frameworks */,
@@ -137,12 +139,12 @@
 		770456E8251522F1006CC071 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				770456E7251522F1006CC071 /* OnoCommon.framework */,
+				770456E7251522F1006CC071 /* OnoKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		770456E9251522F1006CC071 /* OnoCommon */ = {
+		770456E9251522F1006CC071 /* OnoKit */ = {
 			isa = PBXGroup;
 			children = (
 				770457302515249E006CC071 /* Resources */,
@@ -152,7 +154,7 @@
 				7704576E251526DA006CC071 /* CommonConstants.swift */,
 				770456EB251522F1006CC071 /* Info.plist */,
 			);
-			path = OnoCommon;
+			path = OnoKit;
 			sourceTree = "<group>";
 		};
 		770456F325152328006CC071 /* Classes */ = {
@@ -223,6 +225,8 @@
 				D9B2FECED0ECBEB2F5FCA534 /* Pods-Common.release.xcconfig */,
 				969680373C63C20055DFA949 /* Pods-OnoCommon.debug.xcconfig */,
 				BBA679E72A357B6E2F971A96 /* Pods-OnoCommon.release.xcconfig */,
+				678736D52C2FCD745E0D3315 /* Pods-OnoKit.debug.xcconfig */,
+				7020874F68DD9D1C4D9477CE /* Pods-OnoKit.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -241,9 +245,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		770456E6251522F0006CC071 /* OnoCommon */ = {
+		770456E6251522F0006CC071 /* OnoKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 770456EF251522F1006CC071 /* Build configuration list for PBXNativeTarget "OnoCommon" */;
+			buildConfigurationList = 770456EF251522F1006CC071 /* Build configuration list for PBXNativeTarget "OnoKit" */;
 			buildPhases = (
 				6E6508F0B757CD7D8C088034 /* [CP] Check Pods Manifest.lock */,
 				770456E2251522F0006CC071 /* Headers */,
@@ -256,9 +260,9 @@
 			);
 			dependencies = (
 			);
-			name = OnoCommon;
+			name = OnoKit;
 			productName = Common;
-			productReference = 770456E7251522F1006CC071 /* OnoCommon.framework */;
+			productReference = 770456E7251522F1006CC071 /* OnoKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -275,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 770456E1251522F0006CC071 /* Build configuration list for PBXProject "OnoCommon" */;
+			buildConfigurationList = 770456E1251522F0006CC071 /* Build configuration list for PBXProject "OnoKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -288,7 +292,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				770456E6251522F0006CC071 /* OnoCommon */,
+				770456E6251522F0006CC071 /* OnoKit */,
 			);
 		};
 /* End PBXProject section */
@@ -320,7 +324,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OnoCommon-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-OnoKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -521,7 +525,7 @@
 		};
 		770456F0251522F1006CC071 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 969680373C63C20055DFA949 /* Pods-OnoCommon.debug.xcconfig */;
+			baseConfigurationReference = 678736D52C2FCD745E0D3315 /* Pods-OnoKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -530,7 +534,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/OnoCommon/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/OnoKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -538,7 +542,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ono.common;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -552,7 +556,7 @@
 		};
 		770456F1251522F1006CC071 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBA679E72A357B6E2F971A96 /* Pods-OnoCommon.release.xcconfig */;
+			baseConfigurationReference = 7020874F68DD9D1C4D9477CE /* Pods-OnoKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -561,7 +565,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/OnoCommon/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/OnoKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,7 +573,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ono.common;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -583,7 +587,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		770456E1251522F0006CC071 /* Build configuration list for PBXProject "OnoCommon" */ = {
+		770456E1251522F0006CC071 /* Build configuration list for PBXProject "OnoKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				770456ED251522F1006CC071 /* Debug */,
@@ -592,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		770456EF251522F1006CC071 /* Build configuration list for PBXNativeTarget "OnoCommon" */ = {
+		770456EF251522F1006CC071 /* Build configuration list for PBXNativeTarget "OnoKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				770456F0251522F1006CC071 /* Debug */,
