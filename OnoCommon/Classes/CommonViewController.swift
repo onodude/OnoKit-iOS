@@ -6,8 +6,6 @@
 
 import UIKit
 
-protocol CommonViewControllerProtocol: class { }
-
 open class CommonViewController: UIViewController {
 
     open override func viewDidAppear(_ animated: Bool) {
