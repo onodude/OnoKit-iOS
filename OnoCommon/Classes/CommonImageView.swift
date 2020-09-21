@@ -58,6 +58,12 @@ open class CommonImageView: UIImageView {
         return self
     }
 
+    @discardableResult
+    public func contentMode(_ contentMode: UIView.ContentMode) -> CommonImageView {
+        self.contentMode = contentMode
+        return self
+    }
+
     // MARK: - Actions
 
     public func loadImageView(photoUrl: String, aspectMode: UIView.ContentMode) {
