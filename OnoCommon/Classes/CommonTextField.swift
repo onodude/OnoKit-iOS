@@ -62,16 +62,23 @@ open class CommonTextField: UITextField {
     }
 
     @discardableResult
-    public func placeholderColor(_ placeholderColor: UIColor) -> CommonTextField {
-        if let placeholder = self.placeholder, let font = self.font {
-            self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: placeholderColor])
-        }
+    public func placeholder(_ text: String, _ color: UIColor? = nil, _ font: UIFont? = nil) -> CommonTextField {
+
+        self.attributedPlaceholder = NSAttributedString(text, color ?? self.textColor ?? UIColor(), font ?? self.font ?? UIFont())
         return self
     }
 
     @discardableResult
     public func font(_ font: UIFont) -> CommonTextField {
         self.font = font
+        return self
+    }
+
+    @discardableResult
+    public func placeholderFont(_ font: UIFont) -> CommonTextField {
+        if let placeholder = self.placeholder {
+            self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.font: font])
+        }
         return self
     }
 

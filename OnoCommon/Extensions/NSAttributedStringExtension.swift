@@ -9,7 +9,7 @@ import UIKit
 
 public extension NSAttributedString {
 
-    convenience init(text: String, _ font: UIFont, _ lineHeightMultiple: CGFloat? = nil, _ alignment: NSTextAlignment? = nil) {
+    convenience init(_ text: String, _ color: UIColor? = nil, _ font: UIFont? = nil, _ lineHeightMultiple: CGFloat? = nil, _ alignment: NSTextAlignment? = nil) {
 
         var attributes: [NSAttributedString.Key: Any] = [:]
 
@@ -21,7 +21,13 @@ public extension NSAttributedString {
             attributes[NSAttributedString.Key.paragraphStyle] = paragraphStyle
         }
 
-        attributes[NSAttributedString.Key.font] = font
+        if let font = font {
+            attributes[NSAttributedString.Key.font] = font
+        }
+
+        if let color = color {
+            attributes[NSAttributedString.Key.foregroundColor] = color
+        }
 
         self.init(string: text, attributes: attributes)
 
