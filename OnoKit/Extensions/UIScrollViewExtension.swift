@@ -6,7 +6,7 @@
 
 import UIKit
 
-extension UIScrollView {
+public extension UIScrollView {
 
     public convenience init(_ superview: UIView) {
 

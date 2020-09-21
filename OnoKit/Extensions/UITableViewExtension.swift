@@ -6,7 +6,7 @@
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
 
     convenience init(_ superview: UIView, _ style: UITableView.Style, _ handler: CommonTableViewHandler, _ identifiers: [String]) {
 
