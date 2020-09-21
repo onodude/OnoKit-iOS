@@ -137,6 +137,12 @@ open class CommonTextField: UITextField {
     }
 
     @discardableResult
+    public func secureText(_ secureText: Bool) -> CommonTextField {
+        self.isSecureTextEntry = secureText
+        return self
+    }
+
+    @discardableResult
     public func padding(_ width: Int, _ position: Position) -> CommonTextField {
         if position == .left {
             self.leftView = CommonView(frame: CGRect(x: 0, y: 0, width: width, height: 10))
