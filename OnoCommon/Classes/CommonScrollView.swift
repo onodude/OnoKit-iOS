@@ -6,7 +6,7 @@
 
 import UIKit
 
-open class CommonScrollView: UICollectionView {
+open class CommonScrollView: UIScrollView {
 
     public static func create(_ superview: UIView) -> CommonScrollView {
         return CommonScrollView(superview)
