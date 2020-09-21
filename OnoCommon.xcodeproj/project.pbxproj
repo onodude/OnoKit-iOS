@@ -45,6 +45,7 @@
 		772BF2DA25187A9500359479 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BF2D925187A9500359479 /* UIScrollViewExtension.swift */; };
 		77870C6D25191B2A0092CE5C /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77870C6C25191B2A0092CE5C /* UITableViewExtension.swift */; };
 		77870C7025191B850092CE5C /* CommonTableViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77870C6F25191B850092CE5C /* CommonTableViewHandler.swift */; };
+		77870CCC251927FC0092CE5C /* CommonTextFieldHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77870CCB251927FC0092CE5C /* CommonTextFieldHandler.swift */; };
 		7793AA622516729500910FAC /* CommonClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AA612516729500910FAC /* CommonClosureSleeve.swift */; };
 		7793AA65251672B600910FAC /* UIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AA64251672B600910FAC /* UIControlExtension.swift */; };
 		7793AB822516CD4E00910FAC /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */; };
@@ -92,6 +93,7 @@
 		772BF2D925187A9500359479 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		77870C6C25191B2A0092CE5C /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		77870C6F25191B850092CE5C /* CommonTableViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTableViewHandler.swift; sourceTree = "<group>"; };
+		77870CCB251927FC0092CE5C /* CommonTextFieldHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextFieldHandler.swift; sourceTree = "<group>"; };
 		7793AA612516729500910FAC /* CommonClosureSleeve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClosureSleeve.swift; sourceTree = "<group>"; };
 		7793AA64251672B600910FAC /* UIControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlExtension.swift; sourceTree = "<group>"; };
 		7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				7704571E251523BD006CC071 /* CommonView.swift */,
 				7793AA612516729500910FAC /* CommonClosureSleeve.swift */,
 				77870C6F25191B850092CE5C /* CommonTableViewHandler.swift */,
+				77870CCB251927FC0092CE5C /* CommonTextFieldHandler.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				7704570725152373006CC071 /* UIColorExtension.swift in Sources */,
 				7793AA622516729500910FAC /* CommonClosureSleeve.swift in Sources */,
 				77045729251523BE006CC071 /* CommonView.swift in Sources */,
+				77870CCC251927FC0092CE5C /* CommonTextFieldHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,7 +538,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ono.common;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -565,7 +569,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ono.common;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
