@@ -13,10 +13,6 @@ open class CommonTextField: UITextField {
         case right
     }
 
-    public static func create(_ superview: UIView) -> CommonTextField {
-        return CommonTextField().superview(superview).frame(.zero).bgColor(.clear)
-    }
-
     // MARK: - Setters
 
     @discardableResult

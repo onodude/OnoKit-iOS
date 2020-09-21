@@ -8,8 +8,16 @@ import UIKit
 
 open class CommonView: UIView {
 
-    public static func create(_ superview: UIView) -> CommonView {
-        return CommonView().superview(superview).frame(.zero).bgColor(.clear)
+    // MARK: - Common Creators
+
+    public convenience init(_ superview: UIView) {
+
+        self.init()
+        self.frame = .zero
+        self.backgroundColor = .clear
+
+        superview.addSubview(self)
+
     }
 
     // MARK: - Setters

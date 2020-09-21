@@ -8,10 +8,6 @@ import UIKit
 
 open class CommonImageView: UIImageView {
 
-    public static func create(_ superview: UIView) -> CommonImageView {
-        return CommonImageView().superview(superview).frame(.zero).bgColor(.clear)
-    }
-
     // MARK: - Setters
 
     @discardableResult
@@ -33,16 +29,16 @@ open class CommonImageView: UIImageView {
     }
 
     @discardableResult
-    public func image(_ image: UIImage) -> CommonImageView {
+    public func image(_ image: UIImage, _ contentMode: ContentMode = .center) -> CommonImageView {
         self.image = image
-        self.contentMode = .center
+        self.contentMode = contentMode
         return self
     }
 
     @discardableResult
-    public func imageName(_ imageName: String) -> CommonImageView {
+    public func imageName(_ imageName: String, _ contentMode: ContentMode = .center) -> CommonImageView {
         self.image = UIImage(named: imageName)
-        self.contentMode = .center
+        self.contentMode = contentMode
         return self
     }
 

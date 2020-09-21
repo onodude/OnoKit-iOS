@@ -8,10 +8,6 @@ import UIKit
 
 open class CommonLabel: UILabel {
 
-    public static func create(_ superview: UIView) -> CommonLabel {
-        return CommonLabel().superview(superview).frame(.zero).bgColor(.clear)
-    }
-
     // MARK: - Setters
 
     @discardableResult
