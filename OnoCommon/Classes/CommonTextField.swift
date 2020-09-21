@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class CommonTextField: UITextField {
+open class CommonTextField: UITextField {
 
     public enum Position {
         case left
@@ -58,6 +58,14 @@ public class CommonTextField: UITextField {
     @discardableResult
     public func textColor(_ textColor: UIColor) -> CommonTextField {
         self.textColor = textColor
+        return self
+    }
+
+    @discardableResult
+    public func placeholderColor(_ placeholderColor: UIColor) -> CommonTextField {
+        if let placeholder = self.placeholder, let font = self.font {
+            self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: placeholderColor])
+        }
         return self
     }
 
