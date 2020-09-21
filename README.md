@@ -1,7 +1,7 @@
 # OnoKit
 
-[![Version](https://img.shields.io/cocoapods/v/OnoKit)](https://cocoapods.org/pods/onocommon)
-[![Platform](https://img.shields.io/cocoapods/p/OnoKit)](https://cocoapods.org/pods/onocommon)
+[![Version](https://img.shields.io/cocoapods/v/OnoKit)](https://cocoapods.org/pods/OnoKit)
+[![Platform](https://img.shields.io/cocoapods/p/OnoKit)](https://cocoapods.org/pods/OnoKit)
 
 ## Requirements
 
