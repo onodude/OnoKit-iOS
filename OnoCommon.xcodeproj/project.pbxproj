@@ -43,6 +43,8 @@
 		7704575925152523006CC071 /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575225152523006CC071 /* CommonTableViewCell.swift */; };
 		77045771251526DA006CC071 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704576E251526DA006CC071 /* CommonConstants.swift */; };
 		772BF2DA25187A9500359479 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BF2D925187A9500359479 /* UIScrollViewExtension.swift */; };
+		77870C6D25191B2A0092CE5C /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77870C6C25191B2A0092CE5C /* UITableViewExtension.swift */; };
+		77870C7025191B850092CE5C /* CommonTableViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77870C6F25191B850092CE5C /* CommonTableViewHandler.swift */; };
 		7793AA622516729500910FAC /* CommonClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AA612516729500910FAC /* CommonClosureSleeve.swift */; };
 		7793AA65251672B600910FAC /* UIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AA64251672B600910FAC /* UIControlExtension.swift */; };
 		7793AB822516CD4E00910FAC /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */; };
@@ -88,6 +90,8 @@
 		7704575225152523006CC071 /* CommonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
 		7704576E251526DA006CC071 /* CommonConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
 		772BF2D925187A9500359479 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		77870C6C25191B2A0092CE5C /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		77870C6F25191B850092CE5C /* CommonTableViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTableViewHandler.swift; sourceTree = "<group>"; };
 		7793AA612516729500910FAC /* CommonClosureSleeve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClosureSleeve.swift; sourceTree = "<group>"; };
 		7793AA64251672B600910FAC /* UIControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlExtension.swift; sourceTree = "<group>"; };
 		7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				77045719251523BD006CC071 /* CommonTextView.swift */,
 				7704571E251523BD006CC071 /* CommonView.swift */,
 				7793AA612516729500910FAC /* CommonClosureSleeve.swift */,
+				77870C6F25191B850092CE5C /* CommonTableViewHandler.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 				7793AA64251672B600910FAC /* UIControlExtension.swift */,
 				7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */,
 				772BF2D925187A9500359479 /* UIScrollViewExtension.swift */,
+				77870C6C25191B2A0092CE5C /* UITableViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 			files = (
 				7704570B25152373006CC071 /* StringExtension.swift in Sources */,
 				7793AA65251672B600910FAC /* UIControlExtension.swift in Sources */,
+				77870C7025191B850092CE5C /* CommonTableViewHandler.swift in Sources */,
 				7704570A25152373006CC071 /* DateExtension.swift in Sources */,
 				77045721251523BE006CC071 /* CommonButton.swift in Sources */,
 				7793AB822516CD4E00910FAC /* UICollectionViewExtension.swift in Sources */,
@@ -365,6 +372,7 @@
 				7704571225152373006CC071 /* UIImageViewExtension.swift in Sources */,
 				7704570F25152373006CC071 /* NSAttributedStringExtension.swift in Sources */,
 				7704575425152523006CC071 /* CommonViewController.swift in Sources */,
+				77870C6D25191B2A0092CE5C /* UITableViewExtension.swift in Sources */,
 				7704570C25152373006CC071 /* URLExtension.swift in Sources */,
 				7704575825152523006CC071 /* CommonModel.swift in Sources */,
 				7704572A251523BE006CC071 /* CommonLabel.swift in Sources */,
