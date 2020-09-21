@@ -11,10 +11,8 @@ open class CommonTableViewCell: UITableViewCell {
 
     // MARK: - Objects
 
-    open var viewMain: UIView!
     open var indexPath: IndexPath!
-    open var controller: UIViewController!
-    open var tableView: UITableView!
+    open var viewMain: UIView!
 
     // MARK: - Initializers
 
@@ -30,15 +28,7 @@ open class CommonTableViewCell: UITableViewCell {
     }
 
     public required init(coder aDecoder: NSCoder) {
-
         super.init(coder: aDecoder)!
-
-    }
-
-    public func set(indexPath: IndexPath, tableView: UITableView, viewController: UIViewController) {
-        self.indexPath = indexPath
-        self.tableView = tableView
-        self.controller = viewController
     }
 
 }
