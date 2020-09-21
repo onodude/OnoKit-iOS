@@ -13,10 +13,8 @@ open class CommonTableReusableView: UIView {
     public static var defaultHeaderHeight: CGFloat = 60
     public static var defaultFooterHeight: CGFloat = 20
 
-    open var viewMain: UIView!
     open var indexPath: IndexPath!
-    open var controller: UIViewController!
-    open var tableView: UITableView!
+    open var viewMain: UIView!
 
     // MARK: - Build
 

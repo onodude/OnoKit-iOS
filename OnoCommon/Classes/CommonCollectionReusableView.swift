@@ -10,10 +10,8 @@ open class CommonCollectionReusableView: UICollectionReusableView {
 
     // MARK: Objects
 
-    open var viewMain: UIView!
     open var indexPath: IndexPath!
-    open var controller: UIViewController!
-    open var collectionView: UICollectionView!
+    open var viewMain: UIView!
 
     // MARK: Initializers
 

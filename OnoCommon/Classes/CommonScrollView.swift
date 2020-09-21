@@ -6,48 +6,30 @@
 
 import UIKit
 
-public class CommonScrollView: UIScrollView {
+open class CommonScrollView: UIScrollView {
 
-    /*
-
-    public convenience init(superview: UIView) {
-
-        self.init(frame: .zero)
-        self.translatesAutoresizingMaskIntoConstraints = false
-        self.alwaysBounceVertical = true
-        self.delegate = self as? UIScrollViewDelegate
-
-        self.keyboardDismissMode = .interactive
-
-        self.showsVerticalScrollIndicator = false
-        self.showsHorizontalScrollIndicator = false
-
-        superview.addSubview(self)
-
+    public static func create(_ superview: UIView) -> CommonScrollView {
+        return CommonScrollView(superview)
     }
 
-    */
+    // MARK: - Setters
 
-    public convenience init(superview: UIView, controller: UIViewController) {
+    @discardableResult
+    public func frame(_ frame: CGRect) -> CommonScrollView {
+        self.frame = frame
+        return self
+    }
 
-        self.init(frame: .zero)
-        self.translatesAutoresizingMaskIntoConstraints = false
-        self.alwaysBounceVertical = true
-        self.delegate = self as? UIScrollViewDelegate
-
-        self.keyboardDismissMode = .interactive
-
-        self.showsVerticalScrollIndicator = false
-        self.showsHorizontalScrollIndicator = false
-
-        if #available(iOS 11.0, *) {
-            self.contentInsetAdjustmentBehavior = .never
-        } else {
-            controller.automaticallyAdjustsScrollViewInsets = false
-        }
-
+    @discardableResult
+    public func superview(_ superview: UIView) -> CommonScrollView {
         superview.addSubview(self)
+        return self
+    }
 
+    @discardableResult
+    public func bgColor(_ bgColor: UIColor) -> CommonScrollView {
+        self.backgroundColor = bgColor
+        return self
     }
 
 }

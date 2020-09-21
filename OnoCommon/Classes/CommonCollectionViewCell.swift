@@ -10,10 +10,8 @@ open class CommonCollectionViewCell: UICollectionViewCell {
 
     // MARK: Objects
 
-    open var viewMain: UIView!
     open var indexPath: IndexPath!
-    open var controller: UIViewController!
-    open var collectionView: UICollectionView!
+    open var viewMain: UIView!
 
     // MARK: Initializers
 
@@ -30,12 +28,6 @@ open class CommonCollectionViewCell: UICollectionViewCell {
 
     public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-    }
-
-    public func set(indexPath: IndexPath, collectionView: UICollectionView, viewController: UIViewController) {
-        self.indexPath = indexPath
-        self.collectionView = collectionView
-        self.controller = viewController
     }
 
 }

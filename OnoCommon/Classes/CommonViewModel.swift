@@ -13,4 +13,8 @@ open class CommonViewModel: ObservableObject, Identifiable {
 
     open var disposables = Set<AnyCancellable>()
 
+    open func observe(_ cancellable: AnyCancellable) {
+        cancellable.store(in: &self.disposables)
+    }
+
 }
