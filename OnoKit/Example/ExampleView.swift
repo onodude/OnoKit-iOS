@@ -16,7 +16,7 @@ class ExampleView: CommonView {
 
     // MARK: - Initializers
 
-    func create(_ superview: UIView) {
+    override func create(_ superview: UIView) {
 
         viewMain = CommonView(superview)
             .bgColor(.white)

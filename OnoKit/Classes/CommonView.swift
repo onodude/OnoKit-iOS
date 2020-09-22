@@ -6,7 +6,15 @@
 
 import UIKit
 
-open class CommonView: UIView {
+protocol CommonViewProtocol {
+
+    func create(_ superview: UIView)
+
+}
+
+open class CommonView: UIView, CommonViewProtocol {
+
+    open func create(_ superview: UIView) { }
 
     // MARK: - Common Creators
 

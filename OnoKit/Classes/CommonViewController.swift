@@ -6,7 +6,27 @@
 
 import UIKit
 
-open class CommonViewController: UIViewController {
+protocol CommonViewControllerProtocol {
+
+    func initView()
+    func initViewModel()
+
+}
+
+open class CommonViewController: UIViewController, CommonViewControllerProtocol {
+
+    open override func viewDidLoad() {
+
+        super.viewDidLoad()
+
+        initView()
+        initViewModel()
+
+    }
+
+    open func initView() { }
+
+    open func initViewModel() { }
 
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
