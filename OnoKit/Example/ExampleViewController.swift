@@ -16,7 +16,9 @@ class ExampleViewController: CommonViewController {
     // MARK: - Initializers
 
     override func initView() {
+
         self.viewMain.create(self.view)
+        
     }
 
     override func initViewModel() {

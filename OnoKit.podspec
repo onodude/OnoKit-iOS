@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name = 'OnoKit'
-	s.version = '1.0.9'
+	s.version = '1.0.11'
 	s.summary = 'A collection of common classes'
 	s.description = 'This is a collection of classes, extensions, methods and functions that aims at make things easy.'
 	s.swift_version = '5'
