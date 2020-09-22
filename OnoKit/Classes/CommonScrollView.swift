@@ -8,10 +8,6 @@ import UIKit
 
 open class CommonScrollView: UIScrollView {
 
-    public static func create(_ superview: UIView) -> CommonScrollView {
-        return CommonScrollView(superview)
-    }
-
     // MARK: - Setters
 
     @discardableResult

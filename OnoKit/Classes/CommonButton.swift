@@ -8,11 +8,6 @@ import UIKit
 
 open class CommonButton: UIButton {
 
-    public static func create(_ superview: UIView) -> CommonButton {
-        let button = CommonButton(type: .custom)
-        return button.superview(superview).frame(.zero).bgColor(.clear)
-    }
-
     // MARK: - Setters
 
     @discardableResult

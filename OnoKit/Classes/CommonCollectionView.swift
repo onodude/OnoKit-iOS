@@ -8,10 +8,6 @@ import UIKit
 
 open class CommonCollectionView: UICollectionView {
 
-    public static func create(_ superview: UIView, _ direction: UICollectionView.ScrollDirection, _ handler: CommonCollectionViewHandler, _ identifiers: [String]) -> CommonCollectionView {
-        return CommonCollectionView(superview, direction, handler, identifiers)
-    }
-
     // MARK: - Setters
 
     @discardableResult

@@ -10,12 +10,6 @@ public class CommonTableView: UITableView {
 
     public var ctrlRefresh: UIRefreshControl = UIRefreshControl()
 
-    // MARK: - Initializers
-
-    public static func create(_ superview: UIView, _ style: UITableView.Style, _ handler: CommonTableViewHandler, _ identifiers: [String]) -> CommonTableView {
-        return CommonTableView(superview, style, handler, identifiers)
-    }
-
     // MARK: - Setters
 
     @discardableResult

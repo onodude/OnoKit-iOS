@@ -6,9 +6,9 @@
 
 import UIKit
 
-extension UIScrollView {
+public extension UIScrollView {
 
-    public convenience init(_ superview: UIView) {
+    convenience init(_ superview: UIView) {
 
         self.init(frame: .zero)
         self.translatesAutoresizingMaskIntoConstraints = false

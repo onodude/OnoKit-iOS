@@ -6,7 +6,7 @@
 
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
 
     // MARK: - Common Creators
 

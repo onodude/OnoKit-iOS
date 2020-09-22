@@ -6,4 +6,18 @@
 
 import UIKit
 
-public extension UITextField { }
+public extension UITextField {
+
+    // MARK: - Common Creators
+
+    convenience init(_ superview: UIView) {
+
+        self.init()
+        self.frame = .zero
+        self.backgroundColor = .clear
+
+        superview.addSubview(self)
+
+    }
+
+}
