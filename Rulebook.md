@@ -1,5 +1,9 @@
 # Rulebook
 
+The convention styles below make up a guideline for the library style. 
+
+Please check out the `Example` module for a better understanding.
+
 
 ## Element Prefixes
 
@@ -68,8 +72,5 @@ Object | Prefix | Example
 
 `doLoadSomeViewName` 
 `doTapSomeButtonName` 
-
-
-Please check out the `Example` module for a better understanding.
 
 
