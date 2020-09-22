@@ -66,7 +66,7 @@ Object | Prefix | Example
 
 ## View Model Methods
 
-*eq. doLoadSomeViewName*
-*eq. doTapSomeButtonName*
+eq. doLoadSomeViewName
+eq. doTapSomeButtonName
 
 
