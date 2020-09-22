@@ -70,3 +70,6 @@ Object | Prefix | Example
 `doTapSomeButtonName` 
 
 
+Please check out the `Example` module for a better understanding.
+
+

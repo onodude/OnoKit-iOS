@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,8 +49,23 @@
 		7793AA622516729500910FAC /* CommonClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AA612516729500910FAC /* CommonClosureSleeve.swift */; };
 		7793AA65251672B600910FAC /* UIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AA64251672B600910FAC /* UIControlExtension.swift */; };
 		7793AB822516CD4E00910FAC /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */; };
+		77E9AEDF25198A55002A8538 /* OnoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770456E7251522F1006CC071 /* OnoKit.framework */; platformFilter = ios; };
+		77E9AEE925198A76002A8538 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E9AEE825198A76002A8538 /* ExampleView.swift */; };
+		77E9AEEF25198A7E002A8538 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E9AEEE25198A7E002A8538 /* ExampleViewModel.swift */; };
+		77E9AEF625198A89002A8538 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E9AEF525198A89002A8538 /* ExampleViewController.swift */; };
+		77E9AEFA25198BC1002A8538 /* ExampleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E9AEF925198BC1002A8538 /* ExampleViewModelTests.swift */; };
 		F3FF6975D3ADD9ACCA4E275C /* Pods_OnoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A9E3F1689CD6C95BE0112C /* Pods_OnoKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77E9AEE025198A55002A8538 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 770456DE251522F0006CC071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 770456E6251522F0006CC071;
+			remoteInfo = OnoKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		55A9E3F1689CD6C95BE0112C /* Pods_OnoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +115,12 @@
 		7793AA612516729500910FAC /* CommonClosureSleeve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClosureSleeve.swift; sourceTree = "<group>"; };
 		7793AA64251672B600910FAC /* UIControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlExtension.swift; sourceTree = "<group>"; };
 		7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		77E9AEDA25198A55002A8538 /* OnoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E9AEDE25198A55002A8538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E9AEE825198A76002A8538 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		77E9AEEE25198A7E002A8538 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
+		77E9AEF525198A89002A8538 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		77E9AEF925198BC1002A8538 /* ExampleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModelTests.swift; sourceTree = "<group>"; };
 		969680373C63C20055DFA949 /* Pods-OnoCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoCommon.debug.xcconfig"; path = "Target Support Files/Pods-OnoCommon/Pods-OnoCommon.debug.xcconfig"; sourceTree = "<group>"; };
 		BBA679E72A357B6E2F971A96 /* Pods-OnoCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoCommon.release.xcconfig"; path = "Target Support Files/Pods-OnoCommon/Pods-OnoCommon.release.xcconfig"; sourceTree = "<group>"; };
 		D9B2FECED0ECBEB2F5FCA534 /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +133,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3FF6975D3ADD9ACCA4E275C /* Pods_OnoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E9AED725198A55002A8538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E9AEDF25198A55002A8538 /* OnoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				770456E9251522F1006CC071 /* OnoKit */,
+				77E9AEDB25198A55002A8538 /* OnoKitTests */,
 				770456E8251522F1006CC071 /* Products */,
 				D862A78856655A581D570C6B /* Pods */,
 				74E660A7E976FA58851907A5 /* Frameworks */,
@@ -140,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				770456E7251522F1006CC071 /* OnoKit.framework */,
+				77E9AEDA25198A55002A8538 /* OnoKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +178,7 @@
 		770456E9251522F1006CC071 /* OnoKit */ = {
 			isa = PBXGroup;
 			children = (
+				77E9AEE725198A69002A8538 /* Example */,
 				770457302515249E006CC071 /* Resources */,
 				770456F425152330006CC071 /* Extensions */,
 				770456F325152328006CC071 /* Classes */,
@@ -218,6 +250,25 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		77E9AEDB25198A55002A8538 /* OnoKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				77E9AEDE25198A55002A8538 /* Info.plist */,
+				77E9AEF925198BC1002A8538 /* ExampleViewModelTests.swift */,
+			);
+			path = OnoKitTests;
+			sourceTree = "<group>";
+		};
+		77E9AEE725198A69002A8538 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				77E9AEE825198A76002A8538 /* ExampleView.swift */,
+				77E9AEEE25198A7E002A8538 /* ExampleViewModel.swift */,
+				77E9AEF525198A89002A8538 /* ExampleViewController.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		D862A78856655A581D570C6B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,17 +316,39 @@
 			productReference = 770456E7251522F1006CC071 /* OnoKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		77E9AED925198A55002A8538 /* OnoKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77E9AEE425198A55002A8538 /* Build configuration list for PBXNativeTarget "OnoKitTests" */;
+			buildPhases = (
+				77E9AED625198A55002A8538 /* Sources */,
+				77E9AED725198A55002A8538 /* Frameworks */,
+				77E9AED825198A55002A8538 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77E9AEE125198A55002A8538 /* PBXTargetDependency */,
+			);
+			name = OnoKitTests;
+			productName = OnoKitTests;
+			productReference = 77E9AEDA25198A55002A8538 /* OnoKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		770456DE251522F0006CC071 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					770456E6251522F0006CC071 = {
 						CreatedOnToolsVersion = 12.0;
 						LastSwiftMigration = 1200;
+					};
+					77E9AED925198A55002A8538 = {
+						CreatedOnToolsVersion = 12.0;
 					};
 				};
 			};
@@ -293,6 +366,7 @@
 			projectRoot = "";
 			targets = (
 				770456E6251522F0006CC071 /* OnoKit */,
+				77E9AED925198A55002A8538 /* OnoKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,6 +377,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				77045732251524AD006CC071 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E9AED825198A55002A8538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,11 +455,13 @@
 				7704570D25152373006CC071 /* UIImageExtension.swift in Sources */,
 				7704571125152373006CC071 /* UILabelExtension.swift in Sources */,
 				77045726251523BE006CC071 /* CommonTextField.swift in Sources */,
+				77E9AEEF25198A7E002A8538 /* ExampleViewModel.swift in Sources */,
 				7704575625152523006CC071 /* CommonViewModel.swift in Sources */,
 				7704575325152523006CC071 /* CommonCollectionReusableView.swift in Sources */,
 				7704571225152373006CC071 /* UIImageViewExtension.swift in Sources */,
 				7704570F25152373006CC071 /* NSAttributedStringExtension.swift in Sources */,
 				7704575425152523006CC071 /* CommonViewController.swift in Sources */,
+				77E9AEE925198A76002A8538 /* ExampleView.swift in Sources */,
 				77870C6D25191B2A0092CE5C /* UITableViewExtension.swift in Sources */,
 				7704570C25152373006CC071 /* URLExtension.swift in Sources */,
 				7704575825152523006CC071 /* CommonModel.swift in Sources */,
@@ -386,6 +469,7 @@
 				772BF2DA25187A9500359479 /* UIScrollViewExtension.swift in Sources */,
 				7704571025152373006CC071 /* NSStringExtension.swift in Sources */,
 				77045723251523BE006CC071 /* CommonCollectionView.swift in Sources */,
+				77E9AEF625198A89002A8538 /* ExampleViewController.swift in Sources */,
 				7704570525152373006CC071 /* UINavigationControllerExtension.swift in Sources */,
 				7704570E25152373006CC071 /* UITextViewExtension.swift in Sources */,
 				7704570825152373006CC071 /* UITextFieldExtension.swift in Sources */,
@@ -398,7 +482,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77E9AED625198A55002A8538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E9AEFA25198BC1002A8538 /* ExampleViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77E9AEE125198A55002A8538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 770456E6251522F0006CC071 /* OnoKit */;
+			targetProxy = 77E9AEE025198A55002A8538 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		770456ED251522F1006CC071 /* Debug */ = {
@@ -584,6 +685,40 @@
 			};
 			name = Release;
 		};
+		77E9AEE225198A55002A8538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnoKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ono.common.OnoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77E9AEE325198A55002A8538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnoKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ono.common.OnoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -601,6 +736,15 @@
 			buildConfigurations = (
 				770456F0251522F1006CC071 /* Debug */,
 				770456F1251522F1006CC071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77E9AEE425198A55002A8538 /* Build configuration list for PBXNativeTarget "OnoKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E9AEE225198A55002A8538 /* Debug */,
+				77E9AEE325198A55002A8538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
