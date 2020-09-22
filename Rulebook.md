@@ -44,10 +44,29 @@ Object | Example
 `CommonViewModel` | *eq. ProfileViewController*
 
 
-## Reactive Conventions
+## Reactive Prefixes
 
 Object | Prefix | Example
 --- | --- | ---
-`Selector` | **do** | *eq. doLoadView*
-`PassthroughSubject` | **event** | *eq. eventLoadView*
-`AnyCancellable` | **handle** | *eq. handleLoadView*
+`Selector` | **do** | *eq. doLoadView, doTapStart*
+`PassthroughSubject` | **event** | *eq. eventLoadView, eventTapStart*
+`AnyCancellable` | **handle** | *eq. handleLoadView, handleTapStart*
+
+
+## View Methods
+
+`create(_ superview: UIView)` 
+
+
+## View Controller Methods
+
+`viewDidLoad` 
+`initView` 
+`initViewModel` 
+
+## View Model Methods
+
+*eq. doLoadSomeViewName*
+*eq. doTapSomeButtonName*
+
+
