@@ -1,6 +1,6 @@
 # Rulebook
 
-The convention styles below make up a guideline for the library style. 
+These are general convention guidelines for the library style.
 
 Please check out the `Example` module for a better understanding.
 
