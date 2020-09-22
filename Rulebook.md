@@ -60,6 +60,7 @@ Object | Prefix | Example
 `Selector` | **do** | *eq. doLoadView, doTapStart*
 `PassthroughSubject` | **event** | *eq. eventLoadView, eventTapStart*
 `AnyCancellable` | **handle** | *eq. handleLoadView, handleTapStart*
+`XCTest` | **test** | *eq. testLoadView, testTapStart*
 
 
 ## View Methods
