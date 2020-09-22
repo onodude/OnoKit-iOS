@@ -1,7 +1,7 @@
 # Rulebook
 
 
-## Element Abbreviations
+## Element Prefixes
 
 Object | Prefix | Example
 --- | --- | ---
@@ -19,7 +19,7 @@ Object | Prefix | Example
 `UIViewController` | **vc** | *eq. vcHome*
 
 
-##	Type Abbreviations
+##	Type Prefixes
 
 Object | Prefix | Example
 --- | --- | ---
@@ -30,7 +30,7 @@ Object | Prefix | Example
 `UIImage` | **img** | *eq. imgPhoto*
 
 	
-## Architecture Component Suffixes
+## Common Suffixes
 
 Object | Example
 --- | ---
@@ -42,3 +42,12 @@ Object | Example
 `CommonView` | *eq. ProfileView*
 `CommonViewController` | *eq. ProfileViewController*
 `CommonViewModel` | *eq. ProfileViewController*
+
+
+## Reactive Conventions
+
+Object | Prefix | Example
+--- | --- | ---
+`Selector` | **do** | *eq. doLoadView*
+`PassthroughSubject` | **event** | *eq. eventLoadView*
+`AnyCancellable` | **handle** | *eq. handleLoadView*
