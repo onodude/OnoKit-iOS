@@ -3,6 +3,8 @@
 
 ## Element Abbreviations
 
+Object | Prefix | Example
+--- | --- | ---
 `UIButton` | **btn** | *eq. btnStart*
 --- | --- | ---
 `UICollectionView` | **cv** | *eq. cvPhotos*
@@ -31,6 +33,8 @@
 
 ##	Type Abbreviations
 
+Object | Prefix | Example
+--- | --- | ---
 `Array` | **lst** | *eq. lstItems*
 --- | --- | ---
 `Dictionary` | **dict** | *eq. dictOptions*
@@ -45,18 +49,20 @@
 	
 ## Architecture Component Suffixes
 
+Object | Prefix | Example
+--- | --- | ---
 `CommonCollectionViewHandler` | *eq. PhotoCollectionViewHandler*
---- | --- | ---
+--- | ---
 `CommonCollectionViewListener` | *eq. PhotoCollectionViewListener*
---- | --- | ---
+---	| ---
 `CommonModel` | *eq. ProfileModel*
---- | --- | ---
+---	| ---
 `CommonTableViewHandler` | *eq. FriendTableViewHandler*
---- | --- | ---
+---	| ---
 `CommonTableViewListener` | *eq. FriendTableViewListener*
---- | --- | ---
+---	| ---
 `CommonView` | *eq. ProfileView*
---- | --- | ---
+---	| ---
 `CommonViewController` | *eq. ProfileViewController*
---- | --- | ---
+---	| ---
 `CommonViewModel` | *eq. ProfileViewController*
