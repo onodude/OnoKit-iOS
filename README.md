@@ -36,6 +36,10 @@ OnoKit is available through [CocoaPods](https://cocoapods.org). To install it, s
 pod 'OnoKit'
 ```
 
+## Code style
+
+The convention style definition follows [OnoKit's Rulebook](https://github.com/onodude/OnoKit-iOS/blob/develop/Rulebook.md) which is a guideline for the library style.
+
 ## Author
 
 onodude, onur.erdemol@gmail.com
