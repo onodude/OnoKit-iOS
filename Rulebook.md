@@ -4,6 +4,11 @@ These are general convention guidelines for the library style.
 
 Please check out the `Example` module for a better understanding.
 
+- [ExampleView](https://github.com/onodude/OnoKit-iOS/blob/develop/OnoKit/Example/ExampleView.swift)
+- [ExampleViewController](https://github.com/onodude/OnoKit-iOS/blob/develop/OnoKit/Example/ExampleViewController.swift)
+- [ExampleViewModel](https://github.com/onodude/OnoKit-iOS/blob/develop/OnoKit/Example/ExampleViewModel.swift)
+- [ExampleViewModelTests](https://github.com/onodude/OnoKit-iOS/blob/develop/OnoKitTests/ExampleViewModelTests.swift)
+
 
 ## Element Prefixes
 
