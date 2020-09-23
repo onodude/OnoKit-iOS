@@ -6,15 +6,20 @@
 
 import UIKit
 
-protocol CommonViewProtocol {
+open class CommonView: UIView {
 
-    func create(_ superview: UIView)
+    open var viewMain: CommonView!
 
-}
+    open func build(_ superview: UIView) {
 
-open class CommonView: UIView, CommonViewProtocol {
+        viewMain = CommonView(superview)
+            .bgColor(.white)
 
-    open func create(_ superview: UIView) { }
+        viewMain.snp.makeConstraints { (view) in
+            view.edges.equalToSuperview()
+        }
+
+    }
 
     // MARK: - Common Creators
 

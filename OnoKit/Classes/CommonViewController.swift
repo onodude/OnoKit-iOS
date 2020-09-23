@@ -6,27 +6,16 @@
 
 import UIKit
 
-protocol CommonViewControllerProtocol {
-
-    func initView()
-    func initViewModel()
-
-}
-
-open class CommonViewController: UIViewController, CommonViewControllerProtocol {
+open class CommonViewController: UIViewController {
 
     open override func viewDidLoad() {
 
         super.viewDidLoad()
 
-        initView()
-        initViewModel()
+        build()
+        bind()
 
     }
-
-    open func initView() { }
-
-    open func initViewModel() { }
 
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -35,5 +24,9 @@ open class CommonViewController: UIViewController, CommonViewControllerProtocol 
         print(String(format: "%@", viewName))
 
     }
+
+    open func build() { }
+
+    open func bind() { }
 
 }

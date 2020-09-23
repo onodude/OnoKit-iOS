@@ -9,7 +9,7 @@ import UIKit
 
 public extension UIColor {
 
-    convenience init(hexString: String, alpha: CGFloat = 1.0) {
+    convenience init(_ hexString: String, _ alpha: CGFloat = 1.0) {
 
         var hexColor = hexString
         if hexString.hasPrefix("#") {

@@ -10,20 +10,14 @@ class ExampleView: CommonView {
 
     // MARK: - Objects
 
-    var viewMain: CommonView!
     var lblTitle: CommonLabel!
     var btnStart: CommonButton!
 
     // MARK: - Initializers
 
-    override func create(_ superview: UIView) {
+    override func build(_ superview: UIView) {
 
-        viewMain = CommonView(superview)
-            .bgColor(.white)
-
-        viewMain.snp.makeConstraints { (view) in
-            view.edges.equalToSuperview()
-        }
+        super.build(superview)
 
         lblTitle = CommonLabel(viewMain)
             .textColor(.black)

@@ -15,13 +15,13 @@ class ExampleViewController: CommonViewController {
 
     // MARK: - Initializers
 
-    override func initView() {
+    override func build() {
 
-        self.viewMain.create(self.view)
-        
+        self.viewMain.build(self.view)
+
     }
 
-    override func initViewModel() {
+    override func bind() {
 
         self.viewMain.btnStart.action { self.viewModel.doTapStart() }
 
