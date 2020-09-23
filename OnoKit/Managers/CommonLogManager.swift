@@ -17,14 +17,12 @@ public func Log<T>(_ object: T?, filename: String = #file, line: Int = #line, fu
 }
 
 public protocol CommonLogManagerProtocol {
-    func logProd()
+    static func logProd()
 }
 
 open class CommonLogManager: NSObject {
 
-    static let common = CommonLogManager()
-
-    public func log(_ string: String) {
+    static func log(_ string: String) {
 
         if isXcode() {
 
@@ -38,13 +36,13 @@ open class CommonLogManager: NSObject {
 
     }
 
-    func logProd(_ string: String) {
+    static func logProd(_ string: String) {
 
         //  Crashlytics.crashlytics().log(string)
 
     }
 
-    func isXcode() -> Bool {
+    static func isXcode() -> Bool {
 
         var info = kinfo_proc()
         var mib: [Int32] = [CTL_KERN, KERN_PROC, KERN_PROC_PID, getpid()]

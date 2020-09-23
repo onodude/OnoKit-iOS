@@ -14,13 +14,13 @@ open class CommonNavigationManager: NSObject {
 
     open func loggedInLaunchSequence(animated: Bool) {
 
-        CommonLogManager.common.log("loggedInLaunchSequence")
+        CommonLogManager.log("loggedInLaunchSequence")
 
     }
 
     open func notLoggedInLaunchSequence(animated: Bool) {
 
-        CommonLogManager.common.log("notLoggedInLaunchSequence")
+        CommonLogManager.log("notLoggedInLaunchSequence")
 
     }
 

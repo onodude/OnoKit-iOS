@@ -23,10 +23,10 @@ open class CommonFontManager: NSObject {
     public static func printFonts() {
         let fontFamilyNames = UIFont.familyNames
         for familyName in fontFamilyNames {
-            CommonLogManager.common.log("------------------------------")
-            CommonLogManager.common.log("Font Family Name = [\(familyName)]")
+            CommonLogManager.log("------------------------------")
+            CommonLogManager.log("Font Family Name = [\(familyName)]")
             let names = UIFont.fontNames(forFamilyName: familyName)
-            CommonLogManager.common.log("Font Names = [\(names)]")
+            CommonLogManager.log("Font Names = [\(names)]")
         }
     }
 
