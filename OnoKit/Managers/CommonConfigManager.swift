@@ -10,8 +10,4 @@ public protocol CommonConfigManagerProtocol {
     func configureLibraries()
 }
 
-open class CommonConfigManager {
-
-    public static let shared = CommonConfigManager()
-
-}
+open class CommonConfigManager { }
