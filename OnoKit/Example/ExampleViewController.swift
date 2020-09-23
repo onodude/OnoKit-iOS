@@ -18,7 +18,7 @@ class ExampleViewController: CommonViewController {
     override func initView() {
 
         self.viewMain.create(self.view)
-        
+
     }
 
     override func initViewModel() {
