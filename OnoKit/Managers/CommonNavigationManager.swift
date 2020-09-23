@@ -15,11 +15,9 @@ public protocol CommonNavigationManagerProtocol {
 
 open class CommonNavigationManager: NSObject {
 
-    static let shared = CommonNavigationManager()
-
     open var window: UIWindow!
 
-    open func show(from: UIViewController, to: UIViewController) {
+    public static func show(from: UIViewController, to: UIViewController) {
         to.hidesBottomBarWhenPushed = true
         let transition = CATransition()
         transition.duration = 0.4
@@ -29,7 +27,7 @@ open class CommonNavigationManager: NSObject {
         from.navigationController?.pushViewController(to, animated: false)
     }
 
-    open func dismiss(from: UIViewController) {
+    public static func dismiss(from: UIViewController) {
         let transition = CATransition()
         transition.duration = 0.4
         transition.type = CATransitionType.fade
@@ -38,7 +36,7 @@ open class CommonNavigationManager: NSObject {
         from.navigationController?.popViewController(animated: false)
     }
 
-    open func push(from: UIViewController, to: UIViewController, direction: CATransitionSubtype) {
+    public static func push(from: UIViewController, to: UIViewController, direction: CATransitionSubtype) {
         to.hidesBottomBarWhenPushed = true
         let transition = CATransition()
         transition.duration = 0.4
@@ -49,7 +47,7 @@ open class CommonNavigationManager: NSObject {
         from.navigationController?.pushViewController(to, animated: false)
     }
 
-    open func pop(from: UIViewController, direction: CATransitionSubtype) {
+    public static func pop(from: UIViewController, direction: CATransitionSubtype) {
         let transition = CATransition()
         transition.duration = 0.4
         transition.type = CATransitionType.moveIn
