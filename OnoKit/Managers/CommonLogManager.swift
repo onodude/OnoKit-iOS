@@ -16,9 +16,9 @@ public func Log<T>(_ object: T?, filename: String = #file, line: Int = #line, fu
 
 }
 
-open class CommonLogManager {
+open class CommonLogManager: NSObject {
 
-    static let shared = CommonLogManager()
+    static let common = CommonLogManager()
 
     public func log(_ string: String) {
 

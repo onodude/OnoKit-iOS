@@ -4,20 +4,19 @@
 //  All rights reserved
 //
 
-import Foundation
 import UIKit
 
-class CommonFontManager {
+open class CommonFontManager: NSObject {
 
     // MARK: - Helpers
 
-    static func printFonts() {
+    public static func printFonts() {
         let fontFamilyNames = UIFont.familyNames
         for familyName in fontFamilyNames {
-            CommonLogManager.shared.log("------------------------------")
-            print("Font Family Name = [\(familyName)]")
+            CommonLogManager.common.log("------------------------------")
+            CommonLogManager.common.log("Font Family Name = [\(familyName)]")
             let names = UIFont.fontNames(forFamilyName: familyName)
-            CommonLogManager.shared.log("Font Names = [\(names)]")
+            CommonLogManager.common.log("Font Names = [\(names)]")
         }
     }
 

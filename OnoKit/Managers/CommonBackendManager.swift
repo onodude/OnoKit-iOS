@@ -4,7 +4,4 @@
 //  All rights reserved
 //
 
-import Foundation
-import ObjectMapper
-
-class CommonBackendManager { }
+public class CommonBackendManager { }

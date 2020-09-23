@@ -5,10 +5,8 @@
 //
 
 import Foundation
-import KeychainAccess
-import ObjectMapper
 
-public class CommonCacheManager {
+public class CommonCacheManager: NSObject {
 
     // MARK: - Helpers
 

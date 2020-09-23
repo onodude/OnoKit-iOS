@@ -13,7 +13,7 @@ public protocol CommonApplicationManagerProtocol {
 
 }
 
-open class CommonApplicationManager {
+open class CommonApplicationManager: NSObject {
 
     open var window: UIWindow!
 

@@ -6,9 +6,8 @@
 
 import Foundation
 import KeychainAccess
-import ObjectMapper
 
-public class CommonStorageManager {
+public class CommonStorageManager: NSObject {
 
     let shared = CommonStorageManager()
 

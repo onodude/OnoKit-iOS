@@ -6,7 +6,7 @@
 
 import UIKit
 
-open class CommonNavigationManager {
+open class CommonNavigationManager: NSObject {
 
     static let shared = CommonNavigationManager()
 
@@ -14,13 +14,13 @@ open class CommonNavigationManager {
 
     open func loggedInLaunchSequence(animated: Bool) {
 
-        CommonLogManager.shared.log("loggedInLaunchSequence")
+        CommonLogManager.common.log("loggedInLaunchSequence")
 
     }
 
     open func notLoggedInLaunchSequence(animated: Bool) {
 
-        CommonLogManager.shared.log("notLoggedInLaunchSequence")
+        CommonLogManager.common.log("notLoggedInLaunchSequence")
 
     }
 

@@ -4,7 +4,4 @@
 //  All rights reserved
 //
 
-import Foundation
-import UIKit
-
-class CommonColorManager { }
+public class CommonColorManager { }

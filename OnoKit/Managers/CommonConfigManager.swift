@@ -4,8 +4,6 @@
 //  All rights reserved
 //
 
-import UIKit
-
 public protocol CommonConfigManagerProtocol {
     func configureLibraries()
 }
