@@ -41,7 +41,6 @@
 		7704575725152523006CC071 /* CommonTableReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575025152523006CC071 /* CommonTableReusableView.swift */; };
 		7704575825152523006CC071 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575125152523006CC071 /* CommonModel.swift */; };
 		7704575925152523006CC071 /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575225152523006CC071 /* CommonTableViewCell.swift */; };
-		77045771251526DA006CC071 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704576E251526DA006CC071 /* CommonConstants.swift */; };
 		772BF2DA25187A9500359479 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BF2D925187A9500359479 /* UIScrollViewExtension.swift */; };
 		776F6E5E251ACB2700C1A84B /* CommonApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F6E5D251ACB2700C1A84B /* CommonApplicationManager.swift */; };
 		776F6E65251ACB7F00C1A84B /* CommonConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F6E64251ACB7F00C1A84B /* CommonConfigManager.swift */; };
@@ -118,7 +117,6 @@
 		7704575025152523006CC071 /* CommonTableReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableReusableView.swift; sourceTree = "<group>"; };
 		7704575125152523006CC071 /* CommonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
 		7704575225152523006CC071 /* CommonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
-		7704576E251526DA006CC071 /* CommonConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
 		772BF2D925187A9500359479 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		776F6E5D251ACB2700C1A84B /* CommonApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonApplicationManager.swift; sourceTree = "<group>"; };
 		776F6E64251ACB7F00C1A84B /* CommonConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConfigManager.swift; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 				770456F425152330006CC071 /* Extensions */,
 				770456F325152328006CC071 /* Classes */,
 				770456EA251522F1006CC071 /* Common.h */,
-				7704576E251526DA006CC071 /* CommonConstants.swift */,
 				770456EB251522F1006CC071 /* Info.plist */,
 			);
 			path = OnoKit;
@@ -488,7 +485,6 @@
 				7704575725152523006CC071 /* CommonTableReusableView.swift in Sources */,
 				776F6E79251ACEE700C1A84B /* CommonCacheManager.swift in Sources */,
 				77045727251523BE006CC071 /* CommonImageView.swift in Sources */,
-				77045771251526DA006CC071 /* CommonConstants.swift in Sources */,
 				7704575925152523006CC071 /* CommonTableViewCell.swift in Sources */,
 				776F6E69251ACBA800C1A84B /* CommonLogManager.swift in Sources */,
 				7704570925152373006CC071 /* UIViewExtension.swift in Sources */,
