@@ -6,7 +6,7 @@
 
 import UIKit
 
-protocol CommonViewProtocol {
+public protocol CommonViewProtocol {
 
     func create(_ superview: UIView)
 

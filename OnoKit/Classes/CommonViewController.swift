@@ -6,7 +6,7 @@
 
 import UIKit
 
-protocol CommonViewControllerProtocol {
+public protocol CommonViewControllerProtocol {
 
     func initView()
     func initViewModel()
