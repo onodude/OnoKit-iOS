@@ -7,7 +7,7 @@
 import UIKit
 import UserNotifications
 
-protocol CommonApplicationManagerProtocol {
+public protocol CommonApplicationManagerProtocol {
     func start()
     func loadDeviceInfo()
 }
