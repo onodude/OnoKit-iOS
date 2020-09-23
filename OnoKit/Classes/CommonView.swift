@@ -14,6 +14,8 @@ public protocol CommonViewProtocol {
 
 open class CommonView: UIView {
 
+    open func create(_ superview: UIView) { }
+
     // MARK: - Common Creators
 
     public convenience init(_ superview: UIView) {

@@ -13,7 +13,7 @@ public protocol CommonViewControllerProtocol {
 
 }
 
-open class CommonViewController: UIViewController {
+open class CommonViewController: UIViewController, CommonViewControllerProtocol {
 
     open override func viewDidLoad() {
 
@@ -32,8 +32,8 @@ open class CommonViewController: UIViewController {
 
     }
 
-    private func initView() { }
+    open func initView() { }
 
-    private func initViewModel() { }
+    open func initViewModel() { }
 
 }
