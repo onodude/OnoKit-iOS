@@ -6,8 +6,12 @@
 
 import UIKit
 
+public protocol CommonConfigManagerProtocol {
+    func configureLibraries()
+}
+
 open class CommonConfigManager {
 
-    open func configureLibraries() { }
+    static let shared = CommonLogManager()
 
 }
