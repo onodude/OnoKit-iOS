@@ -6,7 +6,7 @@
 
 import Foundation
 
-public class CommonCacheManager: NSObject {
+open class CommonCacheManager: NSObject {
 
     // MARK: - Helpers
 

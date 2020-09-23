@@ -4,4 +4,6 @@
 //  All rights reserved
 //
 
-public class CommonColorManager { }
+import UIKit
+
+open class CommonColorManager: NSObject { }

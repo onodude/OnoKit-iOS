@@ -7,7 +7,7 @@
 import Foundation
 import KeychainAccess
 
-public class CommonStorageManager: NSObject {
+open class CommonStorageManager: NSObject {
 
     let shared = CommonStorageManager()
 
