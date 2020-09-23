@@ -7,4 +7,4 @@
 import Foundation
 import UIKit
 
-open class CommonNavigationController: UINavigationController { }
+open class CommonTabBarController: UITabBarController { }
