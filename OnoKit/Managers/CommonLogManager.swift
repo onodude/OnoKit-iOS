@@ -16,6 +16,10 @@ public func Log<T>(_ object: T?, filename: String = #file, line: Int = #line, fu
 
 }
 
+public protocol CommonLogManagerProtocol {
+    func logProd()
+}
+
 open class CommonLogManager: NSObject {
 
     static let common = CommonLogManager()
@@ -34,7 +38,7 @@ open class CommonLogManager: NSObject {
 
     }
 
-    open func logProd(_ string: String) {
+    func logProd(_ string: String) {
 
         //  Crashlytics.crashlytics().log(string)
 
