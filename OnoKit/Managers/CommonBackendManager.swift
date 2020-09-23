@@ -7,6 +7,5 @@
 import Foundation
 import Alamofire
 import ObjectMapper
-import SVProgressHUD
 
 class CommonBackendManager { }
