@@ -7,11 +7,6 @@
 import Foundation
 import UIKit
 
-public protocol CommonUtilityManagerProtocol {
-    static func getCurrentViewController() -> UIViewController!
-    static func getCurrentNavigationController() -> UINavigationController!
-}
-
 open class CommonUtilityManager {
 
     // MARK: - Version

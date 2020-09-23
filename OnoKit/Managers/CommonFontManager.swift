@@ -6,16 +6,6 @@
 
 import UIKit
 
-public protocol CommonFontManagerProtocol {
-
-    static var fontNameRegular: String { get set }
-    static var fontNameBold: String { get set }
-
-    static func fontRegular(_ size: CGFloat) -> UIFont
-    static func fontBold(_ size: CGFloat) -> UIFont
-
-}
-
 open class CommonFontManager: NSObject {
 
     // MARK: - Helpers

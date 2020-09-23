@@ -16,27 +16,21 @@ public func Log<T>(_ object: T?, filename: String = #file, line: Int = #line, fu
 
 }
 
-public protocol CommonLogManagerProtocol {
-    static func logProd()
-}
-
 open class CommonLogManager: NSObject {
 
     public static func log(_ string: String) {
 
-        if isXcode() {
-
-            print(string)
-
-        } else {
-
-            logProd(string)
-
-        }
+        isXcode() ? logConsole(string) : logRemote(string)
 
     }
 
-    static func logProd(_ string: String) {
+    static func logConsole(_ string: String) {
+
+        print(string)
+
+    }
+
+    static func logRemote(_ string: String) {
 
         //  Crashlytics.crashlytics().log(string)
 

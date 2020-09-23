@@ -6,13 +6,6 @@
 
 import UIKit
 
-public protocol CommonApplicationManagerProtocol {
-
-    func start()
-    func loadDeviceInfo()
-
-}
-
 open class CommonApplicationManager: NSObject {
 
     open var window: UIWindow!

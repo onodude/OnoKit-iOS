@@ -6,8 +6,4 @@
 
 import UIKit
 
-public protocol CommonConfigManagerProtocol {
-    static func configureLibraries()
-}
-
 open class CommonConfigManager: NSObject { }
