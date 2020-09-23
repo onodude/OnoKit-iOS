@@ -10,7 +10,7 @@ open class CommonFontManager: NSObject {
 
     // MARK: - Helpers
 
-    public static func build(_ name: String, size: CGFloat) -> UIFont {
+    public static func build(_ name: String, _ size: CGFloat) -> UIFont {
         return UIFont(name, size) ?? UIFont.systemFont(ofSize: size)
     }
 
