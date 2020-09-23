@@ -65,14 +65,17 @@ Object | Prefix | Example
 
 ## View Methods
 
-`create(_ superview: UIView)` 
+`build(_ superview: UIView)` 
 
 
 ## View Controller Methods
 
-`viewDidLoad` 
-`initView` 
-`initViewModel` 
+`build` 
+`bind` 
+
+`handleLoadSomeViewName` 
+`handleTapSomeButtonName` 
+
 
 ## View Model Methods
 
