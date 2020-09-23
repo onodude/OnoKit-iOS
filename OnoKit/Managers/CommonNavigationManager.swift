@@ -6,23 +6,18 @@
 
 import UIKit
 
+public protocol CommonNavigationManagerProtocol {
+
+    func loggedInLaunchSequence(animated: Bool)
+    func notLoggedInLaunchSequence(animated: Bool)
+
+}
+
 open class CommonNavigationManager: NSObject {
 
     static let shared = CommonNavigationManager()
 
     open var window: UIWindow!
-
-    open func loggedInLaunchSequence(animated: Bool) {
-
-        CommonLogManager.log("loggedInLaunchSequence")
-
-    }
-
-    open func notLoggedInLaunchSequence(animated: Bool) {
-
-        CommonLogManager.log("notLoggedInLaunchSequence")
-
-    }
 
     open func show(from: UIViewController, to: UIViewController) {
         to.hidesBottomBarWhenPushed = true
