@@ -4,8 +4,10 @@
 //  All rights reserved
 //
 
+import UIKit
+
 public protocol CommonConfigManagerProtocol {
     func configureLibraries()
 }
 
-open class CommonConfigManager { }
+open class CommonConfigManager: NSObject { }
