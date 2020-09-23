@@ -6,7 +6,7 @@
 
 import UIKit
 
-class ExampleView: CommonView {
+class ExampleView: CommonView, CommonViewProtocol {
 
     // MARK: - Objects
 
@@ -16,7 +16,7 @@ class ExampleView: CommonView {
 
     // MARK: - Initializers
 
-    override func create(_ superview: UIView) {
+    func create(_ superview: UIView) {
 
         viewMain = CommonView(superview)
             .bgColor(.white)

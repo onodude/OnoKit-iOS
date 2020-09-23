@@ -13,7 +13,7 @@ protocol CommonViewControllerProtocol {
 
 }
 
-open class CommonViewController: UIViewController, CommonViewControllerProtocol {
+open class CommonViewController: UIViewController {
 
     open override func viewDidLoad() {
 
@@ -24,10 +24,6 @@ open class CommonViewController: UIViewController, CommonViewControllerProtocol 
 
     }
 
-    open func initView() { }
-
-    open func initViewModel() { }
-
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
@@ -35,5 +31,9 @@ open class CommonViewController: UIViewController, CommonViewControllerProtocol 
         print(String(format: "%@", viewName))
 
     }
+
+    private func initView() { }
+
+    private func initViewModel() { }
 
 }

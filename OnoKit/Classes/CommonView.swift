@@ -12,9 +12,7 @@ protocol CommonViewProtocol {
 
 }
 
-open class CommonView: UIView, CommonViewProtocol {
-
-    open func create(_ superview: UIView) { }
+open class CommonView: UIView {
 
     // MARK: - Common Creators
 

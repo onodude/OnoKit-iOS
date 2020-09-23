@@ -6,7 +6,7 @@
 
 import UIKit
 
-class ExampleViewController: CommonViewController {
+class ExampleViewController: CommonViewController, CommonViewControllerProtocol {
 
     // MARK: - Objects
 
@@ -15,13 +15,13 @@ class ExampleViewController: CommonViewController {
 
     // MARK: - Initializers
 
-    override func initView() {
+    func initView() {
 
         self.viewMain.create(self.view)
 
     }
 
-    override func initViewModel() {
+    func initViewModel() {
 
         self.viewMain.btnStart.action { self.viewModel.doTapStart() }
 
