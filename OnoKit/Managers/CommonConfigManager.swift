@@ -12,6 +12,6 @@ public protocol CommonConfigManagerProtocol {
 
 open class CommonConfigManager {
 
-    static let shared = CommonLogManager()
+    public static let shared = CommonConfigManager()
 
 }
