@@ -53,6 +53,7 @@
 		776F6E7D251AD15B00C1A84B /* CommonStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F6E7C251AD15B00C1A84B /* CommonStorageManager.swift */; };
 		776F6E81251AD29000C1A84B /* CommonUtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F6E80251AD29000C1A84B /* CommonUtilityManager.swift */; };
 		776F6E85251AD2C900C1A84B /* CommonColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F6E84251AD2C900C1A84B /* CommonColorManager.swift */; };
+		776F6EA3251AD3DE00C1A84B /* CommonBackendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F6EA2251AD3DE00C1A84B /* CommonBackendManager.swift */; };
 		77870C6D25191B2A0092CE5C /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77870C6C25191B2A0092CE5C /* UITableViewExtension.swift */; };
 		77870C7025191B850092CE5C /* CommonTableViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77870C6F25191B850092CE5C /* CommonTableViewHandler.swift */; };
 		77870CCC251927FC0092CE5C /* CommonTextFieldHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77870CCB251927FC0092CE5C /* CommonTextFieldHandler.swift */; };
@@ -129,6 +130,7 @@
 		776F6E7C251AD15B00C1A84B /* CommonStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStorageManager.swift; sourceTree = "<group>"; };
 		776F6E80251AD29000C1A84B /* CommonUtilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtilityManager.swift; sourceTree = "<group>"; };
 		776F6E84251AD2C900C1A84B /* CommonColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonColorManager.swift; sourceTree = "<group>"; };
+		776F6EA2251AD3DE00C1A84B /* CommonBackendManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonBackendManager.swift; sourceTree = "<group>"; };
 		77870C6C25191B2A0092CE5C /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		77870C6F25191B850092CE5C /* CommonTableViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTableViewHandler.swift; sourceTree = "<group>"; };
 		77870CCB251927FC0092CE5C /* CommonTextFieldHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextFieldHandler.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				776F6E7C251AD15B00C1A84B /* CommonStorageManager.swift */,
 				776F6E80251AD29000C1A84B /* CommonUtilityManager.swift */,
 				776F6E84251AD2C900C1A84B /* CommonColorManager.swift */,
+				776F6EA2251AD3DE00C1A84B /* CommonBackendManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				77870C6D25191B2A0092CE5C /* UITableViewExtension.swift in Sources */,
 				7704570C25152373006CC071 /* URLExtension.swift in Sources */,
 				7704575825152523006CC071 /* CommonModel.swift in Sources */,
+				776F6EA3251AD3DE00C1A84B /* CommonBackendManager.swift in Sources */,
 				7704572A251523BE006CC071 /* CommonLabel.swift in Sources */,
 				776F6E71251ACCAE00C1A84B /* CommonNavigationController.swift in Sources */,
 				776F6E5E251ACB2700C1A84B /* CommonApplicationManager.swift in Sources */,

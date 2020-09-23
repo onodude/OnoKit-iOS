@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
 	s.dependency 'ObjectMapper', '~> 3.5.1'
 	s.dependency 'SnapKit', '~> 5.0.0'
 	s.dependency 'KeychainAccess', '~> 4.1.0'
+	s.dependency 'Alamofire', '~> 5.0.0'
 end
 
