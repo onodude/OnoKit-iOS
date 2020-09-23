@@ -10,6 +10,10 @@ open class CommonFontManager: NSObject {
 
     // MARK: - Helpers
 
+    public static func build(_ name: String, size: CGFloat) -> UIFont {
+        return UIFont(name, size) ?? UIFont.systemFont(ofSize: size)
+    }
+
     public static func printFonts() {
         let fontFamilyNames = UIFont.familyNames
         for familyName in fontFamilyNames {
