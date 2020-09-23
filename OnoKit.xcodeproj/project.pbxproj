@@ -42,6 +42,7 @@
 		7704575825152523006CC071 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575125152523006CC071 /* CommonModel.swift */; };
 		7704575925152523006CC071 /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704575225152523006CC071 /* CommonTableViewCell.swift */; };
 		772BF2DA25187A9500359479 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BF2D925187A9500359479 /* UIScrollViewExtension.swift */; };
+		774D019B251B0541005F35B2 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D019A251B0541005F35B2 /* UIFontExtension.swift */; };
 		776F6E5E251ACB2700C1A84B /* CommonApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F6E5D251ACB2700C1A84B /* CommonApplicationManager.swift */; };
 		776F6E65251ACB7F00C1A84B /* CommonConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F6E64251ACB7F00C1A84B /* CommonConfigManager.swift */; };
 		776F6E69251ACBA800C1A84B /* CommonLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F6E68251ACBA800C1A84B /* CommonLogManager.swift */; };
@@ -119,6 +120,7 @@
 		7704575125152523006CC071 /* CommonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
 		7704575225152523006CC071 /* CommonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
 		772BF2D925187A9500359479 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		774D019A251B0541005F35B2 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		776F6E5D251ACB2700C1A84B /* CommonApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonApplicationManager.swift; sourceTree = "<group>"; };
 		776F6E64251ACB7F00C1A84B /* CommonConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConfigManager.swift; sourceTree = "<group>"; };
 		776F6E68251ACBA800C1A84B /* CommonLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLogManager.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				7793AB812516CD4E00910FAC /* UICollectionViewExtension.swift */,
 				772BF2D925187A9500359479 /* UIScrollViewExtension.swift */,
 				77870C6C25191B2A0092CE5C /* UITableViewExtension.swift */,
+				774D019A251B0541005F35B2 /* UIFontExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				77045722251523BE006CC071 /* CommonCollectionViewHandler.swift in Sources */,
 				7704570D25152373006CC071 /* UIImageExtension.swift in Sources */,
 				7704571125152373006CC071 /* UILabelExtension.swift in Sources */,
+				774D019B251B0541005F35B2 /* UIFontExtension.swift in Sources */,
 				77045726251523BE006CC071 /* CommonTextField.swift in Sources */,
 				776F6E75251ACE6200C1A84B /* CommonFontManager.swift in Sources */,
 				77E9AEEF25198A7E002A8538 /* ExampleViewModel.swift in Sources */,
