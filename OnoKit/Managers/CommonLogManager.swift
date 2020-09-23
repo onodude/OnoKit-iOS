@@ -22,7 +22,7 @@ public protocol CommonLogManagerProtocol {
 
 open class CommonLogManager: NSObject {
 
-    static func log(_ string: String) {
+    public static func log(_ string: String) {
 
         if isXcode() {
 
