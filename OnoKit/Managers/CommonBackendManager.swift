@@ -4,4 +4,6 @@
 //  All rights reserved
 //
 
-public class CommonBackendManager { }
+import UIKit
+
+open class CommonBackendManager: NSObject { }
