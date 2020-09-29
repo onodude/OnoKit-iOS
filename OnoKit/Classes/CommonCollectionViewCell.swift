@@ -19,6 +19,10 @@ open class CommonCollectionViewCell: UICollectionViewCell {
 
     // MARK: Initializers
 
+    open override func layoutSubviews() {
+        contentView.isHidden = contentView.frame.size == .zero
+    }
+
     public override init(frame: CGRect) {
         super.init(frame: frame)
 
