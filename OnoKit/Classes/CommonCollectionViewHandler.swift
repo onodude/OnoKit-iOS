@@ -9,19 +9,11 @@ import UIKit
 open class CommonCollectionViewHandler: NSObject, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     open var itemSize: CGSize {
-        get { return .zero }
-        set { _ = newValue }
+        return .zero
     }
 
     open var itemInsets: UIEdgeInsets {
-        get { return .zero }
-        set { _ = newValue }
-    }
-
-    convenience init(_ size: CGSize, _ insets: UIEdgeInsets) {
-        self.init()
-        self.itemSize = size
-        self.itemInsets = insets
+        return .zero
     }
 
     open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
