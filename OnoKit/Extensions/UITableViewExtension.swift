@@ -28,7 +28,8 @@ public extension UITableView {
         self.estimatedSectionFooterHeight = 0
 
         for identifier in identifiers {
-            if let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String {
+            if let projectName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String {
+                let namespace = projectName.replacingOccurrences(of: "-", with: "_")
                 if let anyClass: AnyClass = NSClassFromString("\(namespace).\(identifier)") {
                     self.register(anyClass, forCellReuseIdentifier: identifier)
                 }
