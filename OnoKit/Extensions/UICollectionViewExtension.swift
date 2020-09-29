@@ -14,7 +14,6 @@ public extension UICollectionView {
 
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.scrollDirection = direction
-        layout.itemSize = handler.itemSize
 
         self.init(frame: .zero, collectionViewLayout: layout)
 
