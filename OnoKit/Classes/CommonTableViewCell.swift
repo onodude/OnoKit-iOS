@@ -22,7 +22,7 @@ open class CommonTableViewCell: UITableViewCell {
 
         viewMain = CommonView(contentView)
         viewMain.snp.makeConstraints { (view) in
-            view.edges.equalToSuperview()
+            view.left.top.right.bottom.equalToSuperview()
         }
 
     }

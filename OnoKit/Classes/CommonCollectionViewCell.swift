@@ -8,6 +8,10 @@ import UIKit
 
 open class CommonCollectionViewCell: UICollectionViewCell {
 
+    open var itemSize: CGSize {
+        return .zero
+    }
+
     // MARK: Objects
 
     open var indexPath: IndexPath!
@@ -15,13 +19,17 @@ open class CommonCollectionViewCell: UICollectionViewCell {
 
     // MARK: Initializers
 
+    open override func layoutSubviews() {
+        contentView.isHidden = contentView.frame.size == .zero
+    }
+
     public override init(frame: CGRect) {
         super.init(frame: frame)
 
         viewMain = CommonView(contentView)
-
         viewMain.snp.makeConstraints { (view) in
-            view.edges.equalToSuperview()
+            view.center.equalToSuperview()
+            view.size.equalTo(itemSize)
         }
 
     }

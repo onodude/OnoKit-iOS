@@ -16,7 +16,7 @@ open class CommonView: UIView {
             .bgColor(.white)
 
         viewMain.snp.makeConstraints { (view) in
-            view.edges.equalToSuperview()
+            view.left.top.right.bottom.equalToSuperview()
         }
 
     }
