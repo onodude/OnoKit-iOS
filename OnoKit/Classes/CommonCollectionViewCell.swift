@@ -8,6 +8,10 @@ import UIKit
 
 open class CommonCollectionViewCell: UICollectionViewCell {
 
+    open var itemSize: CGSize {
+        return .zero
+    }
+
     // MARK: Objects
 
     open var indexPath: IndexPath!
@@ -19,9 +23,9 @@ open class CommonCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
 
         viewMain = CommonView(contentView)
-
         viewMain.snp.makeConstraints { (view) in
-            view.left.top.right.bottom.equalToSuperview()
+            view.center.equalToSuperview()
+            view.size.equalTo(itemSize)
         }
 
     }

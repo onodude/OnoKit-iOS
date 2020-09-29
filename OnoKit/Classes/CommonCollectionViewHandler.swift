@@ -30,8 +30,6 @@ open class CommonCollectionViewHandler: NSObject, UICollectionViewDelegate, UICo
     }
 
     open func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-
         return itemInsets
-
     }
 }
