@@ -8,6 +8,13 @@ import UIKit
 
 open class CommonCollectionViewHandler: NSObject, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    open var itemSize: CGSize = .zero
+
+    convenience init(_ size: CGSize) {
+        self.init()
+        self.itemSize = size
+    }
+
     open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 0
     }
@@ -17,7 +24,7 @@ open class CommonCollectionViewHandler: NSObject, UICollectionViewDelegate, UICo
     }
 
     open func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .zero
+        return itemSize
 
     }
 
