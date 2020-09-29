@@ -8,8 +8,8 @@ import UIKit
 
 open class CommonCollectionViewHandler: NSObject, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-    var itemSize: CGSize = .zero
-    var itemInsets: UIEdgeInsets = .zero
+    open var itemSize: CGSize = .zero
+    open var itemInsets: UIEdgeInsets = .zero
 
     convenience init(_ size: CGSize, _ insets: UIEdgeInsets) {
         self.init()
