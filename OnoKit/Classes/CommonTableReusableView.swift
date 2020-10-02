@@ -14,7 +14,7 @@ open class CommonTableReusableView: UIView {
     public static var defaultFooterHeight: CGFloat = 20
 
     open var indexPath: IndexPath!
-    open var viewMain: UIView!
+    open var viewMain: CommonView!
 
     // MARK: - Build
 
