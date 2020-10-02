@@ -13,7 +13,7 @@ open class CommonView: UIView {
     open func build(_ superview: UIView) {
 
         viewMain = CommonView(superview)
-            .bgColor(.white)
+            .bgColor(.clear)
 
         viewMain.snp.makeConstraints { (view) in
             view.left.top.right.bottom.equalToSuperview()
