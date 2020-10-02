@@ -15,7 +15,7 @@ open class CommonCollectionViewCell: UICollectionViewCell {
     // MARK: Objects
 
     open var indexPath: IndexPath!
-    open var viewMain: UIView!
+    open var viewMain: CommonView!
 
     // MARK: Initializers
 
