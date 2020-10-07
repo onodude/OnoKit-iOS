@@ -20,6 +20,10 @@ open class CommonTableViewCell: UITableViewCell {
 
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
+        self.selectionStyle = .none
+        self.backgroundColor = .clear
+        self.backgroundView = nil
+
         viewMain = CommonView(contentView)
         viewMain.snp.makeConstraints { (view) in
             view.left.top.right.bottom.equalToSuperview()
