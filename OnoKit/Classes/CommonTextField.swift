@@ -128,6 +128,12 @@ open class CommonTextField: UITextField {
     }
 
     @discardableResult
+    public func autocorrectionType(_ type: UITextAutocorrectionType) -> CommonTextField {
+        self.autocorrectionType = type
+        return self
+    }
+    
+    @discardableResult
     public func keyboardType(_ type: UIKeyboardType) -> CommonTextField {
         self.keyboardType = type
         return self
