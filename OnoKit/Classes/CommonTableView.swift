@@ -50,7 +50,7 @@ public class CommonTableView: UITableView {
     public func identifiers(_ identifiers: [String]) -> CommonTableView {
         for identifier in identifiers {
             if let projectName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String {
-                let namespace = projectName.replacingOccurrences(of: "-", with: "_")
+                let namespace = projectName.replacingOccurrences(of: "-", with: "_").replacingOccurrences(of: " ", with: "_")
                 if let anyClass: AnyClass = NSClassFromString("\(namespace).\(identifier)") {
                     self.register(anyClass, forCellReuseIdentifier: identifier)
                 }

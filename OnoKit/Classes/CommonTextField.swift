@@ -132,7 +132,7 @@ open class CommonTextField: UITextField {
         self.autocorrectionType = type
         return self
     }
-    
+
     @discardableResult
     public func keyboardType(_ type: UIKeyboardType) -> CommonTextField {
         self.keyboardType = type
